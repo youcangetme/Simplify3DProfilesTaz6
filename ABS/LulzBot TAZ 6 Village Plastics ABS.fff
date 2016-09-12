@@ -341,35 +341,47 @@
     </fanSpeed>
   </autoConfigureMaterial>
   <autoConfigureQuality name="Fast">
-    <layerHeight>0.3</layerHeight>
+    <layerHeight>0.300</layerHeight>
     <topSolidLayers>3</topSolidLayers>
     <bottomSolidLayers>3</bottomSolidLayers>
     <skirtLayers>1</skirtLayers>
     <infillPercentage>15</infillPercentage>
     <supportInfillPercentage>25</supportInfillPercentage>
+    <firstLayerHeightPercentage>141</firstLayerHeightPercentage>
+    <firstLayerWidthPercentage>125</firstLayerWidthPercentage>
+    <firstLayerUnderspeed>0.50</firstLayerUnderspeed>
   </autoConfigureQuality>
-  <autoConfigureQuality name="Medium">
+  <autoConfigureQuality name="Standard">
     <layerHeight>0.2</layerHeight>
     <topSolidLayers>3</topSolidLayers>
     <bottomSolidLayers>3</bottomSolidLayers>
     <skirtLayers>1</skirtLayers>
     <infillPercentage>20</infillPercentage>
     <supportInfillPercentage>30</supportInfillPercentage>
+    <firstLayerHeightPercentage>170</firstLayerHeightPercentage>
+    <firstLayerWidthPercentage>125</firstLayerWidthPercentage>
+    <firstLayerUnderspeed>0.50</firstLayerUnderspeed>
   </autoConfigureQuality>
-  <autoConfigureQuality name="High">
+  <autoConfigureQuality name="Fine">
     <layerHeight>0.1</layerHeight>
     <topSolidLayers>4</topSolidLayers>
     <bottomSolidLayers>4</bottomSolidLayers>
-    <skirtLayers>2</skirtLayers>
+    <skirtLayers>1</skirtLayers>
     <infillPercentage>30</infillPercentage>
     <supportInfillPercentage>40</supportInfillPercentage>
+    <firstLayerHeightPercentage>425</firstLayerHeightPercentage>
+    <firstLayerWidthPercentage>125</firstLayerWidthPercentage>
+    <firstLayerUnderspeed>0.50</firstLayerUnderspeed>
   </autoConfigureQuality>
   <autoConfigureQuality name="Lulzbot Res">
-    <layerHeight>0.35</layerHeight>
+    <layerHeight>0.350</layerHeight>
     <topSolidLayers>3</topSolidLayers>
     <bottomSolidLayers>3</bottomSolidLayers>
     <skirtLayers>1</skirtLayers>
-    <infillPercentage>78</infillPercentage>
+    <infillPercentage>15</infillPercentage>
     <supportInfillPercentage>25</supportInfillPercentage>
+    <firstLayerHeightPercentage>122</firstLayerHeightPercentage>
+    <firstLayerWidthPercentage>125</firstLayerWidthPercentage>
+    <firstLayerUnderspeed>0.50</firstLayerUnderspeed>
   </autoConfigureQuality>
 </profile>
