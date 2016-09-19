@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<profile name="LulzBot TAZ 6 IC3D ABS" version="2016-09-18 22:16:15" app="S3D-Software 3.1.0">
+<profile name="LulzBot TAZ 6 IC3D ABS" version="2016-09-18 23:12:26" app="S3D-Software 3.1.0">
   <baseProfile>LulzBot TAZ 6 Single</baseProfile>
   <printMaterial>ABS</printMaterial>
   <printQuality>Fast</printQuality>
@@ -89,7 +89,9 @@
     <relayBetweenLayers>0</relayBetweenLayers>
     <relayBetweenLoops>0</relayBetweenLoops>
     <stabilizeAtStartup>1</stabilizeAtStartup>
-    <setpoint layer="1" temperature="230"/>
+    <setpoint layer="1" temperature="240"/>
+    <setpoint layer="2" temperature="235"/>
+    <setpoint layer="3" temperature="230"/>
   </temperatureController>
   <temperatureController name="Heated Bed">
     <temperatureNumber>0</temperatureNumber>
@@ -101,6 +103,8 @@
   </temperatureController>
   <fanSpeed>
     <setpoint layer="1" speed="0"/>
+    <setpoint layer="3" speed="6"/>
+    <setpoint layer="18" speed="0"/>
   </fanSpeed>
   <blipFanToFullPower>1</blipFanToFullPower>
   <adjustSpeedForCooling>1</adjustSpeedForCooling>
@@ -209,7 +213,9 @@
       <relayBetweenLayers>0</relayBetweenLayers>
       <relayBetweenLoops>0</relayBetweenLoops>
       <stabilizeAtStartup>1</stabilizeAtStartup>
-      <setpoint layer="1" temperature="230"/>
+      <setpoint layer="1" temperature="240"/>
+      <setpoint layer="2" temperature="235"/>
+      <setpoint layer="3" temperature="230"/>
     </temperatureController>
     <temperatureController name="Heated Bed">
       <temperatureNumber>0</temperatureNumber>
@@ -221,6 +227,8 @@
     </temperatureController>
     <fanSpeed>
       <setpoint layer="1" speed="0"/>
+      <setpoint layer="3" speed="6"/>
+      <setpoint layer="18" speed="0"/>
     </fanSpeed>
   </autoConfigureMaterial>
   <autoConfigureQuality name="Fast">
