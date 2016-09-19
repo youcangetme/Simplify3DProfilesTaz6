@@ -188,44 +188,6 @@
   <allowThinWallGapFill>1</allowThinWallGapFill>
   <thinWallAllowedOverlapPercentage>10</thinWallAllowedOverlapPercentage>
   <horizontalSizeCompensation>0</horizontalSizeCompensation>
-  <autoConfigureMaterial name="PLA">
-    <extruder name="Primary Extruder">
-      <toolheadNumber>0</toolheadNumber>
-      <diameter>0.5</diameter>
-      <autoWidth>0</autoWidth>
-      <width>0.5</width>
-      <extrusionMultiplier>1</extrusionMultiplier>
-      <useRetract>1</useRetract>
-      <retractionDistance>1.5</retractionDistance>
-      <extraRestartDistance>0</extraRestartDistance>
-      <retractionZLift>0</retractionZLift>
-      <retractionSpeed>1800</retractionSpeed>
-      <useCoasting>0</useCoasting>
-      <coastingDistance>0.2</coastingDistance>
-      <useWipe>0</useWipe>
-      <wipeDistance>5</wipeDistance>
-    </extruder>
-    <temperatureController name="Primary Extruder">
-      <temperatureNumber>0</temperatureNumber>
-      <isHeatedBed>0</isHeatedBed>
-      <relayBetweenLayers>0</relayBetweenLayers>
-      <relayBetweenLoops>0</relayBetweenLoops>
-      <stabilizeAtStartup>1</stabilizeAtStartup>
-      <setpoint layer="1" temperature="205"/>
-    </temperatureController>
-    <temperatureController name="Heated Bed">
-      <temperatureNumber>0</temperatureNumber>
-      <isHeatedBed>1</isHeatedBed>
-      <relayBetweenLayers>0</relayBetweenLayers>
-      <relayBetweenLoops>0</relayBetweenLoops>
-      <stabilizeAtStartup>1</stabilizeAtStartup>
-      <setpoint layer="1" temperature="60"/>
-    </temperatureController>
-    <fanSpeed>
-      <setpoint layer="1" speed="0"/>
-      <setpoint layer="2" speed="100"/>
-    </fanSpeed>
-  </autoConfigureMaterial>
   <autoConfigureMaterial name="ABS">
     <extruder name="Primary Extruder">
       <toolheadNumber>0</toolheadNumber>
@@ -263,81 +225,6 @@
       <setpoint layer="1" speed="0"/>
       <setpoint layer="3" speed="1"/>
       <setpoint layer="6" speed="3"/>
-    </fanSpeed>
-  </autoConfigureMaterial>
-  <autoConfigureMaterial name="PVA">
-    <extruder name="Primary Extruder">
-      <toolheadNumber>0</toolheadNumber>
-      <diameter>0.5</diameter>
-      <autoWidth>0</autoWidth>
-      <width>0.5</width>
-      <extrusionMultiplier>1</extrusionMultiplier>
-      <useRetract>1</useRetract>
-      <retractionDistance>1.5</retractionDistance>
-      <extraRestartDistance>0</extraRestartDistance>
-      <retractionZLift>0</retractionZLift>
-      <retractionSpeed>1800</retractionSpeed>
-      <useCoasting>0</useCoasting>
-      <coastingDistance>0.2</coastingDistance>
-      <useWipe>0</useWipe>
-      <wipeDistance>5</wipeDistance>
-    </extruder>
-    <temperatureController name="Primary Extruder">
-      <temperatureNumber>0</temperatureNumber>
-      <isHeatedBed>0</isHeatedBed>
-      <relayBetweenLayers>0</relayBetweenLayers>
-      <relayBetweenLoops>0</relayBetweenLoops>
-      <stabilizeAtStartup>1</stabilizeAtStartup>
-      <setpoint layer="1" temperature="190"/>
-    </temperatureController>
-    <temperatureController name="Heated Bed">
-      <temperatureNumber>0</temperatureNumber>
-      <isHeatedBed>1</isHeatedBed>
-      <relayBetweenLayers>0</relayBetweenLayers>
-      <relayBetweenLoops>0</relayBetweenLoops>
-      <stabilizeAtStartup>1</stabilizeAtStartup>
-      <setpoint layer="1" temperature="60"/>
-    </temperatureController>
-    <fanSpeed>
-      <setpoint layer="1" speed="0"/>
-      <setpoint layer="2" speed="100"/>
-    </fanSpeed>
-  </autoConfigureMaterial>
-  <autoConfigureMaterial name="Nylon">
-    <extruder name="Primary Extruder">
-      <toolheadNumber>0</toolheadNumber>
-      <diameter>0.5</diameter>
-      <autoWidth>0</autoWidth>
-      <width>0.5</width>
-      <extrusionMultiplier>1</extrusionMultiplier>
-      <useRetract>1</useRetract>
-      <retractionDistance>1.5</retractionDistance>
-      <extraRestartDistance>0</extraRestartDistance>
-      <retractionZLift>0</retractionZLift>
-      <retractionSpeed>1800</retractionSpeed>
-      <useCoasting>0</useCoasting>
-      <coastingDistance>0.2</coastingDistance>
-      <useWipe>0</useWipe>
-      <wipeDistance>5</wipeDistance>
-    </extruder>
-    <temperatureController name="Primary Extruder">
-      <temperatureNumber>0</temperatureNumber>
-      <isHeatedBed>0</isHeatedBed>
-      <relayBetweenLayers>0</relayBetweenLayers>
-      <relayBetweenLoops>0</relayBetweenLoops>
-      <stabilizeAtStartup>1</stabilizeAtStartup>
-      <setpoint layer="1" temperature="245"/>
-    </temperatureController>
-    <temperatureController name="Heated Bed">
-      <temperatureNumber>0</temperatureNumber>
-      <isHeatedBed>1</isHeatedBed>
-      <relayBetweenLayers>0</relayBetweenLayers>
-      <relayBetweenLoops>0</relayBetweenLoops>
-      <stabilizeAtStartup>1</stabilizeAtStartup>
-      <setpoint layer="1" temperature="110"/>
-    </temperatureController>
-    <fanSpeed>
-      <setpoint layer="1" speed="0"/>
     </fanSpeed>
   </autoConfigureMaterial>
   <autoConfigureQuality name="Fast">
