@@ -9,7 +9,7 @@
     <diameter>0.5</diameter>
     <autoWidth>0</autoWidth>
     <width>0.5</width>
-    <extrusionMultiplier>1</extrusionMultiplier>
+    <extrusionMultiplier>0.90</extrusionMultiplier>
     <useRetract>1</useRetract>
     <retractionDistance>1.5</retractionDistance>
     <extraRestartDistance>0</extraRestartDistance>
@@ -32,8 +32,8 @@
   <startPointOriginZ>300</startPointOriginZ>
   <sequentialIslands>0</sequentialIslands>
   <spiralVaseMode>0</spiralVaseMode>
-  <firstLayerHeightPercentage>170</firstLayerHeightPercentage>
-  <firstLayerWidthPercentage>125</firstLayerWidthPercentage>
+  <firstLayerHeightPercentage>90</firstLayerHeightPercentage>
+  <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
   <firstLayerUnderspeed>0.25</firstLayerUnderspeed>
   <useRaft>0</useRaft>
   <raftExtruder>0</raftExtruder>
@@ -160,7 +160,7 @@
   <rapidZspeed>1002</rapidZspeed>
   <minBridgingArea>50</minBridgingArea>
   <bridgingExtraInflation>0</bridgingExtraInflation>
-  <bridgingExtrusionMultiplier>1</bridgingExtrusionMultiplier>
+  <bridgingExtrusionMultiplier>0.90</bridgingExtrusionMultiplier>
   <bridgingSpeedMultiplier>1</bridgingSpeedMultiplier>
   <filamentDiameter>2.85</filamentDiameter>
   <filamentPricePerKg>46</filamentPricePerKg>
@@ -193,7 +193,7 @@
       <diameter>0.5</diameter>
       <autoWidth>0</autoWidth>
       <width>0.5</width>
-      <extrusionMultiplier>1</extrusionMultiplier>
+      <extrusionMultiplier>0.90</extrusionMultiplier>
       <useRetract>1</useRetract>
       <retractionDistance>1.5</retractionDistance>
       <extraRestartDistance>0</extraRestartDistance>
