@@ -226,13 +226,13 @@
     </fanSpeed>
   </autoConfigureMaterial>
   <autoConfigureQuality name="Fast">
-    <layerHeight>0.2</layerHeight>
+    <layerHeight>0.3</layerHeight>
     <topSolidLayers>3</topSolidLayers>
     <bottomSolidLayers>3</bottomSolidLayers>
     <skirtLayers>1</skirtLayers>
     <infillPercentage>20</infillPercentage>
     <supportInfillPercentage>30</supportInfillPercentage>
-    <firstLayerHeightPercentage>170</firstLayerHeightPercentage>
+    <firstLayerHeightPercentage>141</firstLayerHeightPercentage>
     <firstLayerWidthPercentage>125</firstLayerWidthPercentage>
     <firstLayerUnderspeed>0.25</firstLayerUnderspeed>
   </autoConfigureQuality>
@@ -243,7 +243,7 @@
     <skirtLayers>1</skirtLayers>
     <infillPercentage>20</infillPercentage>
     <supportInfillPercentage>30</supportInfillPercentage>
-    <firstLayerHeightPercentage>170</firstLayerHeightPercentage>
+    <firstLayerHeightPercentage>213</firstLayerHeightPercentage>
     <firstLayerWidthPercentage>125</firstLayerWidthPercentage>
     <firstLayerUnderspeed>0.50</firstLayerUnderspeed>
   </autoConfigureQuality>
