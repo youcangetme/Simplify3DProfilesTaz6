@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
-<profile name="Lulzbot TAZ 6 PLA" version="2016-09-25 10:52:26" app="S3D-Software 3.1.0">
+<profile name="Lulzbot TAZ 6 PLA" version="2016-09-25 19:34:02" app="S3D-Software 3.1.0">
   <baseProfile>LulzBot TAZ 6 Single</baseProfile>
   <printMaterial>PLA</printMaterial>
-  <printQuality>Fast</printQuality>
+  <printQuality>Fine</printQuality>
   <printExtruders></printExtruders>
   <extruder name="Primary Extruder">
     <toolheadNumber>0</toolheadNumber>
     <diameter>0.5</diameter>
     <autoWidth>0</autoWidth>
     <width>0.5</width>
-    <extrusionMultiplier>0.90</extrusionMultiplier>
+    <extrusionMultiplier>0.9</extrusionMultiplier>
     <useRetract>1</useRetract>
     <retractionDistance>1.5</retractionDistance>
     <extraRestartDistance>0</extraRestartDistance>
@@ -21,9 +21,9 @@
     <wipeDistance>5</wipeDistance>
   </extruder>
   <primaryExtruder>0</primaryExtruder>
-  <layerHeight>0.2</layerHeight>
-  <topSolidLayers>3</topSolidLayers>
-  <bottomSolidLayers>3</bottomSolidLayers>
+  <layerHeight>0.1</layerHeight>
+  <topSolidLayers>5</topSolidLayers>
+  <bottomSolidLayers>5</bottomSolidLayers>
   <perimeterOutlines>3</perimeterOutlines>
   <printPerimetersInsideOut>1</printPerimetersInsideOut>
   <startPointOption>2</startPointOption>
@@ -32,9 +32,9 @@
   <startPointOriginZ>300</startPointOriginZ>
   <sequentialIslands>0</sequentialIslands>
   <spiralVaseMode>0</spiralVaseMode>
-  <firstLayerHeightPercentage>90</firstLayerHeightPercentage>
-  <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
-  <firstLayerUnderspeed>0.25</firstLayerUnderspeed>
+  <firstLayerHeightPercentage>425</firstLayerHeightPercentage>
+  <firstLayerWidthPercentage>125</firstLayerWidthPercentage>
+  <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
   <useRaft>0</useRaft>
   <raftExtruder>0</raftExtruder>
   <raftLayers>3</raftLayers>
@@ -62,7 +62,7 @@
   <infillExtruder>0</infillExtruder>
   <internalInfillPattern>Rectilinear</internalInfillPattern>
   <externalInfillPattern>Rectilinear</externalInfillPattern>
-  <infillPercentage>20</infillPercentage>
+  <infillPercentage>30</infillPercentage>
   <outlineOverlapPercentage>15</outlineOverlapPercentage>
   <infillExtrusionWidthPercentage>200</infillExtrusionWidthPercentage>
   <minInfillLength>5</minInfillLength>
@@ -71,7 +71,7 @@
   <overlapInfillAngles>0</overlapInfillAngles>
   <generateSupport>0</generateSupport>
   <supportExtruder>0</supportExtruder>
-  <supportInfillPercentage>30</supportInfillPercentage>
+  <supportInfillPercentage>40</supportInfillPercentage>
   <supportExtraInflation>0</supportExtraInflation>
   <denseSupportLayers>0</denseSupportLayers>
   <denseSupportInfillPercentage>70</denseSupportInfillPercentage>
@@ -160,7 +160,7 @@
   <rapidZspeed>1002</rapidZspeed>
   <minBridgingArea>50</minBridgingArea>
   <bridgingExtraInflation>0</bridgingExtraInflation>
-  <bridgingExtrusionMultiplier>0.90</bridgingExtrusionMultiplier>
+  <bridgingExtrusionMultiplier>1</bridgingExtrusionMultiplier>
   <bridgingSpeedMultiplier>1</bridgingSpeedMultiplier>
   <filamentDiameter>2.85</filamentDiameter>
   <filamentPricePerKg>46</filamentPricePerKg>
@@ -193,7 +193,7 @@
       <diameter>0.5</diameter>
       <autoWidth>0</autoWidth>
       <width>0.5</width>
-      <extrusionMultiplier>0.90</extrusionMultiplier>
+      <extrusionMultiplier>0.9</extrusionMultiplier>
       <useRetract>1</useRetract>
       <retractionDistance>1.5</retractionDistance>
       <extraRestartDistance>0</extraRestartDistance>
@@ -227,35 +227,35 @@
   </autoConfigureMaterial>
   <autoConfigureQuality name="Fast">
     <layerHeight>0.3</layerHeight>
-    <topSolidLayers>3</topSolidLayers>
+    <topSolidLayers>4</topSolidLayers>
     <bottomSolidLayers>3</bottomSolidLayers>
     <skirtLayers>1</skirtLayers>
-    <infillPercentage>20</infillPercentage>
+    <infillPercentage>15</infillPercentage>
     <supportInfillPercentage>30</supportInfillPercentage>
     <firstLayerHeightPercentage>141</firstLayerHeightPercentage>
     <firstLayerWidthPercentage>125</firstLayerWidthPercentage>
-    <firstLayerUnderspeed>0.25</firstLayerUnderspeed>
+    <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
   </autoConfigureQuality>
   <autoConfigureQuality name="Standard">
     <layerHeight>0.2</layerHeight>
-    <topSolidLayers>3</topSolidLayers>
+    <topSolidLayers>4</topSolidLayers>
     <bottomSolidLayers>3</bottomSolidLayers>
     <skirtLayers>1</skirtLayers>
     <infillPercentage>20</infillPercentage>
     <supportInfillPercentage>30</supportInfillPercentage>
     <firstLayerHeightPercentage>213</firstLayerHeightPercentage>
     <firstLayerWidthPercentage>125</firstLayerWidthPercentage>
-    <firstLayerUnderspeed>0.50</firstLayerUnderspeed>
+    <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
   </autoConfigureQuality>
   <autoConfigureQuality name="Fine">
     <layerHeight>0.1</layerHeight>
-    <topSolidLayers>4</topSolidLayers>
-    <bottomSolidLayers>4</bottomSolidLayers>
+    <topSolidLayers>5</topSolidLayers>
+    <bottomSolidLayers>5</bottomSolidLayers>
     <skirtLayers>1</skirtLayers>
     <infillPercentage>30</infillPercentage>
     <supportInfillPercentage>40</supportInfillPercentage>
     <firstLayerHeightPercentage>425</firstLayerHeightPercentage>
     <firstLayerWidthPercentage>125</firstLayerWidthPercentage>
-    <firstLayerUnderspeed>0.50</firstLayerUnderspeed>
+    <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
   </autoConfigureQuality>
 </profile>
