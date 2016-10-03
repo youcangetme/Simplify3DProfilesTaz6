@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<profile name="Lulzbot TAZ 6 Amphora" version="2016-09-27 22:59:19" app="S3D-Software 3.1.0">
+<profile name="Lulzbot TAZ 6 Amphora" version="2016-10-01 10:11:38" app="S3D-Software 3.1.0">
   <baseProfile>LulzBot TAZ 6 Single</baseProfile>
-  <printMaterial>PLA</printMaterial>
-  <printQuality>Fast</printQuality>
+  <printMaterial>nGen by ColorFab</printMaterial>
+  <printQuality>Standard</printQuality>
   <printExtruders></printExtruders>
   <extruder name="Primary Extruder">
     <toolheadNumber>0</toolheadNumber>
@@ -21,7 +21,7 @@
     <wipeDistance>5</wipeDistance>
   </extruder>
   <primaryExtruder>0</primaryExtruder>
-  <layerHeight>0.3</layerHeight>
+  <layerHeight>0.2</layerHeight>
   <topSolidLayers>3</topSolidLayers>
   <bottomSolidLayers>3</bottomSolidLayers>
   <perimeterOutlines>3</perimeterOutlines>
@@ -32,7 +32,7 @@
   <startPointOriginZ>300</startPointOriginZ>
   <sequentialIslands>0</sequentialIslands>
   <spiralVaseMode>0</spiralVaseMode>
-  <firstLayerHeightPercentage>141</firstLayerHeightPercentage>
+  <firstLayerHeightPercentage>213</firstLayerHeightPercentage>
   <firstLayerWidthPercentage>125</firstLayerWidthPercentage>
   <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
   <useRaft>0</useRaft>
@@ -62,7 +62,7 @@
   <infillExtruder>0</infillExtruder>
   <internalInfillPattern>Rectilinear</internalInfillPattern>
   <externalInfillPattern>Rectilinear</externalInfillPattern>
-  <infillPercentage>15</infillPercentage>
+  <infillPercentage>20</infillPercentage>
   <outlineOverlapPercentage>15</outlineOverlapPercentage>
   <infillExtrusionWidthPercentage>200</infillExtrusionWidthPercentage>
   <minInfillLength>5</minInfillLength>
@@ -187,7 +187,40 @@
   <allowThinWallGapFill>1</allowThinWallGapFill>
   <thinWallAllowedOverlapPercentage>10</thinWallAllowedOverlapPercentage>
   <horizontalSizeCompensation>0</horizontalSizeCompensation>
-  <autoConfigureMaterial name="PLA">
+  <autoConfigureQuality name="Fast">
+    <layerHeight>0.3</layerHeight>
+    <topSolidLayers>3</topSolidLayers>
+    <bottomSolidLayers>3</bottomSolidLayers>
+    <skirtLayers>1</skirtLayers>
+    <infillPercentage>15</infillPercentage>
+    <supportInfillPercentage>30</supportInfillPercentage>
+    <firstLayerHeightPercentage>141</firstLayerHeightPercentage>
+    <firstLayerWidthPercentage>125</firstLayerWidthPercentage>
+    <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
+  </autoConfigureQuality>
+  <autoConfigureQuality name="Standard">
+    <layerHeight>0.2</layerHeight>
+    <topSolidLayers>3</topSolidLayers>
+    <bottomSolidLayers>3</bottomSolidLayers>
+    <skirtLayers>1</skirtLayers>
+    <infillPercentage>20</infillPercentage>
+    <supportInfillPercentage>30</supportInfillPercentage>
+    <firstLayerHeightPercentage>213</firstLayerHeightPercentage>
+    <firstLayerWidthPercentage>125</firstLayerWidthPercentage>
+    <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
+  </autoConfigureQuality>
+  <autoConfigureQuality name="Fine">
+    <layerHeight>0.1</layerHeight>
+    <topSolidLayers>4</topSolidLayers>
+    <bottomSolidLayers>4</bottomSolidLayers>
+    <skirtLayers>1</skirtLayers>
+    <infillPercentage>30</infillPercentage>
+    <supportInfillPercentage>40</supportInfillPercentage>
+    <firstLayerHeightPercentage>425</firstLayerHeightPercentage>
+    <firstLayerWidthPercentage>125</firstLayerWidthPercentage>
+    <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
+  </autoConfigureQuality>
+  <autoConfigureMaterial name="nGen by ColorFab">
     <extruder name="Primary Extruder">
       <toolheadNumber>0</toolheadNumber>
       <diameter>0.5</diameter>
@@ -225,37 +258,4 @@
       <setpoint layer="2" speed="100"/>
     </fanSpeed>
   </autoConfigureMaterial>
-  <autoConfigureQuality name="Fast">
-    <layerHeight>0.3</layerHeight>
-    <topSolidLayers>3</topSolidLayers>
-    <bottomSolidLayers>3</bottomSolidLayers>
-    <skirtLayers>1</skirtLayers>
-    <infillPercentage>15</infillPercentage>
-    <supportInfillPercentage>30</supportInfillPercentage>
-    <firstLayerHeightPercentage>141</firstLayerHeightPercentage>
-    <firstLayerWidthPercentage>125</firstLayerWidthPercentage>
-    <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
-  </autoConfigureQuality>
-  <autoConfigureQuality name="Standard">
-    <layerHeight>0.2</layerHeight>
-    <topSolidLayers>3</topSolidLayers>
-    <bottomSolidLayers>3</bottomSolidLayers>
-    <skirtLayers>1</skirtLayers>
-    <infillPercentage>20</infillPercentage>
-    <supportInfillPercentage>30</supportInfillPercentage>
-    <firstLayerHeightPercentage>213</firstLayerHeightPercentage>
-    <firstLayerWidthPercentage>125</firstLayerWidthPercentage>
-    <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
-  </autoConfigureQuality>
-  <autoConfigureQuality name="Fine">
-    <layerHeight>0.1</layerHeight>
-    <topSolidLayers>4</topSolidLayers>
-    <bottomSolidLayers>4</bottomSolidLayers>
-    <skirtLayers>1</skirtLayers>
-    <infillPercentage>30</infillPercentage>
-    <supportInfillPercentage>40</supportInfillPercentage>
-    <firstLayerHeightPercentage>425</firstLayerHeightPercentage>
-    <firstLayerWidthPercentage>125</firstLayerWidthPercentage>
-    <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
-  </autoConfigureQuality>
 </profile>
