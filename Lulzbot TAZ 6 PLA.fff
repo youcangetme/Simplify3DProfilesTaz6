@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<profile name="Lulzbot TAZ 6 PLA" version="2016-09-27 21:29:16" app="S3D-Software 3.1.0">
+<profile name="Lulzbot TAZ 6 PLA" version="2017-01-22 00:12:04" app="S3D-Software 3.1.1">
   <baseProfile>LulzBot TAZ 6 Single</baseProfile>
   <printMaterial>PLA</printMaterial>
-  <printQuality>Fast</printQuality>
+  <printQuality>Lulzbot Res</printQuality>
   <printExtruders></printExtruders>
   <extruder name="Primary Extruder">
     <toolheadNumber>0</toolheadNumber>
@@ -21,7 +21,7 @@
     <wipeDistance>5</wipeDistance>
   </extruder>
   <primaryExtruder>0</primaryExtruder>
-  <layerHeight>0.3</layerHeight>
+  <layerHeight>0.38</layerHeight>
   <topSolidLayers>3</topSolidLayers>
   <bottomSolidLayers>3</bottomSolidLayers>
   <perimeterOutlines>3</perimeterOutlines>
@@ -32,7 +32,7 @@
   <startPointOriginZ>300</startPointOriginZ>
   <sequentialIslands>0</sequentialIslands>
   <spiralVaseMode>0</spiralVaseMode>
-  <firstLayerHeightPercentage>141</firstLayerHeightPercentage>
+  <firstLayerHeightPercentage>112</firstLayerHeightPercentage>
   <firstLayerWidthPercentage>125</firstLayerWidthPercentage>
   <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
   <useRaft>0</useRaft>
@@ -71,7 +71,7 @@
   <overlapInfillAngles>0</overlapInfillAngles>
   <generateSupport>0</generateSupport>
   <supportExtruder>0</supportExtruder>
-  <supportInfillPercentage>30</supportInfillPercentage>
+  <supportInfillPercentage>25</supportInfillPercentage>
   <supportExtraInflation>0</supportExtraInflation>
   <denseSupportLayers>0</denseSupportLayers>
   <denseSupportInfillPercentage>70</denseSupportInfillPercentage>
@@ -255,6 +255,17 @@
     <infillPercentage>30</infillPercentage>
     <supportInfillPercentage>40</supportInfillPercentage>
     <firstLayerHeightPercentage>425</firstLayerHeightPercentage>
+    <firstLayerWidthPercentage>125</firstLayerWidthPercentage>
+    <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
+  </autoConfigureQuality>
+  <autoConfigureQuality name="Lulzbot Res">
+    <layerHeight>0.38</layerHeight>
+    <topSolidLayers>3</topSolidLayers>
+    <bottomSolidLayers>3</bottomSolidLayers>
+    <skirtLayers>1</skirtLayers>
+    <infillPercentage>15</infillPercentage>
+    <supportInfillPercentage>25</supportInfillPercentage>
+    <firstLayerHeightPercentage>112</firstLayerHeightPercentage>
     <firstLayerWidthPercentage>125</firstLayerWidthPercentage>
     <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
   </autoConfigureQuality>
