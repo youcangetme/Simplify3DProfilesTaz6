@@ -11,7 +11,7 @@ G90                            ; absolute positioning
 G1 Y0 F3000                    ; move to cooling position
 M190 S50                       ; set bed to cool off
 G1 Y280 F3000                  ; present finished print
-M140 S50                       ; leave bed at 50
+M140 S45                       ; leave bed at 50
 M84                            ; steppers off
 G90                            ; absolute positioning
 M117 Print complete            ; progress indicator message
