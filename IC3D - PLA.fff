@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<profile name="LulzBot TAZ 6 ABS" version="2017-04-22 12:42:18" app="S3D-Software 3.1.1">
+<profile name="IC3D - PLA" version="2017-05-01 06:26:20" app="S3D-Software 3.1.1">
   <baseProfile>LulzBot TAZ 6 Single</baseProfile>
-  <printMaterial>ABS</printMaterial>
-  <printQuality>Lulzbot Res</printQuality>
+  <printMaterial>PLA</printMaterial>
+  <printQuality>Standard</printQuality>
   <printExtruders></printExtruders>
   <extruder name="Primary Extruder">
     <toolheadNumber>0</toolheadNumber>
@@ -11,17 +11,17 @@
     <width>0.5</width>
     <extrusionMultiplier>1</extrusionMultiplier>
     <useRetract>1</useRetract>
-    <retractionDistance>1.5</retractionDistance>
+    <retractionDistance>3</retractionDistance>
     <extraRestartDistance>0</extraRestartDistance>
     <retractionZLift>0</retractionZLift>
     <retractionSpeed>1800</retractionSpeed>
-    <useCoasting>0</useCoasting>
+    <useCoasting>1</useCoasting>
     <coastingDistance>0.2</coastingDistance>
-    <useWipe>0</useWipe>
-    <wipeDistance>5</wipeDistance>
+    <useWipe>1</useWipe>
+    <wipeDistance>2</wipeDistance>
   </extruder>
   <primaryExtruder>0</primaryExtruder>
-  <layerHeight>0.35</layerHeight>
+  <layerHeight>0.2</layerHeight>
   <topSolidLayers>3</topSolidLayers>
   <bottomSolidLayers>3</bottomSolidLayers>
   <perimeterOutlines>3</perimeterOutlines>
@@ -32,9 +32,9 @@
   <startPointOriginZ>300</startPointOriginZ>
   <sequentialIslands>0</sequentialIslands>
   <spiralVaseMode>0</spiralVaseMode>
-  <firstLayerHeightPercentage>122</firstLayerHeightPercentage>
+  <firstLayerHeightPercentage>213</firstLayerHeightPercentage>
   <firstLayerWidthPercentage>125</firstLayerWidthPercentage>
-  <firstLayerUnderspeed>0.3</firstLayerUnderspeed>
+  <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
   <useRaft>0</useRaft>
   <raftExtruder>0</raftExtruder>
   <raftLayers>3</raftLayers>
@@ -62,16 +62,16 @@
   <infillExtruder>0</infillExtruder>
   <internalInfillPattern>Rectilinear</internalInfillPattern>
   <externalInfillPattern>Rectilinear</externalInfillPattern>
-  <infillPercentage>78</infillPercentage>
-  <outlineOverlapPercentage>15</outlineOverlapPercentage>
+  <infillPercentage>20</infillPercentage>
+  <outlineOverlapPercentage>25</outlineOverlapPercentage>
   <infillExtrusionWidthPercentage>200</infillExtrusionWidthPercentage>
-  <minInfillLength>1</minInfillLength>
+  <minInfillLength>5</minInfillLength>
   <infillLayerInterval>1</infillLayerInterval>
   <infillAngles>45,-45</infillAngles>
-  <overlapInfillAngles>0</overlapInfillAngles>
+  <overlapInfillAngles>1</overlapInfillAngles>
   <generateSupport>0</generateSupport>
   <supportExtruder>0</supportExtruder>
-  <supportInfillPercentage>25</supportInfillPercentage>
+  <supportInfillPercentage>30</supportInfillPercentage>
   <supportExtraInflation>0</supportExtraInflation>
   <denseSupportLayers>0</denseSupportLayers>
   <denseSupportInfillPercentage>70</denseSupportInfillPercentage>
@@ -89,7 +89,7 @@
     <relayBetweenLayers>0</relayBetweenLayers>
     <relayBetweenLoops>0</relayBetweenLoops>
     <stabilizeAtStartup>1</stabilizeAtStartup>
-    <setpoint layer="1" temperature="240"/>
+    <setpoint layer="1" temperature="195"/>
   </temperatureController>
   <temperatureController name="Heated Bed">
     <temperatureNumber>0</temperatureNumber>
@@ -97,14 +97,11 @@
     <relayBetweenLayers>0</relayBetweenLayers>
     <relayBetweenLoops>0</relayBetweenLoops>
     <stabilizeAtStartup>1</stabilizeAtStartup>
-    <setpoint layer="1" temperature="110"/>
+    <setpoint layer="1" temperature="60"/>
   </temperatureController>
   <fanSpeed>
     <setpoint layer="1" speed="0"/>
-    <setpoint layer="2" speed="6"/>
-    <setpoint layer="4" speed="12"/>
-    <setpoint layer="20" speed="6"/>
-    <setpoint layer="28" speed="0"/>
+    <setpoint layer="2" speed="100"/>
   </fanSpeed>
   <blipFanToFullPower>1</blipFanToFullPower>
   <adjustSpeedForCooling>1</adjustSpeedForCooling>
@@ -146,11 +143,11 @@
   <baudRateOverride>250000</baudRateOverride>
   <overridePrinterModels>1</overridePrinterModels>
   <printerModelsOverride>LulzBot_TAZ6.stl</printerModelsOverride>
-  <startingGcode>;This profile is designed specifically for LulzBot TAZ 6 3D Printer by Lulzbot.com,G26                          ; clear potential 'probe fail' condition,G21                          ; set units to Millimetres,M107                         ; disable fans,G90                          ; absolute positioning,M82                          ; set extruder to absolute mode,G92 E0                       ; set extruder position to 0,M140 S[bed0_temperature]     ; get bed heating up,G28 XY                       ; home X and Y,G1 X-19 Y258 F1000           ; move to safe homing position,M109 R170                    ; soften filament for z homing,G28 Z                        ; home Z,M104 S160                    ; wipe temp,G1 E-30 F100                 ; suck up XXmm of filament,G1 X-15 Y100 F3000           ; move above wiper pad,G1 Z1                        ; push nozzle into wiper,G1 X-17 Y95 F1000            ; slow wipe,G1 X-17 Y90 F1000            ; slow wipe,G1 X-17 Y85 F1000            ; slow wipe,G1 X-15 Y90 F1000            ; slow wipe,G1 X-17 Y80 F1000            ; slow wipe,G1 X-15 Y95 F1000            ; slow wipe,G1 X-17 Y75 F2000            ; fast wipe,G1 X-15 Y65 F2000            ; fast wipe,G1 X-17 Y70 F2000            ; fast wipe,G1 X-15 Y60 F2000            ; fast wipe,G1 X-17 Y55 F2000            ; fast wipe,G1 X-15 Y50 F2000            ; fast wipe,G1 X-17 Y40 F2000            ; fast wipe,G1 X-15 Y45 F2000            ; fast wipe,G1 X-17 Y35 F2000            ; fast wipe,G1 X-15 Y40 F2000            ; fast wipe,G1 X-17 Y70 F2000            ; fast wipe,G1 X-15 Y30 Z2 F2000         ; fast wipe,G1 X-17 Y35 F2000            ; fast wipe,G1 X-15 Y25 F2000            ; fast wipe,G1 X-17 Y30 F2000            ; fast wipe,G1 X-15 Y25 Z1.5 F1000       ; slow wipe,G1 X-17 Y23 F1000            ; slow wipe,G1 Z10                       ; raise extruder,M109 R160                    ; heat to probe temp,G1 X-9 Y-9                   ; move above probe,M204 S100                    ; set accel for probing,G29                          ; probe sequence (for auto-leveling),M204 S500                    ; set accel back to normal,G1 X0 Y0 Z15 F5000           ; get out the way,M400                         ; clear buffer,G4 S1                        ; pause,M117 Heating...              ; LCD status message,M140 S[bed0_temperature]     ; get bed heating up,M109 R[extruder0_temperature]; set extruder temp and wait,M190 R[bed0_temperature]     ; get bed temping up during first layer,G1 Z2 E0 F230                ; prime extruder,M117 TAZ6 Printing...        ; LCD status message</startingGcode>
+  <startingGcode>;This profile is designed specifically for LulzBot TAZ 6 3D Printer by Lulzbot.com,G26                          ; clear potential 'probe fail' condition,G21                          ; set units to Millimetres,M107                         ; disable fans,G90                          ; absolute positioning,M82                          ; set extruder to absolute mode,G92 E0                       ; set extruder position to 0,M140 S[bed0_temperature]     ; get bed heating up,M117 Print by John Bryant    ; LCD status message,G28 XY                       ; home X and Y,G1 X-19 Y258 F1000           ; move to safe homing position,M109 S160                    ; soften filament for z homing,G28 Z                        ; home Z,M104 S150                    ; wipe temp,G1 E-30 F100                 ; suck up 12mm of filament,G1 X-15 Y100 F3000           ; move above wiper pad,G1 Z1                        ; push nozzle into wiper,G1 X-17 Y95 F1000            ; slow wipe,G1 X-17 Y90 F1000            ; slow wipe,G1 X-17 Y85 F1000            ; slow wipe,G1 X-15 Y90 F1000            ; slow wipe,G1 X-17 Y80 F1000            ; slow wipe,G1 X-15 Y95 F1000            ; slow wipe,G1 X-17 Y75 F2000            ; fast wipe,G1 X-15 Y65 F2000            ; fast wipe,G1 X-17 Y70 F2000            ; fast wipe,G1 X-15 Y60 F2000            ; fast wipe,G1 X-17 Y55 F2000            ; fast wipe,G1 X-15 Y50 F2000            ; fast wipe,G1 X-17 Y40 F2000            ; fast wipe,G1 X-15 Y45 F2000            ; fast wipe,G1 X-17 Y35 F2000            ; fast wipe,G1 X-15 Y40 F2000            ; fast wipe,G1 X-17 Y70 F2000            ; fast wipe,G1 X-15 Y30 Z2 F2000         ; fast wipe,G1 X-17 Y35 F2000            ; fast wipe,G1 X-15 Y25 F2000            ; fast wipe,G1 X-17 Y30 F2000            ; fast wipe,G1 X-15 Y25 Z1.5 F1000       ; slow wipe,G1 X-17 Y23 F1000            ; slow wipe,G1 Z10                       ; raise extruder,M109 R150                    ; heat to probe temp,G1 X-9 Y-9                   ; move above probe,M204 S100                    ; set accel for probing,G29                          ; probe sequence (for auto-leveling),M204 S500                    ; set accel back to normal,G1 X0 Y0 Z15 F5000           ; get out the way,M400                         ; clear buffer,G4 S1                        ; pause,M117 Heating...              ; LCD status message,M140 S[bed0_temperature]     ; get bed heating up,M109 R[extruder0_temperature]; set extruder temp and wait,M190 R[bed0_temperature]     ; get bed temping up during first layer,G1 Z2 E0 F400                ; prime extruder,M117 TAZ Printing...        ; LCD status message</startingGcode>
   <layerChangeGcode></layerChangeGcode>
   <retractionGcode></retractionGcode>
   <toolChangeGcode></toolChangeGcode>
-  <endingGcode>;,M400                           ; wait for moves to finish,M104 S0                        ; hotend off,M107                           ; fans off,G91                            ; relative positioning,G1 E-1 F300                    ; retract the filament a bit before lifting the nozzle, to release some of the pressure,G1 Z+20 E-5 X-20 Y-20 F3000    ; move Z up a bit and retract filament even more,M117 Cooling please wait       ; progress indicator message,G90                            ; absolute positioning,G1 Y0 F3000                    ; move to cooling position,M190 R50                       ; set bed to cool off,G1 Y280 F3000                  ; present finished print,M84                            ; steppers off,G90                            ; absolute positioning,M117 Print complete            ; progress indicator message,;</endingGcode>
+  <endingGcode>;,M400                           ; wait for moves to finish,M104 S0                        ; hotend off,M107                           ; fans off,G91                            ; relative positioning,G1 E-1 F300                    ; retract the filament a bit before lifting the nozzle, to release some of the pressure,G1 Z+20 E-5 X-20 Y-20 F3000    ; move Z up a bit and retract filament even more,M117 Cooling please wait       ; progress indicator message,G90                            ; absolute positioning,G1 Y0 F3000                    ; move to cooling position,M190 R45                       ; set bed to cool off,G1 Y280 F3000                  ; present finished print,M84                            ; steppers off,G90                            ; absolute positioning,M117 Print complete            ; progress indicator message,;</endingGcode>
   <exportFileFormat>gcode</exportFileFormat>
   <celebration>0</celebration>
   <celebrationSong>Random Song</celebrationSong>
@@ -190,7 +187,7 @@
   <allowThinWallGapFill>1</allowThinWallGapFill>
   <thinWallAllowedOverlapPercentage>10</thinWallAllowedOverlapPercentage>
   <horizontalSizeCompensation>0</horizontalSizeCompensation>
-  <autoConfigureMaterial name="ABS">
+  <autoConfigureMaterial name="PLA">
     <extruder name="Primary Extruder">
       <toolheadNumber>0</toolheadNumber>
       <diameter>0.5</diameter>
@@ -198,14 +195,14 @@
       <width>0.5</width>
       <extrusionMultiplier>1</extrusionMultiplier>
       <useRetract>1</useRetract>
-      <retractionDistance>1.5</retractionDistance>
+      <retractionDistance>3</retractionDistance>
       <extraRestartDistance>0</extraRestartDistance>
       <retractionZLift>0</retractionZLift>
       <retractionSpeed>1800</retractionSpeed>
-      <useCoasting>0</useCoasting>
+      <useCoasting>1</useCoasting>
       <coastingDistance>0.2</coastingDistance>
-      <useWipe>0</useWipe>
-      <wipeDistance>5</wipeDistance>
+      <useWipe>1</useWipe>
+      <wipeDistance>2</wipeDistance>
     </extruder>
     <temperatureController name="Primary Extruder">
       <temperatureNumber>0</temperatureNumber>
@@ -213,7 +210,7 @@
       <relayBetweenLayers>0</relayBetweenLayers>
       <relayBetweenLoops>0</relayBetweenLoops>
       <stabilizeAtStartup>1</stabilizeAtStartup>
-      <setpoint layer="1" temperature="240"/>
+      <setpoint layer="1" temperature="195"/>
     </temperatureController>
     <temperatureController name="Heated Bed">
       <temperatureNumber>0</temperatureNumber>
@@ -221,8 +218,12 @@
       <relayBetweenLayers>0</relayBetweenLayers>
       <relayBetweenLoops>0</relayBetweenLoops>
       <stabilizeAtStartup>1</stabilizeAtStartup>
-      <setpoint layer="1" temperature="110"/>
+      <setpoint layer="1" temperature="60"/>
     </temperatureController>
+    <fanSpeed>
+      <setpoint layer="1" speed="0"/>
+      <setpoint layer="2" speed="100"/>
+    </fanSpeed>
   </autoConfigureMaterial>
   <autoConfigureQuality name="Fast">
     <layerHeight>0.3</layerHeight>
@@ -230,13 +231,10 @@
     <bottomSolidLayers>3</bottomSolidLayers>
     <skirtLayers>1</skirtLayers>
     <infillPercentage>15</infillPercentage>
-    <supportInfillPercentage>25</supportInfillPercentage>
+    <supportInfillPercentage>30</supportInfillPercentage>
     <firstLayerHeightPercentage>141</firstLayerHeightPercentage>
     <firstLayerWidthPercentage>125</firstLayerWidthPercentage>
     <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
-    <fanSpeed>
-      <setpoint layer="1" speed="0"/>
-    </fanSpeed>
   </autoConfigureQuality>
   <autoConfigureQuality name="Standard">
     <layerHeight>0.2</layerHeight>
@@ -248,13 +246,6 @@
     <firstLayerHeightPercentage>213</firstLayerHeightPercentage>
     <firstLayerWidthPercentage>125</firstLayerWidthPercentage>
     <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
-    <fanSpeed>
-      <setpoint layer="1" speed="0"/>
-      <setpoint layer="2" speed="6"/>
-      <setpoint layer="4" speed="12"/>
-      <setpoint layer="44" speed="6"/>
-      <setpoint layer="49" speed="0"/>
-    </fanSpeed>
   </autoConfigureQuality>
   <autoConfigureQuality name="Fine">
     <layerHeight>0.1</layerHeight>
@@ -266,30 +257,16 @@
     <firstLayerHeightPercentage>425</firstLayerHeightPercentage>
     <firstLayerWidthPercentage>125</firstLayerWidthPercentage>
     <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
-    <fanSpeed>
-      <setpoint layer="1" speed="0"/>
-      <setpoint layer="2" speed="6"/>
-      <setpoint layer="4" speed="12"/>
-      <setpoint layer="85" speed="6"/>
-      <setpoint layer="97" speed="0"/>
-    </fanSpeed>
   </autoConfigureQuality>
   <autoConfigureQuality name="Lulzbot Res">
-    <layerHeight>0.35</layerHeight>
+    <layerHeight>0.38</layerHeight>
     <topSolidLayers>3</topSolidLayers>
     <bottomSolidLayers>3</bottomSolidLayers>
     <skirtLayers>1</skirtLayers>
-    <infillPercentage>78</infillPercentage>
+    <infillPercentage>15</infillPercentage>
     <supportInfillPercentage>25</supportInfillPercentage>
-    <firstLayerHeightPercentage>122</firstLayerHeightPercentage>
+    <firstLayerHeightPercentage>112</firstLayerHeightPercentage>
     <firstLayerWidthPercentage>125</firstLayerWidthPercentage>
     <firstLayerUnderspeed>0.3</firstLayerUnderspeed>
-    <fanSpeed>
-      <setpoint layer="1" speed="0"/>
-      <setpoint layer="2" speed="6"/>
-      <setpoint layer="4" speed="12"/>
-      <setpoint layer="20" speed="6"/>
-      <setpoint layer="28" speed="0"/>
-    </fanSpeed>
   </autoConfigureQuality>
 </profile>
