@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<profile name="LulzBot TAZ 6 ABS" version="2017-04-22 12:42:18" app="S3D-Software 3.1.1">
+<profile name="LulzBot TAZ 6 ABS" version="2017-05-06 13:46:08" app="S3D-Software 3.1.1">
   <baseProfile>LulzBot TAZ 6 Single</baseProfile>
   <printMaterial>ABS</printMaterial>
   <printQuality>Lulzbot Res</printQuality>
@@ -15,10 +15,10 @@
     <extraRestartDistance>0</extraRestartDistance>
     <retractionZLift>0</retractionZLift>
     <retractionSpeed>1800</retractionSpeed>
-    <useCoasting>0</useCoasting>
+    <useCoasting>1</useCoasting>
     <coastingDistance>0.2</coastingDistance>
-    <useWipe>0</useWipe>
-    <wipeDistance>5</wipeDistance>
+    <useWipe>1</useWipe>
+    <wipeDistance>2.5</wipeDistance>
   </extruder>
   <primaryExtruder>0</primaryExtruder>
   <layerHeight>0.35</layerHeight>
@@ -60,14 +60,14 @@
   <oozeShieldSidewallAngle>30</oozeShieldSidewallAngle>
   <oozeShieldSpeedMultiplier>1</oozeShieldSpeedMultiplier>
   <infillExtruder>0</infillExtruder>
-  <internalInfillPattern>Rectilinear</internalInfillPattern>
+  <internalInfillPattern>Full Honeycomb</internalInfillPattern>
   <externalInfillPattern>Rectilinear</externalInfillPattern>
   <infillPercentage>78</infillPercentage>
   <outlineOverlapPercentage>15</outlineOverlapPercentage>
   <infillExtrusionWidthPercentage>200</infillExtrusionWidthPercentage>
   <minInfillLength>1</minInfillLength>
   <infillLayerInterval>1</infillLayerInterval>
-  <infillAngles>45,-45</infillAngles>
+  <infillAngles>0,120,-120</infillAngles>
   <overlapInfillAngles>0</overlapInfillAngles>
   <generateSupport>0</generateSupport>
   <supportExtruder>0</supportExtruder>
@@ -202,10 +202,10 @@
       <extraRestartDistance>0</extraRestartDistance>
       <retractionZLift>0</retractionZLift>
       <retractionSpeed>1800</retractionSpeed>
-      <useCoasting>0</useCoasting>
+      <useCoasting>1</useCoasting>
       <coastingDistance>0.2</coastingDistance>
-      <useWipe>0</useWipe>
-      <wipeDistance>5</wipeDistance>
+      <useWipe>1</useWipe>
+      <wipeDistance>2.5</wipeDistance>
     </extruder>
     <temperatureController name="Primary Extruder">
       <temperatureNumber>0</temperatureNumber>
