@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<profile name="IC3D - PLA" version="2017-11-07 09:19:07" app="S3D-Software 4.0.0">
+<profile name="IC3D - PLA" version="2017-11-11 14:11:14" app="S3D-Software 4.0.0">
   <baseProfile>LulzBot TAZ 6 Single</baseProfile>
   <printMaterial>PLA - Low Temp</printMaterial>
-  <printQuality>Lulzbot Res</printQuality>
+  <printQuality>Standard</printQuality>
   <printExtruders></printExtruders>
   <extruder name="Primary Extruder">
     <toolheadNumber>0</toolheadNumber>
@@ -21,7 +21,7 @@
     <wipeDistance>2.5</wipeDistance>
   </extruder>
   <primaryExtruder>0</primaryExtruder>
-  <layerHeight>0.38</layerHeight>
+  <layerHeight>0.2</layerHeight>
   <topSolidLayers>3</topSolidLayers>
   <bottomSolidLayers>3</bottomSolidLayers>
   <perimeterOutlines>3</perimeterOutlines>
@@ -31,9 +31,9 @@
   <startPointOriginY>0</startPointOriginY>
   <sequentialIslands>0</sequentialIslands>
   <spiralVaseMode>0</spiralVaseMode>
-  <firstLayerHeightPercentage>112</firstLayerHeightPercentage>
+  <firstLayerHeightPercentage>213</firstLayerHeightPercentage>
   <firstLayerWidthPercentage>125</firstLayerWidthPercentage>
-  <firstLayerUnderspeed>0.2</firstLayerUnderspeed>
+  <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
   <useRaft>0</useRaft>
   <raftExtruder>0</raftExtruder>
   <raftTopLayers>3</raftTopLayers>
@@ -62,7 +62,7 @@
   <infillExtruder>0</infillExtruder>
   <internalInfillPattern>Full Honeycomb</internalInfillPattern>
   <externalInfillPattern>Rectilinear</externalInfillPattern>
-  <infillPercentage>78</infillPercentage>
+  <infillPercentage>20</infillPercentage>
   <outlineOverlapPercentage>25</outlineOverlapPercentage>
   <infillExtrusionWidthPercentage>200</infillExtrusionWidthPercentage>
   <minInfillLength>5</minInfillLength>
@@ -72,7 +72,7 @@
   <externalInfillAngles>45,-45</externalInfillAngles>
   <generateSupport>0</generateSupport>
   <supportExtruder>0</supportExtruder>
-  <supportInfillPercentage>25</supportInfillPercentage>
+  <supportInfillPercentage>30</supportInfillPercentage>
   <supportExtraInflation>0</supportExtraInflation>
   <supportBaseLayers>0</supportBaseLayers>
   <denseSupportExtruder>0</denseSupportExtruder>
@@ -245,7 +245,7 @@
     <supportInfillPercentage>30</supportInfillPercentage>
     <firstLayerHeightPercentage>141</firstLayerHeightPercentage>
     <firstLayerWidthPercentage>125</firstLayerWidthPercentage>
-    <firstLayerUnderspeed>0.2</firstLayerUnderspeed>
+    <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
   </autoConfigureQuality>
   <autoConfigureQuality name="Standard">
     <layerHeight>0.2</layerHeight>
@@ -256,7 +256,7 @@
     <supportInfillPercentage>30</supportInfillPercentage>
     <firstLayerHeightPercentage>213</firstLayerHeightPercentage>
     <firstLayerWidthPercentage>125</firstLayerWidthPercentage>
-    <firstLayerUnderspeed>0.2</firstLayerUnderspeed>
+    <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
   </autoConfigureQuality>
   <autoConfigureQuality name="Fine">
     <layerHeight>0.1</layerHeight>
@@ -267,7 +267,7 @@
     <supportInfillPercentage>40</supportInfillPercentage>
     <firstLayerHeightPercentage>425</firstLayerHeightPercentage>
     <firstLayerWidthPercentage>125</firstLayerWidthPercentage>
-    <firstLayerUnderspeed>0.2</firstLayerUnderspeed>
+    <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
   </autoConfigureQuality>
   <autoConfigureQuality name="Lulzbot Res">
     <layerHeight>0.38</layerHeight>
@@ -278,7 +278,7 @@
     <supportInfillPercentage>25</supportInfillPercentage>
     <firstLayerHeightPercentage>112</firstLayerHeightPercentage>
     <firstLayerWidthPercentage>125</firstLayerWidthPercentage>
-    <firstLayerUnderspeed>0.2</firstLayerUnderspeed>
+    <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
   </autoConfigureQuality>
   <autoConfigureMaterial name="PLA - Low Temp">
     <extruder name="Primary Extruder">
