@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<profile name="IC3D - PLA" version="2017-12-05 17:09:48" app="S3D-Software 4.0.0">
+<profile name="eSun PLA Pro" version="2017-12-05 17:08:52" app="S3D-Software 4.0.0">
   <baseProfile>LulzBot TAZ 6 Single</baseProfile>
-  <printMaterial>PLA - Low Temp</printMaterial>
+  <printMaterial>PLA - High Temp</printMaterial>
   <printQuality>Fast</printQuality>
   <printExtruders></printExtruders>
   <extruder name="Primary Extruder">
@@ -9,7 +9,7 @@
     <diameter>0.5</diameter>
     <autoWidth>0</autoWidth>
     <width>0.5</width>
-    <extrusionMultiplier>1</extrusionMultiplier>
+    <extrusionMultiplier>0.9</extrusionMultiplier>
     <useRetract>1</useRetract>
     <retractionDistance>1.5</retractionDistance>
     <extraRestartDistance>0</extraRestartDistance>
@@ -92,7 +92,7 @@
     <relayBetweenLayers>0</relayBetweenLayers>
     <relayBetweenLoops>0</relayBetweenLoops>
     <stabilizeAtStartup>1</stabilizeAtStartup>
-    <setpoint layer="1" temperature="190"/>
+    <setpoint layer="1" temperature="210"/>
   </temperatureController>
   <temperatureController name="Heated Bed">
     <temperatureNumber>0</temperatureNumber>
@@ -304,6 +304,44 @@
       <relayBetweenLoops>0</relayBetweenLoops>
       <stabilizeAtStartup>1</stabilizeAtStartup>
       <setpoint layer="1" temperature="190"/>
+    </temperatureController>
+    <temperatureController name="Heated Bed">
+      <temperatureNumber>0</temperatureNumber>
+      <isHeatedBed>1</isHeatedBed>
+      <relayBetweenLayers>0</relayBetweenLayers>
+      <relayBetweenLoops>0</relayBetweenLoops>
+      <stabilizeAtStartup>1</stabilizeAtStartup>
+      <setpoint layer="1" temperature="60"/>
+    </temperatureController>
+    <fanSpeed>
+      <setpoint layer="1" speed="0"/>
+      <setpoint layer="2" speed="100"/>
+    </fanSpeed>
+  </autoConfigureMaterial>
+  <autoConfigureMaterial name="PLA - High Temp">
+    <extruder name="Primary Extruder">
+      <toolheadNumber>0</toolheadNumber>
+      <diameter>0.5</diameter>
+      <autoWidth>0</autoWidth>
+      <width>0.5</width>
+      <extrusionMultiplier>0.9</extrusionMultiplier>
+      <useRetract>1</useRetract>
+      <retractionDistance>1.5</retractionDistance>
+      <extraRestartDistance>0</extraRestartDistance>
+      <retractionZLift>0</retractionZLift>
+      <retractionSpeed>1800</retractionSpeed>
+      <useCoasting>0</useCoasting>
+      <coastingDistance>0.2</coastingDistance>
+      <useWipe>0</useWipe>
+      <wipeDistance>2.5</wipeDistance>
+    </extruder>
+    <temperatureController name="Primary Extruder">
+      <temperatureNumber>0</temperatureNumber>
+      <isHeatedBed>0</isHeatedBed>
+      <relayBetweenLayers>0</relayBetweenLayers>
+      <relayBetweenLoops>0</relayBetweenLoops>
+      <stabilizeAtStartup>1</stabilizeAtStartup>
+      <setpoint layer="1" temperature="210"/>
     </temperatureController>
     <temperatureController name="Heated Bed">
       <temperatureNumber>0</temperatureNumber>
