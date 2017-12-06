@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<profile name="eSun PLA Pro" version="2017-12-05 20:41:07" app="S3D-Software 4.0.0">
+<profile name="eSun PLA Pro" version="2017-12-05 20:44:54" app="S3D-Software 4.0.0">
   <baseProfile>LulzBot TAZ 6 Single</baseProfile>
-  <printMaterial>PLA - High Temp</printMaterial>
+  <printMaterial>PLA</printMaterial>
   <printQuality>Fast</printQuality>
   <printExtruders></printExtruders>
   <extruder name="Primary Extruder">
@@ -92,7 +92,7 @@
     <relayBetweenLayers>0</relayBetweenLayers>
     <relayBetweenLoops>0</relayBetweenLoops>
     <stabilizeAtStartup>1</stabilizeAtStartup>
-    <setpoint layer="1" temperature="225"/>
+    <setpoint layer="1" temperature="205"/>
   </temperatureController>
   <temperatureController name="Heated Bed">
     <temperatureNumber>0</temperatureNumber>
@@ -169,7 +169,7 @@
   <fixedBridgingAngle>0</fixedBridgingAngle>
   <applyBridgingToPerimeters>0</applyBridgingToPerimeters>
   <filamentDiameters>2.85|2.85|2.85|2.85|2.85|2.85</filamentDiameters>
-  <filamentPricesPerKg>12.5|46|46|46|46|46</filamentPricesPerKg>
+  <filamentPricesPerKg>25|46|46|46|46|46</filamentPricesPerKg>
   <filamentDensities>1.24|1.25|1.25|1.25|1.25|1.25</filamentDensities>
   <useMinPrintHeight>0</useMinPrintHeight>
   <minPrintHeight>0</minPrintHeight>
