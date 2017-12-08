@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<profile name="eSun PLA Pro" version="2017-12-05 21:02:39" app="S3D-Software 4.0.0">
+<profile name="eSun PLA Pro" version="2017-12-06 19:59:53" app="S3D-Software 4.0.0">
   <baseProfile>LulzBot TAZ 6 Single</baseProfile>
-  <printMaterial>PLA - Mid</printMaterial>
+  <printMaterial>PLA - High Temp</printMaterial>
   <printQuality>Fast</printQuality>
   <printExtruders></printExtruders>
   <extruder name="Primary Extruder">
@@ -9,7 +9,7 @@
     <diameter>0.5</diameter>
     <autoWidth>0</autoWidth>
     <width>0.5</width>
-    <extrusionMultiplier>0.9</extrusionMultiplier>
+    <extrusionMultiplier>1</extrusionMultiplier>
     <useRetract>1</useRetract>
     <retractionDistance>1.5</retractionDistance>
     <extraRestartDistance>0</extraRestartDistance>
@@ -92,7 +92,7 @@
     <relayBetweenLayers>0</relayBetweenLayers>
     <relayBetweenLoops>0</relayBetweenLoops>
     <stabilizeAtStartup>1</stabilizeAtStartup>
-    <setpoint layer="1" temperature="210"/>
+    <setpoint layer="1" temperature="225"/>
   </temperatureController>
   <temperatureController name="Heated Bed">
     <temperatureNumber>0</temperatureNumber>
@@ -100,7 +100,7 @@
     <relayBetweenLayers>0</relayBetweenLayers>
     <relayBetweenLoops>0</relayBetweenLoops>
     <stabilizeAtStartup>1</stabilizeAtStartup>
-    <setpoint layer="1" temperature="60"/>
+    <setpoint layer="1" temperature="65"/>
   </temperatureController>
   <fanSpeed>
     <setpoint layer="1" speed="0"/>
@@ -156,8 +156,8 @@
   <celebrationSong>Random Song</celebrationSong>
   <postProcessing></postProcessing>
   <defaultSpeed>3600</defaultSpeed>
-  <outlineUnderspeed>0.5</outlineUnderspeed>
-  <solidInfillUnderspeed>0.8</solidInfillUnderspeed>
+  <outlineUnderspeed>0.45</outlineUnderspeed>
+  <solidInfillUnderspeed>0.75</solidInfillUnderspeed>
   <supportUnderspeed>0.8</supportUnderspeed>
   <rapidXYspeed>10500</rapidXYspeed>
   <rapidZspeed>1000</rapidZspeed>
@@ -204,7 +204,7 @@
       <diameter>0.5</diameter>
       <autoWidth>0</autoWidth>
       <width>0.5</width>
-      <extrusionMultiplier>0.9</extrusionMultiplier>
+      <extrusionMultiplier>1</extrusionMultiplier>
       <useRetract>1</useRetract>
       <retractionDistance>1.5</retractionDistance>
       <extraRestartDistance>0</extraRestartDistance>
@@ -324,7 +324,7 @@
       <diameter>0.5</diameter>
       <autoWidth>0</autoWidth>
       <width>0.5</width>
-      <extrusionMultiplier>0.9</extrusionMultiplier>
+      <extrusionMultiplier>1</extrusionMultiplier>
       <useRetract>1</useRetract>
       <retractionDistance>1.5</retractionDistance>
       <extraRestartDistance>0</extraRestartDistance>
@@ -349,7 +349,7 @@
       <relayBetweenLayers>0</relayBetweenLayers>
       <relayBetweenLoops>0</relayBetweenLoops>
       <stabilizeAtStartup>1</stabilizeAtStartup>
-      <setpoint layer="1" temperature="60"/>
+      <setpoint layer="1" temperature="65"/>
     </temperatureController>
     <fanSpeed>
       <setpoint layer="1" speed="0"/>
@@ -362,7 +362,7 @@
       <diameter>0.5</diameter>
       <autoWidth>0</autoWidth>
       <width>0.5</width>
-      <extrusionMultiplier>0.9</extrusionMultiplier>
+      <extrusionMultiplier>1</extrusionMultiplier>
       <useRetract>1</useRetract>
       <retractionDistance>1.5</retractionDistance>
       <extraRestartDistance>0</extraRestartDistance>
@@ -387,7 +387,7 @@
       <relayBetweenLayers>0</relayBetweenLayers>
       <relayBetweenLoops>0</relayBetweenLoops>
       <stabilizeAtStartup>1</stabilizeAtStartup>
-      <setpoint layer="1" temperature="60"/>
+      <setpoint layer="1" temperature="65"/>
     </temperatureController>
     <fanSpeed>
       <setpoint layer="1" speed="0"/>
