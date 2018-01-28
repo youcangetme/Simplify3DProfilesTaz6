@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<profile name="IC3D - PLA" version="2017-12-15 20:12:45" app="S3D-Software 4.0.0">
+<profile name="eSun PLA PRO (Aerostruder)" version="2018-01-28 17:03:28" app="S3D-Software 4.0.0">
   <baseProfile>LulzBot TAZ 6 Single</baseProfile>
-  <printMaterial>PLA - Low Temp</printMaterial>
+  <printMaterial>PLA - Mid Temp</printMaterial>
   <printQuality>Fast</printQuality>
   <printExtruders></printExtruders>
   <extruder name="Primary Extruder">
@@ -11,10 +11,10 @@
     <width>0.5</width>
     <extrusionMultiplier>1</extrusionMultiplier>
     <useRetract>1</useRetract>
-    <retractionDistance>1.5</retractionDistance>
+    <retractionDistance>1</retractionDistance>
     <extraRestartDistance>0</extraRestartDistance>
     <retractionZLift>0</retractionZLift>
-    <retractionSpeed>1800</retractionSpeed>
+    <retractionSpeed>600</retractionSpeed>
     <useCoasting>0</useCoasting>
     <coastingDistance>0.2</coastingDistance>
     <useWipe>0</useWipe>
@@ -92,7 +92,7 @@
     <relayBetweenLayers>0</relayBetweenLayers>
     <relayBetweenLoops>0</relayBetweenLoops>
     <stabilizeAtStartup>1</stabilizeAtStartup>
-    <setpoint layer="1" temperature="190"/>
+    <setpoint layer="1" temperature="215"/>
   </temperatureController>
   <temperatureController name="Heated Bed">
     <temperatureNumber>0</temperatureNumber>
@@ -104,16 +104,95 @@
   </temperatureController>
   <fanSpeed>
     <setpoint layer="1" speed="0"/>
-    <setpoint layer="2" speed="100"/>
+    <setpoint layer="2" speed="1"/>
+    <setpoint layer="3" speed="2"/>
+    <setpoint layer="4" speed="3"/>
+    <setpoint layer="5" speed="4"/>
+    <setpoint layer="6" speed="5"/>
+    <setpoint layer="7" speed="6"/>
+    <setpoint layer="8" speed="7"/>
+    <setpoint layer="9" speed="8"/>
+    <setpoint layer="10" speed="9"/>
+    <setpoint layer="11" speed="10"/>
+    <setpoint layer="12" speed="11"/>
+    <setpoint layer="13" speed="12"/>
+    <setpoint layer="14" speed="13"/>
+    <setpoint layer="15" speed="14"/>
+    <setpoint layer="16" speed="15"/>
+    <setpoint layer="17" speed="16"/>
+    <setpoint layer="18" speed="17"/>
+    <setpoint layer="19" speed="18"/>
+    <setpoint layer="20" speed="19"/>
+    <setpoint layer="21" speed="20"/>
+    <setpoint layer="22" speed="21"/>
+    <setpoint layer="23" speed="22"/>
+    <setpoint layer="24" speed="23"/>
+    <setpoint layer="25" speed="24"/>
+    <setpoint layer="26" speed="25"/>
+    <setpoint layer="27" speed="26"/>
+    <setpoint layer="28" speed="27"/>
+    <setpoint layer="29" speed="28"/>
+    <setpoint layer="30" speed="29"/>
+    <setpoint layer="31" speed="30"/>
+    <setpoint layer="32" speed="31"/>
+    <setpoint layer="33" speed="32"/>
+    <setpoint layer="34" speed="33"/>
+    <setpoint layer="35" speed="34"/>
+    <setpoint layer="36" speed="35"/>
+    <setpoint layer="37" speed="36"/>
+    <setpoint layer="38" speed="37"/>
+    <setpoint layer="39" speed="38"/>
+    <setpoint layer="40" speed="39"/>
+    <setpoint layer="41" speed="40"/>
+    <setpoint layer="42" speed="41"/>
+    <setpoint layer="43" speed="42"/>
+    <setpoint layer="44" speed="43"/>
+    <setpoint layer="45" speed="44"/>
+    <setpoint layer="46" speed="45"/>
+    <setpoint layer="47" speed="46"/>
+    <setpoint layer="48" speed="47"/>
+    <setpoint layer="49" speed="48"/>
+    <setpoint layer="50" speed="49"/>
+    <setpoint layer="51" speed="50"/>
+    <setpoint layer="52" speed="51"/>
+    <setpoint layer="53" speed="52"/>
+    <setpoint layer="54" speed="53"/>
+    <setpoint layer="55" speed="54"/>
+    <setpoint layer="56" speed="55"/>
+    <setpoint layer="57" speed="56"/>
+    <setpoint layer="58" speed="57"/>
+    <setpoint layer="59" speed="58"/>
+    <setpoint layer="60" speed="59"/>
+    <setpoint layer="61" speed="60"/>
+    <setpoint layer="62" speed="61"/>
+    <setpoint layer="63" speed="62"/>
+    <setpoint layer="64" speed="63"/>
+    <setpoint layer="65" speed="64"/>
+    <setpoint layer="66" speed="65"/>
+    <setpoint layer="67" speed="66"/>
+    <setpoint layer="68" speed="67"/>
+    <setpoint layer="69" speed="68"/>
+    <setpoint layer="70" speed="69"/>
+    <setpoint layer="71" speed="70"/>
+    <setpoint layer="72" speed="71"/>
+    <setpoint layer="73" speed="72"/>
+    <setpoint layer="74" speed="73"/>
+    <setpoint layer="75" speed="74"/>
+    <setpoint layer="76" speed="75"/>
+    <setpoint layer="77" speed="76"/>
+    <setpoint layer="78" speed="77"/>
+    <setpoint layer="79" speed="78"/>
+    <setpoint layer="80" speed="79"/>
+    <setpoint layer="81" speed="80"/>
   </fanSpeed>
-  <blipFanToFullPower>1</blipFanToFullPower>
+  <blipFanToFullPower>0</blipFanToFullPower>
   <adjustSpeedForCooling>1</adjustSpeedForCooling>
   <minSpeedLayerTime>15</minSpeedLayerTime>
   <minCoolingSpeedSlowdown>20</minCoolingSpeedSlowdown>
   <increaseFanForCooling>0</increaseFanForCooling>
-  <minFanLayerTime>45</minFanLayerTime>
+  <minFanLayerTime>15</minFanLayerTime>
   <maxCoolingFanSpeed>100</maxCoolingFanSpeed>
-  <increaseFanForBridging>0</increaseFanForBridging>
+  <increaseFanForBridging>1</increaseFanForBridging>
   <bridgingFanSpeed>100</bridgingFanSpeed>
   <use5D>1</use5D>
   <relativeEdistances>0</relativeEdistances>
@@ -146,11 +225,11 @@
   <baudRateOverride>250000</baudRateOverride>
   <overridePrinterModels>1</overridePrinterModels>
   <printerModelsOverride>LulzBot_TAZ6.stl</printerModelsOverride>
-  <startingGcode>;This profile is designed specifically for LulzBot TAZ 6 3D Printer by Lulzbot.com,G26                          ; clear potential 'probe fail' condition,G21                          ; set units to Millimetres,M107                         ; disable fans,G90                          ; absolute positioning,M82                          ; set extruder to absolute mode,G92 E0                       ; set extruder position to 0,M140 S[bed0_temperature]     ; get bed heating up,M117 Print by John Bryant    ; LCD status message,G28 XY                       ; home X and Y,G1 X-19 Y258 F1000           ; move to safe homing position,M109 S160                    ; soften filament for z homing,G28 Z                        ; home Z,M104 S150                    ; wipe temp,G1 E-30 F100                 ; suck up 12mm of filament,G1 X-15 Y100 F3000           ; move above wiper pad,G1 Z1                        ; push nozzle into wiper,G1 X-17 Y95 F1000            ; slow wipe,G1 X-17 Y90 F1000            ; slow wipe,G1 X-17 Y85 F1000            ; slow wipe,G1 X-15 Y90 F1000            ; slow wipe,G1 X-17 Y80 F1000            ; slow wipe,G1 X-15 Y95 F1000            ; slow wipe,G1 X-17 Y75 F2000            ; fast wipe,G1 X-15 Y65 F2000            ; fast wipe,G1 X-17 Y70 F2000            ; fast wipe,G1 X-15 Y60 F2000            ; fast wipe,G1 X-17 Y55 F2000            ; fast wipe,G1 X-15 Y50 F2000            ; fast wipe,G1 X-17 Y40 F2000            ; fast wipe,G1 X-15 Y45 F2000            ; fast wipe,G1 X-17 Y35 F2000            ; fast wipe,G1 X-15 Y40 F2000            ; fast wipe,G1 X-17 Y70 F2000            ; fast wipe,G1 X-15 Y30 Z2 F2000         ; fast wipe,G1 X-17 Y35 F2000            ; fast wipe,G1 X-15 Y25 F2000            ; fast wipe,G1 X-17 Y30 F2000            ; fast wipe,G1 X-15 Y25 Z1.5 F1000       ; slow wipe,G1 X-17 Y23 F1000            ; slow wipe,G1 Z10                       ; raise extruder,M109 R150                    ; heat to probe temp,G1 X-9 Y-9                   ; move above probe,M204 S100                    ; set accel for probing,G29                          ; probe sequence (for auto-leveling),M204 S500                    ; set accel back to normal,G1 X0 Y0 Z15 F5000           ; get out the way,M400                         ; clear buffer,G4 S1                        ; pause,M117 Heating...              ; LCD status message,M140 S[bed0_temperature]     ; get bed heating up,M109 R[extruder0_temperature]; set extruder temp and wait,M190 R[bed0_temperature]     ; get bed temping up during first layer,G1 Z2 E1 F400                ; prime extruder,M117 TAZ Printing...        ; LCD status message</startingGcode>
+  <startingGcode>;This G-Code has been generated specifically for the LulzBot TAZ 6 with Aerosturder,G26 ; clear potential 'probe fail' condition,G21 ; set units to Millimetres,M107 ; disable fans,G90 ; absolute positioning,M82 ; set extruder to absolute mode,G92 E0 ; set extruder position to 0,M140 S[bed0_temperature] ; start bed heating up,G28 XY ; home X and Y,G1 X-19 Y258 F1000 ; move to safe homing position,M109 R160 ; soften filament before homing Z,G28 Z ; home Z,G1 E-15 F100 ; retract filament,M109 R160 ; wait for extruder to reach wiping temp,G1 X-15 Y100 F3000 ; move above wiper pad,G1 Z1 ; push nozzle into wiper,G1 X-17 Y95 F1000 ; slow wipe,G1 X-17 Y90 F1000 ; slow wipe,G1 X-17 Y85 F1000 ; slow wipe,G1 X-15 Y90 F1000 ; slow wipe,G1 X-17 Y80 F1000 ; slow wipe,G1 X-15 Y95 F1000 ; slow wipe,G1 X-17 Y75 F2000 ; fast wipe,G1 X-15 Y65 F2000 ; fast wipe,G1 X-17 Y70 F2000 ; fast wipe,G1 X-15 Y60 F2000 ; fast wipe,G1 X-17 Y55 F2000 ; fast wipe,G1 X-15 Y50 F2000 ; fast wipe,G1 X-17 Y40 F2000 ; fast wipe,G1 X-15 Y45 F2000 ; fast wipe,G1 X-17 Y35 F2000 ; fast wipe,G1 X-15 Y40 F2000 ; fast wipe,G1 X-17 Y70 F2000 ; fast wipe,G1 X-15 Y30 Z2 F2000 ; fast wipe,G1 X-17 Y35 F2000 ; fast wipe,G1 X-15 Y25 F2000 ; fast wipe,G1 X-17 Y30 F2000 ; fast wipe,G1 X-15 Y25 Z1.5 F1000 ; slow wipe,G1 X-17 Y23 F1000 ; slow wipe,G1 Z10 ; raise extruder,M109 R160 ; wait for extruder to reach probe temp,G1 X-9 Y-9 ; move above first probe point,M204 S100 ; set probing acceleration,G29 ; start auto-leveling sequence,M204 S500 ; restore standard acceleration,G1 X0 Y0 Z15 F5000 ; move up off last probe point,G4 S1 ; pause,M400 ; wait for moves to finish,M117 Heating... ; progress indicator message on LCD,M109 R[extruder0_temperature] ; wait for extruder to reach printing temp,M190 S[bed0_temperature] ; wait for bed to reach printing temp,G1 Z2 E0 F75 ; prime tiny bit of filament into the nozzle,M117 TAZ 6 Printing... ; progress indicator message on LCD</startingGcode>
   <layerChangeGcode></layerChangeGcode>
   <retractionGcode></retractionGcode>
   <toolChangeGcode></toolChangeGcode>
-  <endingGcode>;,M400                           ; wait for moves to finish,M104 S0                        ; hotend off,M107                           ; fans off,G91                            ; relative positioning,G1 E-1 F300                    ; retract the filament a bit before lifting the nozzle, to release some of the pressure,G1 Z+20 E-5 X-20 Y-20 F3000    ; move Z up a bit and retract filament even more,M117 Cooling please wait       ; progress indicator message,G90                            ; absolute positioning,G1 Y0 F3000                    ; move to cooling position,M190 R45                       ; set bed to cool off,M140 S0                         ; turn off bed,G1 Y280 F3000                  ; present finished print,M84                            ; steppers off,G90                            ; absolute positioning,M117 Print complete            ; progress indicator message,;</endingGcode>
+  <endingGcode>M400                                      ; wait for moves to finish,M140 R45                                  ; start bed cooling,M104 S0                                   ; disable hotend,M107                                      ; disable fans,G91                                       ; relative positioning,G1 E-1 F300                               ; filament retraction to release pressure,G1 Z20 E-5 X-20 Y-20 F3000                ; lift up and retract even more filament,G1 E6                                     ; re-prime extruder,M117 Cooling please wait                  ; progress indicator message on LCD,G90                                       ; absolute positioning,G1 Y0 F3000                               ; move to cooling position,M190 R45                                  ; wait for bed to cool down to removal temp,G1 Y280 F3000                             ; present finished print,M140 S0                                   ; keep temperature or cool downs,M84                                       ; disable steppers,G90                                       ; absolute positioning</endingGcode>
   <exportFileFormat>gcode</exportFileFormat>
   <celebration>0</celebration>
   <celebrationSong>Random Song</celebrationSong>
@@ -169,8 +248,8 @@
   <fixedBridgingAngle>0</fixedBridgingAngle>
   <applyBridgingToPerimeters>0</applyBridgingToPerimeters>
   <filamentDiameters>2.85|2.85|2.85|2.85|2.85|2.85</filamentDiameters>
-  <filamentPricesPerKg>46|46|46|46|46|46</filamentPricesPerKg>
-  <filamentDensities>1.25|1.25|1.25|1.25|1.25|1.25</filamentDensities>
+  <filamentPricesPerKg>25|46|46|46|46|46</filamentPricesPerKg>
+  <filamentDensities>1.24|1.25|1.25|1.25|1.25|1.25</filamentDensities>
   <useMinPrintHeight>0</useMinPrintHeight>
   <minPrintHeight>0</minPrintHeight>
   <useMaxPrintHeight>0</useMaxPrintHeight>
@@ -265,7 +344,7 @@
       <relayBetweenLayers>0</relayBetweenLayers>
       <relayBetweenLoops>0</relayBetweenLoops>
       <stabilizeAtStartup>1</stabilizeAtStartup>
-      <setpoint layer="1" temperature="190"/>
+      <setpoint layer="1" temperature="205"/>
     </temperatureController>
     <temperatureController name="Heated Bed">
       <temperatureNumber>0</temperatureNumber>
@@ -280,18 +359,18 @@
       <setpoint layer="2" speed="100"/>
     </fanSpeed>
   </autoConfigureMaterial>
-  <autoConfigureMaterial name="PLA - High Temp">
+  <autoConfigureMaterial name="PLA - Mid Temp">
     <extruder name="Primary Extruder">
       <toolheadNumber>0</toolheadNumber>
       <diameter>0.5</diameter>
       <autoWidth>0</autoWidth>
       <width>0.5</width>
-      <extrusionMultiplier>0.9</extrusionMultiplier>
+      <extrusionMultiplier>1</extrusionMultiplier>
       <useRetract>1</useRetract>
-      <retractionDistance>1.5</retractionDistance>
+      <retractionDistance>1</retractionDistance>
       <extraRestartDistance>0</extraRestartDistance>
       <retractionZLift>0</retractionZLift>
-      <retractionSpeed>1800</retractionSpeed>
+      <retractionSpeed>600</retractionSpeed>
       <useCoasting>0</useCoasting>
       <coastingDistance>0.2</coastingDistance>
       <useWipe>0</useWipe>
@@ -303,7 +382,7 @@
       <relayBetweenLayers>0</relayBetweenLayers>
       <relayBetweenLoops>0</relayBetweenLoops>
       <stabilizeAtStartup>1</stabilizeAtStartup>
-      <setpoint layer="1" temperature="200"/>
+      <setpoint layer="1" temperature="215"/>
     </temperatureController>
     <temperatureController name="Heated Bed">
       <temperatureNumber>0</temperatureNumber>
@@ -315,7 +394,86 @@
     </temperatureController>
     <fanSpeed>
       <setpoint layer="1" speed="0"/>
-      <setpoint layer="2" speed="100"/>
+      <setpoint layer="2" speed="1"/>
+      <setpoint layer="3" speed="2"/>
+      <setpoint layer="4" speed="3"/>
+      <setpoint layer="5" speed="4"/>
+      <setpoint layer="6" speed="5"/>
+      <setpoint layer="7" speed="6"/>
+      <setpoint layer="8" speed="7"/>
+      <setpoint layer="9" speed="8"/>
+      <setpoint layer="10" speed="9"/>
+      <setpoint layer="11" speed="10"/>
+      <setpoint layer="12" speed="11"/>
+      <setpoint layer="13" speed="12"/>
+      <setpoint layer="14" speed="13"/>
+      <setpoint layer="15" speed="14"/>
+      <setpoint layer="16" speed="15"/>
+      <setpoint layer="17" speed="16"/>
+      <setpoint layer="18" speed="17"/>
+      <setpoint layer="19" speed="18"/>
+      <setpoint layer="20" speed="19"/>
+      <setpoint layer="21" speed="20"/>
+      <setpoint layer="22" speed="21"/>
+      <setpoint layer="23" speed="22"/>
+      <setpoint layer="24" speed="23"/>
+      <setpoint layer="25" speed="24"/>
+      <setpoint layer="26" speed="25"/>
+      <setpoint layer="27" speed="26"/>
+      <setpoint layer="28" speed="27"/>
+      <setpoint layer="29" speed="28"/>
+      <setpoint layer="30" speed="29"/>
+      <setpoint layer="31" speed="30"/>
+      <setpoint layer="32" speed="31"/>
+      <setpoint layer="33" speed="32"/>
+      <setpoint layer="34" speed="33"/>
+      <setpoint layer="35" speed="34"/>
+      <setpoint layer="36" speed="35"/>
+      <setpoint layer="37" speed="36"/>
+      <setpoint layer="38" speed="37"/>
+      <setpoint layer="39" speed="38"/>
+      <setpoint layer="40" speed="39"/>
+      <setpoint layer="41" speed="40"/>
+      <setpoint layer="42" speed="41"/>
+      <setpoint layer="43" speed="42"/>
+      <setpoint layer="44" speed="43"/>
+      <setpoint layer="45" speed="44"/>
+      <setpoint layer="46" speed="45"/>
+      <setpoint layer="47" speed="46"/>
+      <setpoint layer="48" speed="47"/>
+      <setpoint layer="49" speed="48"/>
+      <setpoint layer="50" speed="49"/>
+      <setpoint layer="51" speed="50"/>
+      <setpoint layer="52" speed="51"/>
+      <setpoint layer="53" speed="52"/>
+      <setpoint layer="54" speed="53"/>
+      <setpoint layer="55" speed="54"/>
+      <setpoint layer="56" speed="55"/>
+      <setpoint layer="57" speed="56"/>
+      <setpoint layer="58" speed="57"/>
+      <setpoint layer="59" speed="58"/>
+      <setpoint layer="60" speed="59"/>
+      <setpoint layer="61" speed="60"/>
+      <setpoint layer="62" speed="61"/>
+      <setpoint layer="63" speed="62"/>
+      <setpoint layer="64" speed="63"/>
+      <setpoint layer="65" speed="64"/>
+      <setpoint layer="66" speed="65"/>
+      <setpoint layer="67" speed="66"/>
+      <setpoint layer="68" speed="67"/>
+      <setpoint layer="69" speed="68"/>
+      <setpoint layer="70" speed="69"/>
+      <setpoint layer="71" speed="70"/>
+      <setpoint layer="72" speed="71"/>
+      <setpoint layer="73" speed="72"/>
+      <setpoint layer="74" speed="73"/>
+      <setpoint layer="75" speed="74"/>
+      <setpoint layer="76" speed="75"/>
+      <setpoint layer="77" speed="76"/>
+      <setpoint layer="78" speed="77"/>
+      <setpoint layer="79" speed="78"/>
+      <setpoint layer="80" speed="79"/>
+      <setpoint layer="81" speed="80"/>
     </fanSpeed>
   </autoConfigureMaterial>
 </profile>
