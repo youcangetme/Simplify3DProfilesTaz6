@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<profile name="eSun PLA Pro Aerostruder" version="2018-01-30 19:19:29" app="S3D-Software 4.0.0">
+<profile name="eSun PLA Pro Aerostruder" version="2018-02-03 11:59:53" app="S3D-Software 4.0.0">
   <baseProfile>LulzBot TAZ 6 Single</baseProfile>
-  <printMaterial>PLA - Mid Temp</printMaterial>
+  <printMaterial>PLA - 210</printMaterial>
   <printQuality>Fast</printQuality>
   <printExtruders></printExtruders>
   <extruder name="Primary Extruder">
@@ -92,7 +92,7 @@
     <relayBetweenLayers>0</relayBetweenLayers>
     <relayBetweenLoops>0</relayBetweenLoops>
     <stabilizeAtStartup>1</stabilizeAtStartup>
-    <setpoint layer="1" temperature="215"/>
+    <setpoint layer="1" temperature="210"/>
   </temperatureController>
   <temperatureController name="Heated Bed">
     <temperatureNumber>0</temperatureNumber>
@@ -104,10 +104,10 @@
   </temperatureController>
   <fanSpeed>
     <setpoint layer="1" speed="0"/>
-    <setpoint layer="2" speed="8"/>
-    <setpoint layer="4" speed="16"/>
-    <setpoint layer="6" speed="32"/>
-    <setpoint layer="8" speed="64"/>
+    <setpoint layer="2" speed="2"/>
+    <setpoint layer="4" speed="8"/>
+    <setpoint layer="6" speed="16"/>
+    <setpoint layer="8" speed="32"/>
     <setpoint layer="10" speed="80"/>
   </fanSpeed>
   <blipFanToFullPower>0</blipFanToFullPower>
@@ -281,7 +281,12 @@
     </temperatureController>
     <fanSpeed>
       <setpoint layer="1" speed="0"/>
-      <setpoint layer="2" speed="100"/>
+      <setpoint layer="2" speed="2"/>
+      <setpoint layer="4" speed="8"/>
+      <setpoint layer="8" speed="16"/>
+      <setpoint layer="16" speed="32"/>
+      <setpoint layer="32" speed="64"/>
+      <setpoint layer="64" speed="80"/>
     </fanSpeed>
   </autoConfigureMaterial>
   <autoConfigureMaterial name="PLA - Mid Temp">
@@ -307,7 +312,7 @@
       <relayBetweenLayers>0</relayBetweenLayers>
       <relayBetweenLoops>0</relayBetweenLoops>
       <stabilizeAtStartup>1</stabilizeAtStartup>
-      <setpoint layer="1" temperature="215"/>
+      <setpoint layer="1" temperature="210"/>
     </temperatureController>
     <temperatureController name="Heated Bed">
       <temperatureNumber>0</temperatureNumber>
@@ -319,10 +324,52 @@
     </temperatureController>
     <fanSpeed>
       <setpoint layer="1" speed="0"/>
-      <setpoint layer="2" speed="8"/>
-      <setpoint layer="4" speed="16"/>
-      <setpoint layer="6" speed="32"/>
-      <setpoint layer="8" speed="64"/>
+      <setpoint layer="2" speed="2"/>
+      <setpoint layer="4" speed="8"/>
+      <setpoint layer="6" speed="16"/>
+      <setpoint layer="8" speed="32"/>
+      <setpoint layer="10" speed="80"/>
+    </fanSpeed>
+  </autoConfigureMaterial>
+  <autoConfigureMaterial name="PLA - 210">
+    <extruder name="Primary Extruder">
+      <toolheadNumber>0</toolheadNumber>
+      <diameter>0.5</diameter>
+      <autoWidth>0</autoWidth>
+      <width>0.5</width>
+      <extrusionMultiplier>1</extrusionMultiplier>
+      <useRetract>1</useRetract>
+      <retractionDistance>1</retractionDistance>
+      <extraRestartDistance>0</extraRestartDistance>
+      <retractionZLift>0</retractionZLift>
+      <retractionSpeed>600</retractionSpeed>
+      <useCoasting>0</useCoasting>
+      <coastingDistance>0.2</coastingDistance>
+      <useWipe>0</useWipe>
+      <wipeDistance>2.5</wipeDistance>
+    </extruder>
+    <temperatureController name="Primary Extruder">
+      <temperatureNumber>0</temperatureNumber>
+      <isHeatedBed>0</isHeatedBed>
+      <relayBetweenLayers>0</relayBetweenLayers>
+      <relayBetweenLoops>0</relayBetweenLoops>
+      <stabilizeAtStartup>1</stabilizeAtStartup>
+      <setpoint layer="1" temperature="210"/>
+    </temperatureController>
+    <temperatureController name="Heated Bed">
+      <temperatureNumber>0</temperatureNumber>
+      <isHeatedBed>1</isHeatedBed>
+      <relayBetweenLayers>0</relayBetweenLayers>
+      <relayBetweenLoops>0</relayBetweenLoops>
+      <stabilizeAtStartup>1</stabilizeAtStartup>
+      <setpoint layer="1" temperature="60"/>
+    </temperatureController>
+    <fanSpeed>
+      <setpoint layer="1" speed="0"/>
+      <setpoint layer="2" speed="2"/>
+      <setpoint layer="4" speed="8"/>
+      <setpoint layer="6" speed="16"/>
+      <setpoint layer="8" speed="32"/>
       <setpoint layer="10" speed="80"/>
     </fanSpeed>
   </autoConfigureMaterial>
