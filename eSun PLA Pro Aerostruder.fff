@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<profile name="eSun PLA Pro Aerostruder" version="2018-02-03 11:59:53" app="S3D-Software 4.0.0">
+<profile name="eSun PLA Pro Aerostruder" version="2018-02-12 15:16:11" app="S3D-Software 4.0.0">
   <baseProfile>LulzBot TAZ 6 Single</baseProfile>
   <printMaterial>PLA - 210</printMaterial>
   <printQuality>Fast</printQuality>
@@ -32,8 +32,8 @@
   <sequentialIslands>0</sequentialIslands>
   <spiralVaseMode>0</spiralVaseMode>
   <firstLayerHeightPercentage>141</firstLayerHeightPercentage>
-  <firstLayerWidthPercentage>125</firstLayerWidthPercentage>
-  <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
+  <firstLayerWidthPercentage>160</firstLayerWidthPercentage>
+  <firstLayerUnderspeed>0.4</firstLayerUnderspeed>
   <useRaft>0</useRaft>
   <raftExtruder>0</raftExtruder>
   <raftTopLayers>3</raftTopLayers>
@@ -108,7 +108,14 @@
     <setpoint layer="4" speed="8"/>
     <setpoint layer="6" speed="16"/>
     <setpoint layer="8" speed="32"/>
-    <setpoint layer="10" speed="80"/>
+    <setpoint layer="10" speed="40"/>
+    <setpoint layer="15" speed="45"/>
+    <setpoint layer="20" speed="50"/>
+    <setpoint layer="25" speed="55"/>
+    <setpoint layer="30" speed="60"/>
+    <setpoint layer="35" speed="65"/>
+    <setpoint layer="40" speed="70"/>
+    <setpoint layer="50" speed="80"/>
   </fanSpeed>
   <blipFanToFullPower>0</blipFanToFullPower>
   <adjustSpeedForCooling>1</adjustSpeedForCooling>
@@ -117,8 +124,8 @@
   <increaseFanForCooling>0</increaseFanForCooling>
   <minFanLayerTime>15</minFanLayerTime>
   <maxCoolingFanSpeed>100</maxCoolingFanSpeed>
-  <increaseFanForBridging>1</increaseFanForBridging>
-  <bridgingFanSpeed>100</bridgingFanSpeed>
+  <increaseFanForBridging>0</increaseFanForBridging>
+  <bridgingFanSpeed>80</bridgingFanSpeed>
   <use5D>1</use5D>
   <relativeEdistances>0</relativeEdistances>
   <allowEaxisZeroing>1</allowEaxisZeroing>
@@ -210,8 +217,8 @@
     <infillPercentage>15</infillPercentage>
     <supportInfillPercentage>30</supportInfillPercentage>
     <firstLayerHeightPercentage>141</firstLayerHeightPercentage>
-    <firstLayerWidthPercentage>125</firstLayerWidthPercentage>
-    <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
+    <firstLayerWidthPercentage>160</firstLayerWidthPercentage>
+    <firstLayerUnderspeed>0.4</firstLayerUnderspeed>
   </autoConfigureQuality>
   <autoConfigureQuality name="Standard">
     <layerHeight>0.2</layerHeight>
@@ -221,8 +228,8 @@
     <infillPercentage>20</infillPercentage>
     <supportInfillPercentage>30</supportInfillPercentage>
     <firstLayerHeightPercentage>213</firstLayerHeightPercentage>
-    <firstLayerWidthPercentage>125</firstLayerWidthPercentage>
-    <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
+    <firstLayerWidthPercentage>160</firstLayerWidthPercentage>
+    <firstLayerUnderspeed>0.4</firstLayerUnderspeed>
   </autoConfigureQuality>
   <autoConfigureQuality name="Fine">
     <layerHeight>0.1</layerHeight>
@@ -232,8 +239,8 @@
     <infillPercentage>30</infillPercentage>
     <supportInfillPercentage>40</supportInfillPercentage>
     <firstLayerHeightPercentage>425</firstLayerHeightPercentage>
-    <firstLayerWidthPercentage>125</firstLayerWidthPercentage>
-    <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
+    <firstLayerWidthPercentage>160</firstLayerWidthPercentage>
+    <firstLayerUnderspeed>0.4</firstLayerUnderspeed>
   </autoConfigureQuality>
   <autoConfigureQuality name="Lulzbot Res">
     <layerHeight>0.38</layerHeight>
@@ -243,8 +250,8 @@
     <infillPercentage>78</infillPercentage>
     <supportInfillPercentage>25</supportInfillPercentage>
     <firstLayerHeightPercentage>112</firstLayerHeightPercentage>
-    <firstLayerWidthPercentage>125</firstLayerWidthPercentage>
-    <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
+    <firstLayerWidthPercentage>160</firstLayerWidthPercentage>
+    <firstLayerUnderspeed>0.4</firstLayerUnderspeed>
   </autoConfigureQuality>
   <autoConfigureMaterial name="PLA - Low Temp">
     <extruder name="Primary Extruder">
@@ -370,7 +377,14 @@
       <setpoint layer="4" speed="8"/>
       <setpoint layer="6" speed="16"/>
       <setpoint layer="8" speed="32"/>
-      <setpoint layer="10" speed="80"/>
+      <setpoint layer="10" speed="40"/>
+      <setpoint layer="15" speed="45"/>
+      <setpoint layer="20" speed="50"/>
+      <setpoint layer="25" speed="55"/>
+      <setpoint layer="30" speed="60"/>
+      <setpoint layer="35" speed="65"/>
+      <setpoint layer="40" speed="70"/>
+      <setpoint layer="50" speed="80"/>
     </fanSpeed>
   </autoConfigureMaterial>
 </profile>
