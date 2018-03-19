@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<profile name="IC3D PLA Aerostruder" version="2018-03-10 22:59:25" app="S3D-Software 4.0.0">
+<profile name="IC3D PLA Aerostruder" version="2018-03-17 18:04:13" app="S3D-Software 4.0.0">
   <baseProfile>LulzBot TAZ 6 Single</baseProfile>
-  <printMaterial>PLA 190</printMaterial>
-  <printQuality>Fast</printQuality>
+  <printMaterial>PLA 205</printMaterial>
+  <printQuality>Lulzbot Res</printQuality>
   <printExtruders></printExtruders>
   <extruder name="Primary Extruder">
     <toolheadNumber>0</toolheadNumber>
@@ -13,7 +13,7 @@
     <useRetract>1</useRetract>
     <retractionDistance>1</retractionDistance>
     <extraRestartDistance>0</extraRestartDistance>
-    <retractionZLift>0.5</retractionZLift>
+    <retractionZLift>0.8</retractionZLift>
     <retractionSpeed>600</retractionSpeed>
     <useCoasting>0</useCoasting>
     <coastingDistance>0.2</coastingDistance>
@@ -21,7 +21,7 @@
     <wipeDistance>2.5</wipeDistance>
   </extruder>
   <primaryExtruder>0</primaryExtruder>
-  <layerHeight>0.3</layerHeight>
+  <layerHeight>0.38</layerHeight>
   <topSolidLayers>3</topSolidLayers>
   <bottomSolidLayers>3</bottomSolidLayers>
   <perimeterOutlines>3</perimeterOutlines>
@@ -31,7 +31,7 @@
   <startPointOriginY>0</startPointOriginY>
   <sequentialIslands>0</sequentialIslands>
   <spiralVaseMode>0</spiralVaseMode>
-  <firstLayerHeightPercentage>141</firstLayerHeightPercentage>
+  <firstLayerHeightPercentage>112</firstLayerHeightPercentage>
   <firstLayerWidthPercentage>190</firstLayerWidthPercentage>
   <firstLayerUnderspeed>0.25</firstLayerUnderspeed>
   <useRaft>0</useRaft>
@@ -62,7 +62,7 @@
   <infillExtruder>0</infillExtruder>
   <internalInfillPattern>Full Honeycomb</internalInfillPattern>
   <externalInfillPattern>Rectilinear</externalInfillPattern>
-  <infillPercentage>15</infillPercentage>
+  <infillPercentage>78</infillPercentage>
   <outlineOverlapPercentage>25</outlineOverlapPercentage>
   <infillExtrusionWidthPercentage>200</infillExtrusionWidthPercentage>
   <minInfillLength>1</minInfillLength>
@@ -72,7 +72,7 @@
   <externalInfillAngles>45,-45</externalInfillAngles>
   <generateSupport>0</generateSupport>
   <supportExtruder>0</supportExtruder>
-  <supportInfillPercentage>30</supportInfillPercentage>
+  <supportInfillPercentage>25</supportInfillPercentage>
   <supportExtraInflation>0</supportExtraInflation>
   <supportBaseLayers>0</supportBaseLayers>
   <denseSupportExtruder>0</denseSupportExtruder>
@@ -92,8 +92,7 @@
     <relayBetweenLayers>0</relayBetweenLayers>
     <relayBetweenLoops>0</relayBetweenLoops>
     <stabilizeAtStartup>1</stabilizeAtStartup>
-    <setpoint layer="1" temperature="200"/>
-    <setpoint layer="3" temperature="190"/>
+    <setpoint layer="1" temperature="205"/>
   </temperatureController>
   <temperatureController name="Heated Bed">
     <temperatureNumber>0</temperatureNumber>
@@ -186,7 +185,7 @@
   <retractionMinTravel>3</retractionMinTravel>
   <retractWhileWiping>0</retractWhileWiping>
   <onlyWipeOutlines>1</onlyWipeOutlines>
-  <avoidCrossingOutline>0</avoidCrossingOutline>
+  <avoidCrossingOutline>1</avoidCrossingOutline>
   <maxMovementDetourFactor>3</maxMovementDetourFactor>
   <toolChangeRetractionDistance>12</toolChangeRetractionDistance>
   <toolChangeExtraRestartDistance>-0.5</toolChangeExtraRestartDistance>
@@ -237,7 +236,7 @@
     <topSolidLayers>3</topSolidLayers>
     <bottomSolidLayers>3</bottomSolidLayers>
     <skirtLayers>1</skirtLayers>
-    <infillPercentage>80</infillPercentage>
+    <infillPercentage>78</infillPercentage>
     <supportInfillPercentage>25</supportInfillPercentage>
     <firstLayerHeightPercentage>112</firstLayerHeightPercentage>
     <firstLayerWidthPercentage>190</firstLayerWidthPercentage>
@@ -253,7 +252,7 @@
       <useRetract>1</useRetract>
       <retractionDistance>1</retractionDistance>
       <extraRestartDistance>0</extraRestartDistance>
-      <retractionZLift>0.5</retractionZLift>
+      <retractionZLift>0.8</retractionZLift>
       <retractionSpeed>600</retractionSpeed>
       <useCoasting>0</useCoasting>
       <coastingDistance>0.2</coastingDistance>
@@ -268,6 +267,44 @@
       <stabilizeAtStartup>1</stabilizeAtStartup>
       <setpoint layer="1" temperature="200"/>
       <setpoint layer="3" temperature="190"/>
+    </temperatureController>
+    <temperatureController name="Heated Bed">
+      <temperatureNumber>0</temperatureNumber>
+      <isHeatedBed>1</isHeatedBed>
+      <relayBetweenLayers>0</relayBetweenLayers>
+      <relayBetweenLoops>0</relayBetweenLoops>
+      <stabilizeAtStartup>1</stabilizeAtStartup>
+      <setpoint layer="1" temperature="60"/>
+    </temperatureController>
+    <fanSpeed>
+      <setpoint layer="1" speed="0"/>
+      <setpoint layer="2" speed="100"/>
+    </fanSpeed>
+  </autoConfigureMaterial>
+  <autoConfigureMaterial name="PLA 205">
+    <extruder name="Primary Extruder">
+      <toolheadNumber>0</toolheadNumber>
+      <diameter>0.5</diameter>
+      <autoWidth>0</autoWidth>
+      <width>0.5</width>
+      <extrusionMultiplier>1</extrusionMultiplier>
+      <useRetract>1</useRetract>
+      <retractionDistance>1</retractionDistance>
+      <extraRestartDistance>0</extraRestartDistance>
+      <retractionZLift>0.8</retractionZLift>
+      <retractionSpeed>600</retractionSpeed>
+      <useCoasting>0</useCoasting>
+      <coastingDistance>0.2</coastingDistance>
+      <useWipe>0</useWipe>
+      <wipeDistance>2.5</wipeDistance>
+    </extruder>
+    <temperatureController name="Primary Extruder">
+      <temperatureNumber>0</temperatureNumber>
+      <isHeatedBed>0</isHeatedBed>
+      <relayBetweenLayers>0</relayBetweenLayers>
+      <relayBetweenLoops>0</relayBetweenLoops>
+      <stabilizeAtStartup>1</stabilizeAtStartup>
+      <setpoint layer="1" temperature="205"/>
     </temperatureController>
     <temperatureController name="Heated Bed">
       <temperatureNumber>0</temperatureNumber>
