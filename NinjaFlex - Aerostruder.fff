@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<profile name="NinjaFlex - Aerostruder" version="2018-02-03 12:07:48" app="S3D-Software 4.0.0">
+<profile name="NinjaFlex - Aerostruder" version="2018-02-25 08:40:20" app="S3D-Software 4.0.0">
   <baseProfile>LulzBot TAZ 6 Single</baseProfile>
   <printMaterial>TPU</printMaterial>
-  <printQuality>Standard</printQuality>
+  <printQuality>Fast</printQuality>
   <printExtruders></printExtruders>
   <extruder name="Primary Extruder">
     <toolheadNumber>0</toolheadNumber>
@@ -21,17 +21,17 @@
     <wipeDistance>2.5</wipeDistance>
   </extruder>
   <primaryExtruder>0</primaryExtruder>
-  <layerHeight>0.3</layerHeight>
-  <topSolidLayers>3</topSolidLayers>
-  <bottomSolidLayers>3</bottomSolidLayers>
-  <perimeterOutlines>3</perimeterOutlines>
+  <layerHeight>0.38</layerHeight>
+  <topSolidLayers>2</topSolidLayers>
+  <bottomSolidLayers>2</bottomSolidLayers>
+  <perimeterOutlines>1</perimeterOutlines>
   <printPerimetersInsideOut>1</printPerimetersInsideOut>
   <startPointOption>2</startPointOption>
   <startPointOriginX>0</startPointOriginX>
   <startPointOriginY>0</startPointOriginY>
   <sequentialIslands>0</sequentialIslands>
   <spiralVaseMode>0</spiralVaseMode>
-  <firstLayerHeightPercentage>141</firstLayerHeightPercentage>
+  <firstLayerHeightPercentage>112</firstLayerHeightPercentage>
   <firstLayerWidthPercentage>125</firstLayerWidthPercentage>
   <firstLayerUnderspeed>0.4</firstLayerUnderspeed>
   <useRaft>0</useRaft>
@@ -62,7 +62,7 @@
   <infillExtruder>0</infillExtruder>
   <internalInfillPattern>Full Honeycomb</internalInfillPattern>
   <externalInfillPattern>Rectilinear</externalInfillPattern>
-  <infillPercentage>20</infillPercentage>
+  <infillPercentage>15</infillPercentage>
   <outlineOverlapPercentage>25</outlineOverlapPercentage>
   <infillExtrusionWidthPercentage>200</infillExtrusionWidthPercentage>
   <minInfillLength>1</minInfillLength>
@@ -72,7 +72,7 @@
   <externalInfillAngles>45,-45</externalInfillAngles>
   <generateSupport>0</generateSupport>
   <supportExtruder>0</supportExtruder>
-  <supportInfillPercentage>30</supportInfillPercentage>
+  <supportInfillPercentage>25</supportInfillPercentage>
   <supportExtraInflation>0</supportExtraInflation>
   <supportBaseLayers>0</supportBaseLayers>
   <denseSupportExtruder>0</denseSupportExtruder>
@@ -105,11 +105,7 @@
   </temperatureController>
   <fanSpeed>
     <setpoint layer="1" speed="0"/>
-    <setpoint layer="2" speed="2"/>
-    <setpoint layer="4" speed="8"/>
-    <setpoint layer="6" speed="16"/>
-    <setpoint layer="8" speed="32"/>
-    <setpoint layer="10" speed="60"/>
+    <setpoint layer="2" speed="100"/>
   </fanSpeed>
   <blipFanToFullPower>0</blipFanToFullPower>
   <adjustSpeedForCooling>1</adjustSpeedForCooling>
@@ -118,7 +114,7 @@
   <increaseFanForCooling>0</increaseFanForCooling>
   <minFanLayerTime>15</minFanLayerTime>
   <maxCoolingFanSpeed>100</maxCoolingFanSpeed>
-  <increaseFanForBridging>1</increaseFanForBridging>
+  <increaseFanForBridging>0</increaseFanForBridging>
   <bridgingFanSpeed>100</bridgingFanSpeed>
   <use5D>1</use5D>
   <relativeEdistances>0</relativeEdistances>
@@ -155,7 +151,7 @@
   <layerChangeGcode></layerChangeGcode>
   <retractionGcode></retractionGcode>
   <toolChangeGcode></toolChangeGcode>
-  <endingGcode>M400                                      ; wait for moves to finish,M140 R45                                  ; start bed cooling,M104 S0                                   ; disable hotend,M107                                      ; disable fans,G91                                       ; relative positioning,G1 E-1 F300                               ; filament retraction to release pressure,G1 Z20 E-5 X-20 Y-20 F3000                ; lift up and retract even more filament,G1 E6                                     ; re-prime extruder,M117 Cooling please wait                  ; progress indicator message on LCD,G90                                       ; absolute positioning,G1 Y0 F3000                               ; move to cooling position,M190 R45                                  ; wait for bed to cool down to removal temp,G1 Y280 F3000                             ; present finished print,M140 S0                                   ; keep temperature or cool downs,M84                                       ; disable steppers,G90                                       ; absolute positioning</endingGcode>
+  <endingGcode>M400                                      ; wait for moves to finish,M140 R30                                  ; start bed cooling,M104 S0                                   ; disable hotend,M107                                      ; disable fans,G91                                       ; relative positioning,G1 E-1 F300                               ; filament retraction to release pressure,G1 Z20 E-5 X-20 Y-20 F3000                ; lift up and retract even more filament,G1 E6                                     ; re-prime extruder,M117 Cooling please wait                  ; progress indicator message on LCD,G90                                       ; absolute positioning,G1 Y0 F3000                               ; move to cooling position,M190 R30                                  ; wait for bed to cool down to removal temp,G1 Y280 F3000                             ; present finished print,M140 S0                                   ; keep temperature or cool downs,M84                                       ; disable steppers,G90                                       ; absolute positioning</endingGcode>
   <exportFileFormat>gcode</exportFileFormat>
   <celebration>0</celebration>
   <celebrationSong>Random Song</celebrationSong>
@@ -205,8 +201,8 @@
   <horizontalSizeCompensation>0</horizontalSizeCompensation>
   <autoConfigureQuality name="Fine">
     <layerHeight>0.15</layerHeight>
-    <topSolidLayers>6</topSolidLayers>
-    <bottomSolidLayers>6</bottomSolidLayers>
+    <topSolidLayers>4</topSolidLayers>
+    <bottomSolidLayers>4</bottomSolidLayers>
     <skirtLayers>1</skirtLayers>
     <infillPercentage>30</infillPercentage>
     <supportInfillPercentage>40</supportInfillPercentage>
@@ -377,11 +373,7 @@
     </temperatureController>
     <fanSpeed>
       <setpoint layer="1" speed="0"/>
-      <setpoint layer="2" speed="2"/>
-      <setpoint layer="4" speed="8"/>
-      <setpoint layer="6" speed="16"/>
-      <setpoint layer="8" speed="32"/>
-      <setpoint layer="10" speed="60"/>
+      <setpoint layer="2" speed="100"/>
     </fanSpeed>
   </autoConfigureMaterial>
   <autoConfigureQuality name="Standard">
@@ -397,10 +389,10 @@
   </autoConfigureQuality>
   <autoConfigureQuality name="Fast">
     <layerHeight>0.38</layerHeight>
-    <topSolidLayers>3</topSolidLayers>
-    <bottomSolidLayers>3</bottomSolidLayers>
+    <topSolidLayers>2</topSolidLayers>
+    <bottomSolidLayers>2</bottomSolidLayers>
     <skirtLayers>1</skirtLayers>
-    <infillPercentage>20</infillPercentage>
+    <infillPercentage>15</infillPercentage>
     <supportInfillPercentage>25</supportInfillPercentage>
     <firstLayerHeightPercentage>112</firstLayerHeightPercentage>
     <firstLayerWidthPercentage>125</firstLayerWidthPercentage>

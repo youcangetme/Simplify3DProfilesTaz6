@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<profile name="eSun PLA Pro Aerostruder" version="2018-02-14 23:39:22" app="S3D-Software 4.0.0">
+<profile name="IC3D PLA Aerostruder" version="2018-03-10 22:59:25" app="S3D-Software 4.0.0">
   <baseProfile>LulzBot TAZ 6 Single</baseProfile>
-  <printMaterial>PLA - 210</printMaterial>
+  <printMaterial>PLA 190</printMaterial>
   <printQuality>Fast</printQuality>
   <printExtruders></printExtruders>
   <extruder name="Primary Extruder">
@@ -13,7 +13,7 @@
     <useRetract>1</useRetract>
     <retractionDistance>1</retractionDistance>
     <extraRestartDistance>0</extraRestartDistance>
-    <retractionZLift>0</retractionZLift>
+    <retractionZLift>0.5</retractionZLift>
     <retractionSpeed>600</retractionSpeed>
     <useCoasting>0</useCoasting>
     <coastingDistance>0.2</coastingDistance>
@@ -32,8 +32,8 @@
   <sequentialIslands>0</sequentialIslands>
   <spiralVaseMode>0</spiralVaseMode>
   <firstLayerHeightPercentage>141</firstLayerHeightPercentage>
-  <firstLayerWidthPercentage>160</firstLayerWidthPercentage>
-  <firstLayerUnderspeed>0.4</firstLayerUnderspeed>
+  <firstLayerWidthPercentage>190</firstLayerWidthPercentage>
+  <firstLayerUnderspeed>0.25</firstLayerUnderspeed>
   <useRaft>0</useRaft>
   <raftExtruder>0</raftExtruder>
   <raftTopLayers>3</raftTopLayers>
@@ -92,7 +92,8 @@
     <relayBetweenLayers>0</relayBetweenLayers>
     <relayBetweenLoops>0</relayBetweenLoops>
     <stabilizeAtStartup>1</stabilizeAtStartup>
-    <setpoint layer="1" temperature="210"/>
+    <setpoint layer="1" temperature="200"/>
+    <setpoint layer="3" temperature="190"/>
   </temperatureController>
   <temperatureController name="Heated Bed">
     <temperatureNumber>0</temperatureNumber>
@@ -124,7 +125,7 @@
   <applyToolheadOffsets>0</applyToolheadOffsets>
   <gcodeXoffset>0</gcodeXoffset>
   <gcodeYoffset>0</gcodeYoffset>
-  <gcodeZoffset>0</gcodeZoffset>
+  <gcodeZoffset>-0.1</gcodeZoffset>
   <overrideMachineDefinition>1</overrideMachineDefinition>
   <machineTypeOverride>0</machineTypeOverride>
   <strokeXoverride>280</strokeXoverride>
@@ -146,7 +147,7 @@
   <baudRateOverride>250000</baudRateOverride>
   <overridePrinterModels>1</overridePrinterModels>
   <printerModelsOverride>LulzBot_TAZ6.stl</printerModelsOverride>
-  <startingGcode>;This G-Code has been generated specifically for the LulzBot TAZ 6 with Aerosturder,G26 ; clear potential 'probe fail' condition,G21 ; set units to Millimetres,M107 ; disable fans,G90 ; absolute positioning,M82 ; set extruder to absolute mode,G92 E0 ; set extruder position to 0,M140 S[bed0_temperature] ; start bed heating up,G28 XY ; home X and Y,G1 X-19 Y258 F1000 ; move to safe homing position,M109 R160 ; soften filament before homing Z,G28 Z ; home Z,G1 E-15 F100 ; retract filament,M109 R160 ; wait for extruder to reach wiping temp,G1 X-15 Y100 F3000 ; move above wiper pad,G1 Z1 ; push nozzle into wiper,G1 X-17 Y95 F1000 ; slow wipe,G1 X-17 Y90 F1000 ; slow wipe,G1 X-17 Y85 F1000 ; slow wipe,G1 X-15 Y90 F1000 ; slow wipe,G1 X-17 Y80 F1000 ; slow wipe,G1 X-15 Y95 F1000 ; slow wipe,G1 X-17 Y75 F2000 ; fast wipe,G1 X-15 Y65 F2000 ; fast wipe,G1 X-17 Y70 F2000 ; fast wipe,G1 X-15 Y60 F2000 ; fast wipe,G1 X-17 Y55 F2000 ; fast wipe,G1 X-15 Y50 F2000 ; fast wipe,G1 X-17 Y40 F2000 ; fast wipe,G1 X-15 Y45 F2000 ; fast wipe,G1 X-17 Y35 F2000 ; fast wipe,G1 X-15 Y40 F2000 ; fast wipe,G1 X-17 Y70 F2000 ; fast wipe,G1 X-15 Y30 Z2 F2000 ; fast wipe,G1 X-17 Y35 F2000 ; fast wipe,G1 X-15 Y25 F2000 ; fast wipe,G1 X-17 Y30 F2000 ; fast wipe,G1 X-15 Y25 Z1.5 F1000 ; slow wipe,G1 X-17 Y23 F1000 ; slow wipe,G1 Z10 ; raise extruder,M109 R160 ; wait for extruder to reach probe temp,G1 X-9 Y-9 ; move above first probe point,M204 S100 ; set probing acceleration,G29 ; start auto-leveling sequence,M204 S500 ; restore standard acceleration,G1 X0 Y0 Z15 F5000 ; move up off last probe point,G4 S1 ; pause,M400 ; wait for moves to finish,M117 Heating... ; progress indicator message on LCD,M109 R[extruder0_temperature] ; wait for extruder to reach printing temp,M190 S[bed0_temperature] ; wait for bed to reach printing temp,G1 Z2 E0 F75 ; prime tiny bit of filament into the nozzle,M117 TAZ 6 Printing... ; progress indicator message on LCD</startingGcode>
+  <startingGcode>;This G-Code has been generated specifically for the LulzBot TAZ 6 with Aerosturder,G26 ; clear potential 'probe fail' condition,G21 ; set units to Millimetres,M107 ; disable fans,G90 ; absolute positioning,M82 ; set extruder to absolute mode,G92 E0 ; set extruder position to 0,M140 S[bed0_temperature] ; start bed heating up,G28 XY ; home X and Y,G1 X-19 Y258 F1000 ; move to safe homing position,M109 R140 ; soften filament before homing Z,G28 Z ; home Z,G1 E-15 F100 ; retract filament,M109 R140 ; wait for extruder to reach wiping temp,G1 X-15 Y100 F3000 ; move above wiper pad,G1 Z1 ; push nozzle into wiper,G1 X-17 Y95 F1000 ; slow wipe,G1 X-17 Y90 F1000 ; slow wipe,G1 X-17 Y85 F1000 ; slow wipe,G1 X-15 Y90 F1000 ; slow wipe,G1 X-17 Y80 F1000 ; slow wipe,G1 X-15 Y95 F1000 ; slow wipe,G1 X-17 Y75 F2000 ; fast wipe,G1 X-15 Y65 F2000 ; fast wipe,G1 X-17 Y70 F2000 ; fast wipe,G1 X-15 Y60 F2000 ; fast wipe,G1 X-17 Y55 F2000 ; fast wipe,G1 X-15 Y50 F2000 ; fast wipe,G1 X-17 Y40 F2000 ; fast wipe,G1 X-15 Y45 F2000 ; fast wipe,G1 X-17 Y35 F2000 ; fast wipe,G1 X-15 Y40 F2000 ; fast wipe,G1 X-17 Y70 F2000 ; fast wipe,G1 X-15 Y30 Z2 F2000 ; fast wipe,G1 X-17 Y35 F2000 ; fast wipe,G1 X-15 Y25 F2000 ; fast wipe,G1 X-17 Y30 F2000 ; fast wipe,G1 X-15 Y25 Z1.5 F1000 ; slow wipe,G1 X-17 Y23 F1000 ; slow wipe,G1 Z10 ; raise extruder,M109 R140 ; wait for extruder to reach probe temp,G1 X-9 Y-9 ; move above first probe point,M204 S100 ; set probing acceleration,G29 ; start auto-leveling sequence,M204 S500 ; restore standard acceleration,G1 X0 Y0 Z15 F5000 ; move up off last probe point,G4 S1 ; pause,M400 ; wait for moves to finish,M117 Heating... ; progress indicator message on LCD,M109 R[extruder0_temperature] ; wait for extruder to reach printing temp,M190 S[bed0_temperature] ; wait for bed to reach printing temp,G1 Z2 E0 F75 ; prime tiny bit of filament into the nozzle,M117 TAZ 6 Printing... ; progress indicator message on LCD</startingGcode>
   <layerChangeGcode></layerChangeGcode>
   <retractionGcode></retractionGcode>
   <toolChangeGcode></toolChangeGcode>
@@ -206,8 +207,8 @@
     <infillPercentage>15</infillPercentage>
     <supportInfillPercentage>30</supportInfillPercentage>
     <firstLayerHeightPercentage>141</firstLayerHeightPercentage>
-    <firstLayerWidthPercentage>160</firstLayerWidthPercentage>
-    <firstLayerUnderspeed>0.4</firstLayerUnderspeed>
+    <firstLayerWidthPercentage>190</firstLayerWidthPercentage>
+    <firstLayerUnderspeed>0.25</firstLayerUnderspeed>
   </autoConfigureQuality>
   <autoConfigureQuality name="Standard">
     <layerHeight>0.2</layerHeight>
@@ -217,8 +218,8 @@
     <infillPercentage>20</infillPercentage>
     <supportInfillPercentage>30</supportInfillPercentage>
     <firstLayerHeightPercentage>213</firstLayerHeightPercentage>
-    <firstLayerWidthPercentage>160</firstLayerWidthPercentage>
-    <firstLayerUnderspeed>0.4</firstLayerUnderspeed>
+    <firstLayerWidthPercentage>190</firstLayerWidthPercentage>
+    <firstLayerUnderspeed>0.25</firstLayerUnderspeed>
   </autoConfigureQuality>
   <autoConfigureQuality name="Fine">
     <layerHeight>0.1</layerHeight>
@@ -228,64 +229,21 @@
     <infillPercentage>30</infillPercentage>
     <supportInfillPercentage>40</supportInfillPercentage>
     <firstLayerHeightPercentage>425</firstLayerHeightPercentage>
-    <firstLayerWidthPercentage>160</firstLayerWidthPercentage>
-    <firstLayerUnderspeed>0.4</firstLayerUnderspeed>
+    <firstLayerWidthPercentage>190</firstLayerWidthPercentage>
+    <firstLayerUnderspeed>0.25</firstLayerUnderspeed>
   </autoConfigureQuality>
   <autoConfigureQuality name="Lulzbot Res">
     <layerHeight>0.38</layerHeight>
     <topSolidLayers>3</topSolidLayers>
     <bottomSolidLayers>3</bottomSolidLayers>
     <skirtLayers>1</skirtLayers>
-    <infillPercentage>78</infillPercentage>
+    <infillPercentage>80</infillPercentage>
     <supportInfillPercentage>25</supportInfillPercentage>
     <firstLayerHeightPercentage>112</firstLayerHeightPercentage>
-    <firstLayerWidthPercentage>160</firstLayerWidthPercentage>
-    <firstLayerUnderspeed>0.4</firstLayerUnderspeed>
+    <firstLayerWidthPercentage>190</firstLayerWidthPercentage>
+    <firstLayerUnderspeed>0.25</firstLayerUnderspeed>
   </autoConfigureQuality>
-  <autoConfigureMaterial name="PLA - Low Temp">
-    <extruder name="Primary Extruder">
-      <toolheadNumber>0</toolheadNumber>
-      <diameter>0.5</diameter>
-      <autoWidth>0</autoWidth>
-      <width>0.5</width>
-      <extrusionMultiplier>1</extrusionMultiplier>
-      <useRetract>1</useRetract>
-      <retractionDistance>1.5</retractionDistance>
-      <extraRestartDistance>0</extraRestartDistance>
-      <retractionZLift>0</retractionZLift>
-      <retractionSpeed>1800</retractionSpeed>
-      <useCoasting>0</useCoasting>
-      <coastingDistance>0.2</coastingDistance>
-      <useWipe>0</useWipe>
-      <wipeDistance>2.5</wipeDistance>
-    </extruder>
-    <temperatureController name="Primary Extruder">
-      <temperatureNumber>0</temperatureNumber>
-      <isHeatedBed>0</isHeatedBed>
-      <relayBetweenLayers>0</relayBetweenLayers>
-      <relayBetweenLoops>0</relayBetweenLoops>
-      <stabilizeAtStartup>1</stabilizeAtStartup>
-      <setpoint layer="1" temperature="205"/>
-    </temperatureController>
-    <temperatureController name="Heated Bed">
-      <temperatureNumber>0</temperatureNumber>
-      <isHeatedBed>1</isHeatedBed>
-      <relayBetweenLayers>0</relayBetweenLayers>
-      <relayBetweenLoops>0</relayBetweenLoops>
-      <stabilizeAtStartup>1</stabilizeAtStartup>
-      <setpoint layer="1" temperature="60"/>
-    </temperatureController>
-    <fanSpeed>
-      <setpoint layer="1" speed="0"/>
-      <setpoint layer="2" speed="2"/>
-      <setpoint layer="4" speed="8"/>
-      <setpoint layer="8" speed="16"/>
-      <setpoint layer="16" speed="32"/>
-      <setpoint layer="32" speed="64"/>
-      <setpoint layer="64" speed="80"/>
-    </fanSpeed>
-  </autoConfigureMaterial>
-  <autoConfigureMaterial name="PLA - Mid Temp">
+  <autoConfigureMaterial name="PLA 190">
     <extruder name="Primary Extruder">
       <toolheadNumber>0</toolheadNumber>
       <diameter>0.5</diameter>
@@ -295,7 +253,7 @@
       <useRetract>1</useRetract>
       <retractionDistance>1</retractionDistance>
       <extraRestartDistance>0</extraRestartDistance>
-      <retractionZLift>0</retractionZLift>
+      <retractionZLift>0.5</retractionZLift>
       <retractionSpeed>600</retractionSpeed>
       <useCoasting>0</useCoasting>
       <coastingDistance>0.2</coastingDistance>
@@ -308,49 +266,8 @@
       <relayBetweenLayers>0</relayBetweenLayers>
       <relayBetweenLoops>0</relayBetweenLoops>
       <stabilizeAtStartup>1</stabilizeAtStartup>
-      <setpoint layer="1" temperature="210"/>
-    </temperatureController>
-    <temperatureController name="Heated Bed">
-      <temperatureNumber>0</temperatureNumber>
-      <isHeatedBed>1</isHeatedBed>
-      <relayBetweenLayers>0</relayBetweenLayers>
-      <relayBetweenLoops>0</relayBetweenLoops>
-      <stabilizeAtStartup>1</stabilizeAtStartup>
-      <setpoint layer="1" temperature="60"/>
-    </temperatureController>
-    <fanSpeed>
-      <setpoint layer="1" speed="0"/>
-      <setpoint layer="2" speed="2"/>
-      <setpoint layer="4" speed="8"/>
-      <setpoint layer="6" speed="16"/>
-      <setpoint layer="8" speed="32"/>
-      <setpoint layer="10" speed="80"/>
-    </fanSpeed>
-  </autoConfigureMaterial>
-  <autoConfigureMaterial name="PLA - 210">
-    <extruder name="Primary Extruder">
-      <toolheadNumber>0</toolheadNumber>
-      <diameter>0.5</diameter>
-      <autoWidth>0</autoWidth>
-      <width>0.5</width>
-      <extrusionMultiplier>1</extrusionMultiplier>
-      <useRetract>1</useRetract>
-      <retractionDistance>1</retractionDistance>
-      <extraRestartDistance>0</extraRestartDistance>
-      <retractionZLift>0</retractionZLift>
-      <retractionSpeed>600</retractionSpeed>
-      <useCoasting>0</useCoasting>
-      <coastingDistance>0.2</coastingDistance>
-      <useWipe>0</useWipe>
-      <wipeDistance>2.5</wipeDistance>
-    </extruder>
-    <temperatureController name="Primary Extruder">
-      <temperatureNumber>0</temperatureNumber>
-      <isHeatedBed>0</isHeatedBed>
-      <relayBetweenLayers>0</relayBetweenLayers>
-      <relayBetweenLoops>0</relayBetweenLoops>
-      <stabilizeAtStartup>1</stabilizeAtStartup>
-      <setpoint layer="1" temperature="210"/>
+      <setpoint layer="1" temperature="200"/>
+      <setpoint layer="3" temperature="190"/>
     </temperatureController>
     <temperatureController name="Heated Bed">
       <temperatureNumber>0</temperatureNumber>
