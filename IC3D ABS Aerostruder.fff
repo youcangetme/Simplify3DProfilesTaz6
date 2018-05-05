@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<profile name="IC3D ABS Aerostruder" version="2018-03-13 16:32:37" app="S3D-Software 4.0.0">
+<profile name="IC3D ABS Aerostruder" version="2018-03-26 16:58:09" app="S3D-Software 4.0.0">
   <baseProfile>LulzBot TAZ 6 Single</baseProfile>
   <printMaterial>ABS</printMaterial>
   <printQuality>Lulzbot Res</printQuality>
@@ -101,6 +101,7 @@
     <relayBetweenLoops>0</relayBetweenLoops>
     <stabilizeAtStartup>0</stabilizeAtStartup>
     <setpoint layer="1" temperature="105"/>
+    <setpoint layer="2" temperature="80"/>
   </temperatureController>
   <fanSpeed>
     <setpoint layer="1" speed="0"/>
@@ -123,7 +124,7 @@
   <applyToolheadOffsets>0</applyToolheadOffsets>
   <gcodeXoffset>0</gcodeXoffset>
   <gcodeYoffset>0</gcodeYoffset>
-  <gcodeZoffset>-0.1</gcodeZoffset>
+  <gcodeZoffset>0</gcodeZoffset>
   <overrideMachineDefinition>1</overrideMachineDefinition>
   <machineTypeOverride>0</machineTypeOverride>
   <strokeXoverride>280</strokeXoverride>
@@ -229,6 +230,7 @@
       <relayBetweenLoops>0</relayBetweenLoops>
       <stabilizeAtStartup>0</stabilizeAtStartup>
       <setpoint layer="1" temperature="105"/>
+      <setpoint layer="2" temperature="80"/>
     </temperatureController>
   </autoConfigureMaterial>
   <autoConfigureQuality name="Fast">
