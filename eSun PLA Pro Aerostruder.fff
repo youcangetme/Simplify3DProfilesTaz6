@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<profile name="eSun PLA Pro Aerostruder" version="2018-02-14 23:39:22" app="S3D-Software 4.0.0">
+<profile name="eSun PLA Pro Aerostruder" version="2018-05-11 14:30:02" app="S3D-Software 4.0.0">
   <baseProfile>LulzBot TAZ 6 Single</baseProfile>
   <printMaterial>PLA - 210</printMaterial>
   <printQuality>Fast</printQuality>
@@ -185,12 +185,12 @@
   <retractionMinTravel>3</retractionMinTravel>
   <retractWhileWiping>0</retractWhileWiping>
   <onlyWipeOutlines>1</onlyWipeOutlines>
-  <avoidCrossingOutline>0</avoidCrossingOutline>
+  <avoidCrossingOutline>1</avoidCrossingOutline>
   <maxMovementDetourFactor>3</maxMovementDetourFactor>
   <toolChangeRetractionDistance>12</toolChangeRetractionDistance>
   <toolChangeExtraRestartDistance>-0.5</toolChangeExtraRestartDistance>
   <toolChangeRetractionSpeed>600</toolChangeRetractionSpeed>
-  <externalThinWallType>1</externalThinWallType>
+  <externalThinWallType>0</externalThinWallType>
   <internalThinWallType>1</internalThinWallType>
   <thinWallAllowedOverlapPercentage>10</thinWallAllowedOverlapPercentage>
   <singleExtrusionMinLength>1</singleExtrusionMinLength>
