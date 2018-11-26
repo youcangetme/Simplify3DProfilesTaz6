@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<profile name="PETG - Aerostruder" version="2018-05-05 11:37:02" app="S3D-Software 4.0.0">
+<profile name="PETG - Aerostruder" version="2018-05-05 11:37:02" app="S3D-Software 4.0.1">
   <baseProfile>LulzBot TAZ 6 Single</baseProfile>
   <printMaterial>PETG - 245</printMaterial>
   <printQuality>Fast</printQuality>

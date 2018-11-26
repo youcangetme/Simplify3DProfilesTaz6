@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<profile name="IC3D PLA Aerostruder" version="2018-04-14 17:49:45" app="S3D-Software 4.0.0">
+<profile name="IC3D PLA Aerostruder" version="2018-04-14 17:49:45" app="S3D-Software 4.0.1">
   <baseProfile>LulzBot TAZ 6 Single</baseProfile>
   <printMaterial>PLA 205</printMaterial>
   <printQuality>Fast</printQuality>
