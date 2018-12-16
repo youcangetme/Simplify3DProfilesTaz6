@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<profile name="eSun PLA Pro Aerostruder" version="2018-12-12 09:30:25" app="S3D-Software 4.1.1">
+<profile name="eSun PLA Pro Aerostruder" version="2018-12-16 18:09:50" app="S3D-Software 4.1.1">
   <baseProfile>LulzBot TAZ 6 Single</baseProfile>
   <printMaterial>PLA - Mid Temp</printMaterial>
-  <printQuality>Lulzbot Res</printQuality>
+  <printQuality>Fast</printQuality>
   <printExtruders></printExtruders>
   <extruder name="Primary Extruder">
     <toolheadNumber>0</toolheadNumber>
@@ -13,7 +13,7 @@
     <useRetract>1</useRetract>
     <retractionDistance>1</retractionDistance>
     <extraRestartDistance>0</extraRestartDistance>
-    <retractionZLift>0</retractionZLift>
+    <retractionZLift>1.2</retractionZLift>
     <retractionSpeed>600</retractionSpeed>
     <useCoasting>0</useCoasting>
     <coastingDistance>0.2</coastingDistance>
@@ -62,7 +62,7 @@
   <infillExtruder>0</infillExtruder>
   <internalInfillPattern>Full Honeycomb</internalInfillPattern>
   <externalInfillPattern>Rectilinear</externalInfillPattern>
-  <infillPercentage>78</infillPercentage>
+  <infillPercentage>15</infillPercentage>
   <outlineOverlapPercentage>25</outlineOverlapPercentage>
   <infillExtrusionWidthPercentage>200</infillExtrusionWidthPercentage>
   <minInfillLength>1</minInfillLength>
@@ -72,7 +72,7 @@
   <externalInfillAngles>45,-45</externalInfillAngles>
   <generateSupport>0</generateSupport>
   <supportExtruder>0</supportExtruder>
-  <supportInfillPercentage>25</supportInfillPercentage>
+  <supportInfillPercentage>30</supportInfillPercentage>
   <supportExtraInflation>0</supportExtraInflation>
   <supportBaseLayers>0</supportBaseLayers>
   <denseSupportExtruder>0</denseSupportExtruder>
@@ -100,11 +100,7 @@
   </temperatureController>
   <fanSpeed>
     <setpoint layer="1" speed="0"/>
-    <setpoint layer="2" speed="2"/>
-    <setpoint layer="4" speed="8"/>
-    <setpoint layer="6" speed="16"/>
-    <setpoint layer="8" speed="32"/>
-    <setpoint layer="10" speed="80"/>
+    <setpoint layer="2" speed="100"/>
   </fanSpeed>
   <blipFanToFullPower>0</blipFanToFullPower>
   <adjustSpeedForCooling>1</adjustSpeedForCooling>
@@ -179,12 +175,12 @@
   <diaphragmLayerInterval>20</diaphragmLayerInterval>
   <robustSlicing>1</robustSlicing>
   <mergeAllIntoSolid>0</mergeAllIntoSolid>
-  <onlyRetractWhenCrossingOutline>1</onlyRetractWhenCrossingOutline>
+  <onlyRetractWhenCrossingOutline>0</onlyRetractWhenCrossingOutline>
   <retractBetweenLayers>1</retractBetweenLayers>
-  <useRetractionMinTravel>0</useRetractionMinTravel>
+  <useRetractionMinTravel>1</useRetractionMinTravel>
   <retractionMinTravel>3</retractionMinTravel>
   <retractWhileWiping>0</retractWhileWiping>
-  <onlyWipeOutlines>1</onlyWipeOutlines>
+  <onlyWipeOutlines>0</onlyWipeOutlines>
   <avoidCrossingOutline>1</avoidCrossingOutline>
   <maxMovementDetourFactor>3</maxMovementDetourFactor>
   <toolChangeRetractionDistance>12</toolChangeRetractionDistance>
@@ -199,46 +195,35 @@
   <singleExtrusionEndpointExtension>0.2</singleExtrusionEndpointExtension>
   <horizontalSizeCompensation>0</horizontalSizeCompensation>
   <autoConfigureQuality name="Fast">
-    <layerHeight>0.3</layerHeight>
+    <layerHeight>0.38</layerHeight>
     <topSolidLayers>3</topSolidLayers>
     <bottomSolidLayers>3</bottomSolidLayers>
     <skirtLayers>1</skirtLayers>
     <infillPercentage>15</infillPercentage>
     <supportInfillPercentage>30</supportInfillPercentage>
-    <firstLayerHeightPercentage>141</firstLayerHeightPercentage>
+    <firstLayerHeightPercentage>112</firstLayerHeightPercentage>
     <firstLayerWidthPercentage>160</firstLayerWidthPercentage>
     <firstLayerUnderspeed>0.4</firstLayerUnderspeed>
   </autoConfigureQuality>
   <autoConfigureQuality name="Standard">
-    <layerHeight>0.2</layerHeight>
+    <layerHeight>0.28</layerHeight>
     <topSolidLayers>3</topSolidLayers>
     <bottomSolidLayers>3</bottomSolidLayers>
     <skirtLayers>1</skirtLayers>
     <infillPercentage>20</infillPercentage>
     <supportInfillPercentage>30</supportInfillPercentage>
-    <firstLayerHeightPercentage>213</firstLayerHeightPercentage>
+    <firstLayerHeightPercentage>152</firstLayerHeightPercentage>
     <firstLayerWidthPercentage>160</firstLayerWidthPercentage>
     <firstLayerUnderspeed>0.4</firstLayerUnderspeed>
   </autoConfigureQuality>
   <autoConfigureQuality name="Fine">
-    <layerHeight>0.1</layerHeight>
+    <layerHeight>0.18</layerHeight>
     <topSolidLayers>4</topSolidLayers>
     <bottomSolidLayers>4</bottomSolidLayers>
     <skirtLayers>1</skirtLayers>
     <infillPercentage>30</infillPercentage>
     <supportInfillPercentage>40</supportInfillPercentage>
-    <firstLayerHeightPercentage>425</firstLayerHeightPercentage>
-    <firstLayerWidthPercentage>160</firstLayerWidthPercentage>
-    <firstLayerUnderspeed>0.4</firstLayerUnderspeed>
-  </autoConfigureQuality>
-  <autoConfigureQuality name="Lulzbot Res">
-    <layerHeight>0.38</layerHeight>
-    <topSolidLayers>3</topSolidLayers>
-    <bottomSolidLayers>3</bottomSolidLayers>
-    <skirtLayers>1</skirtLayers>
-    <infillPercentage>78</infillPercentage>
-    <supportInfillPercentage>25</supportInfillPercentage>
-    <firstLayerHeightPercentage>112</firstLayerHeightPercentage>
+    <firstLayerHeightPercentage>235</firstLayerHeightPercentage>
     <firstLayerWidthPercentage>160</firstLayerWidthPercentage>
     <firstLayerUnderspeed>0.4</firstLayerUnderspeed>
   </autoConfigureQuality>
@@ -291,7 +276,7 @@
       <useRetract>1</useRetract>
       <retractionDistance>1</retractionDistance>
       <extraRestartDistance>0</extraRestartDistance>
-      <retractionZLift>0</retractionZLift>
+      <retractionZLift>1.2</retractionZLift>
       <retractionSpeed>600</retractionSpeed>
       <useCoasting>0</useCoasting>
       <coastingDistance>0.2</coastingDistance>
@@ -312,11 +297,7 @@
     </temperatureController>
     <fanSpeed>
       <setpoint layer="1" speed="0"/>
-      <setpoint layer="2" speed="2"/>
-      <setpoint layer="4" speed="8"/>
-      <setpoint layer="6" speed="16"/>
-      <setpoint layer="8" speed="32"/>
-      <setpoint layer="10" speed="80"/>
+      <setpoint layer="2" speed="100"/>
     </fanSpeed>
   </autoConfigureMaterial>
   <autoConfigureMaterial name="PLA- High Temp">
