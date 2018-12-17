@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<profile name="PETG - Aerostruder" version="2018-12-16 18:11:00" app="S3D-Software 4.1.1">
+<profile name="PETG - Aerostruder" version="2018-12-16 20:50:00" app="S3D-Software 4.1.1">
   <baseProfile>LulzBot TAZ 6 Single</baseProfile>
   <printMaterial>PETG - 245</printMaterial>
   <printQuality>Fast</printQuality>
@@ -13,7 +13,7 @@
     <useRetract>1</useRetract>
     <retractionDistance>1</retractionDistance>
     <extraRestartDistance>0</extraRestartDistance>
-    <retractionZLift>1.2</retractionZLift>
+    <retractionZLift>1.5</retractionZLift>
     <retractionSpeed>600</retractionSpeed>
     <useCoasting>0</useCoasting>
     <coastingDistance>0.2</coastingDistance>
@@ -239,7 +239,7 @@
       <useRetract>1</useRetract>
       <retractionDistance>1</retractionDistance>
       <extraRestartDistance>0</extraRestartDistance>
-      <retractionZLift>1.2</retractionZLift>
+      <retractionZLift>1.5</retractionZLift>
       <retractionSpeed>600</retractionSpeed>
       <useCoasting>0</useCoasting>
       <coastingDistance>0.2</coastingDistance>
