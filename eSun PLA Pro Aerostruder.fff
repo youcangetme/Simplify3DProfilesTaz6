@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<profile name="eSun PLA Pro Aerostruder" version="2018-12-16 18:09:50" app="S3D-Software 4.1.1">
+<profile name="eSun PLA Pro Aerostruder" version="2019-01-19 12:44:10" app="S3D-Software 4.1.1">
   <baseProfile>LulzBot TAZ 6 Single</baseProfile>
   <printMaterial>PLA - Mid Temp</printMaterial>
   <printQuality>Fast</printQuality>
@@ -32,8 +32,8 @@
   <sequentialIslands>0</sequentialIslands>
   <spiralVaseMode>0</spiralVaseMode>
   <firstLayerHeightPercentage>112</firstLayerHeightPercentage>
-  <firstLayerWidthPercentage>160</firstLayerWidthPercentage>
-  <firstLayerUnderspeed>0.4</firstLayerUnderspeed>
+  <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
+  <firstLayerUnderspeed>0.25</firstLayerUnderspeed>
   <useRaft>0</useRaft>
   <raftExtruder>0</raftExtruder>
   <raftTopLayers>3</raftTopLayers>
@@ -146,7 +146,7 @@
   <layerChangeGcode></layerChangeGcode>
   <retractionGcode></retractionGcode>
   <toolChangeGcode></toolChangeGcode>
-  <endingGcode>M400                                      ; wait for moves to finish,M140 S40                                  ; start bed cooling,M104 S0                                   ; disable hotend,M107                                      ; disable fans,G91                                       ; relative positioning,G1 E-1 F300                               ; filament retraction to release pressure,G1 Z20 E-5 X-20 Y-20 F3000                ; lift up and retract even more filament,G1 E6                                     ; re-prime extruder,M117 Cooling please wait                  ; progress indicator message on LCD,G90                                       ; absolute positioning,G1 Y0 F3000                               ; move to cooling position,M190 R40                                  ; wait for bed to cool down to removal temp,G1 Y280 F3000                             ; present finished print,M140 S0                                   ; keep temperature or cool downs,M77                                       ; stop GLCD timer,M84                                       ; disable steppers,G90                                       ; absolute positioning,M117 Print Complete.                      ; print complete message</endingGcode>
+  <endingGcode>M400                                      ; wait for moves to finish,M140 S40                                  ; start bed cooling,M104 S0                                   ; disable hotend,M107                                      ; disable fans,G91                                       ; relative positioning,G1 E-1 F300                               ; filament retraction to release pressure,G1 Z20 E-5 X-20 Y-20 F3000                ; lift up and retract even more filament,G1 E6                                     ; re-prime extruder,M117 Cooling please wait                  ; progress indicator message on LCD,G90                                       ; absolute positioning,G1 Y0 F3000                               ; move to cooling position,M190 R45                                  ; wait for bed to cool down to removal temp,G1 Y280 F3000                             ; present finished print,M140 S0                                   ; keep temperature or cool downs,M77                                       ; stop GLCD timer,M84                                       ; disable steppers,G90                                       ; absolute positioning,M117 Print Complete.                      ; print complete message</endingGcode>
   <exportFileFormat>gcode</exportFileFormat>
   <celebration>0</celebration>
   <celebrationSong>Random Song</celebrationSong>
@@ -180,7 +180,7 @@
   <useRetractionMinTravel>1</useRetractionMinTravel>
   <retractionMinTravel>3</retractionMinTravel>
   <retractWhileWiping>0</retractWhileWiping>
-  <onlyWipeOutlines>0</onlyWipeOutlines>
+  <onlyWipeOutlines>1</onlyWipeOutlines>
   <avoidCrossingOutline>1</avoidCrossingOutline>
   <maxMovementDetourFactor>3</maxMovementDetourFactor>
   <toolChangeRetractionDistance>12</toolChangeRetractionDistance>
@@ -202,8 +202,8 @@
     <infillPercentage>15</infillPercentage>
     <supportInfillPercentage>30</supportInfillPercentage>
     <firstLayerHeightPercentage>112</firstLayerHeightPercentage>
-    <firstLayerWidthPercentage>160</firstLayerWidthPercentage>
-    <firstLayerUnderspeed>0.4</firstLayerUnderspeed>
+    <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
+    <firstLayerUnderspeed>0.25</firstLayerUnderspeed>
   </autoConfigureQuality>
   <autoConfigureQuality name="Standard">
     <layerHeight>0.28</layerHeight>
@@ -213,8 +213,8 @@
     <infillPercentage>20</infillPercentage>
     <supportInfillPercentage>30</supportInfillPercentage>
     <firstLayerHeightPercentage>152</firstLayerHeightPercentage>
-    <firstLayerWidthPercentage>160</firstLayerWidthPercentage>
-    <firstLayerUnderspeed>0.4</firstLayerUnderspeed>
+    <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
+    <firstLayerUnderspeed>0.25</firstLayerUnderspeed>
   </autoConfigureQuality>
   <autoConfigureQuality name="Fine">
     <layerHeight>0.18</layerHeight>
@@ -224,8 +224,8 @@
     <infillPercentage>30</infillPercentage>
     <supportInfillPercentage>40</supportInfillPercentage>
     <firstLayerHeightPercentage>235</firstLayerHeightPercentage>
-    <firstLayerWidthPercentage>160</firstLayerWidthPercentage>
-    <firstLayerUnderspeed>0.4</firstLayerUnderspeed>
+    <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
+    <firstLayerUnderspeed>0.25</firstLayerUnderspeed>
   </autoConfigureQuality>
   <autoConfigureMaterial name="PLA - Low Temp">
     <extruder name="Primary Extruder">
