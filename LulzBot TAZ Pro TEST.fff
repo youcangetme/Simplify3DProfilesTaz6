@@ -1,0 +1,578 @@
+<?xml version="1.0"?>
+<profile name="LulzBot TAZ Pro TEST" version="2019-07-12 14:38:19" app="S3D-Software 4.1.2">
+  <baseProfile>LulzBot TAZ 6 Dual V3 Upgrade(2) (modified)</baseProfile>
+  <printMaterial>PLA</printMaterial>
+  <printQuality>Medium</printQuality>
+  <printExtruders>Both Extruders</printExtruders>
+  <extruder name="Left Extruder">
+    <toolheadNumber>0</toolheadNumber>
+    <diameter>0.5</diameter>
+    <autoWidth>0</autoWidth>
+    <width>0.5</width>
+    <extrusionMultiplier>1</extrusionMultiplier>
+    <useRetract>1</useRetract>
+    <retractionDistance>1.5</retractionDistance>
+    <extraRestartDistance>0</extraRestartDistance>
+    <retractionZLift>0</retractionZLift>
+    <retractionSpeed>1800</retractionSpeed>
+    <useCoasting>0</useCoasting>
+    <coastingDistance>0.2</coastingDistance>
+    <useWipe>0</useWipe>
+    <wipeDistance>5</wipeDistance>
+  </extruder>
+  <extruder name="Right Extruder">
+    <toolheadNumber>1</toolheadNumber>
+    <diameter>0.5</diameter>
+    <autoWidth>0</autoWidth>
+    <width>0.5</width>
+    <extrusionMultiplier>1</extrusionMultiplier>
+    <useRetract>1</useRetract>
+    <retractionDistance>1.5</retractionDistance>
+    <extraRestartDistance>0</extraRestartDistance>
+    <retractionZLift>0</retractionZLift>
+    <retractionSpeed>1800</retractionSpeed>
+    <useCoasting>0</useCoasting>
+    <coastingDistance>0.2</coastingDistance>
+    <useWipe>0</useWipe>
+    <wipeDistance>5</wipeDistance>
+  </extruder>
+  <primaryExtruder>1</primaryExtruder>
+  <layerHeight>0.3</layerHeight>
+  <topSolidLayers>3</topSolidLayers>
+  <bottomSolidLayers>3</bottomSolidLayers>
+  <perimeterOutlines>3</perimeterOutlines>
+  <printPerimetersInsideOut>1</printPerimetersInsideOut>
+  <startPointOption>2</startPointOption>
+  <startPointOriginX>0</startPointOriginX>
+  <startPointOriginY>0</startPointOriginY>
+  <sequentialIslands>0</sequentialIslands>
+  <spiralVaseMode>0</spiralVaseMode>
+  <firstLayerHeightPercentage>133</firstLayerHeightPercentage>
+  <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
+  <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
+  <useRaft>0</useRaft>
+  <raftExtruder>0</raftExtruder>
+  <raftTopLayers>3</raftTopLayers>
+  <raftBaseLayers>2</raftBaseLayers>
+  <raftOffset>3</raftOffset>
+  <raftSeparationDistance>0.14</raftSeparationDistance>
+  <raftTopInfill>100</raftTopInfill>
+  <aboveRaftSpeedMultiplier>0.3</aboveRaftSpeedMultiplier>
+  <useSkirt>1</useSkirt>
+  <skirtExtruder>999</skirtExtruder>
+  <skirtLayers>1</skirtLayers>
+  <skirtOutlines>2</skirtOutlines>
+  <skirtOffset>6</skirtOffset>
+  <usePrimePillar>0</usePrimePillar>
+  <primePillarExtruder>999</primePillarExtruder>
+  <primePillarWidth>12</primePillarWidth>
+  <primePillarLocation>7</primePillarLocation>
+  <primePillarSpeedMultiplier>1</primePillarSpeedMultiplier>
+  <useOozeShield>0</useOozeShield>
+  <oozeShieldExtruder>999</oozeShieldExtruder>
+  <oozeShieldOffset>2</oozeShieldOffset>
+  <oozeShieldOutlines>1</oozeShieldOutlines>
+  <oozeShieldSidewallShape>1</oozeShieldSidewallShape>
+  <oozeShieldSidewallAngle>30</oozeShieldSidewallAngle>
+  <oozeShieldSpeedMultiplier>1</oozeShieldSpeedMultiplier>
+  <infillExtruder>1</infillExtruder>
+  <internalInfillPattern>Rectilinear</internalInfillPattern>
+  <externalInfillPattern>Rectilinear</externalInfillPattern>
+  <infillPercentage>20</infillPercentage>
+  <outlineOverlapPercentage>25</outlineOverlapPercentage>
+  <infillExtrusionWidthPercentage>200</infillExtrusionWidthPercentage>
+  <minInfillLength>5</minInfillLength>
+  <infillLayerInterval>1</infillLayerInterval>
+  <internalInfillAngles>45,-45</internalInfillAngles>
+  <overlapInternalInfillAngles>1</overlapInternalInfillAngles>
+  <externalInfillAngles>45,-45</externalInfillAngles>
+  <generateSupport>0</generateSupport>
+  <supportExtruder>1</supportExtruder>
+  <supportInfillPercentage>25</supportInfillPercentage>
+  <supportExtraInflation>0</supportExtraInflation>
+  <supportBaseLayers>0</supportBaseLayers>
+  <denseSupportExtruder>1</denseSupportExtruder>
+  <denseSupportLayers>0</denseSupportLayers>
+  <denseSupportInfillPercentage>70</denseSupportInfillPercentage>
+  <supportLayerInterval>1</supportLayerInterval>
+  <supportHorizontalPartOffset>0.3</supportHorizontalPartOffset>
+  <supportUpperSeparationLayers>1</supportUpperSeparationLayers>
+  <supportLowerSeparationLayers>1</supportLowerSeparationLayers>
+  <supportType>0</supportType>
+  <supportGridSpacing>4</supportGridSpacing>
+  <maxOverhangAngle>45</maxOverhangAngle>
+  <supportAngles>0</supportAngles>
+  <temperatureController name="Left Extruder">
+    <temperatureNumber>0</temperatureNumber>
+    <isHeatedBed>0</isHeatedBed>
+    <stabilizeAtStartup>1</stabilizeAtStartup>
+    <setpoint layer="1" temperature="205"/>
+  </temperatureController>
+  <temperatureController name="Right Extruder">
+    <temperatureNumber>1</temperatureNumber>
+    <isHeatedBed>0</isHeatedBed>
+    <stabilizeAtStartup>1</stabilizeAtStartup>
+    <setpoint layer="1" temperature="205"/>
+  </temperatureController>
+  <temperatureController name="Heated Bed">
+    <temperatureNumber>0</temperatureNumber>
+    <isHeatedBed>1</isHeatedBed>
+    <stabilizeAtStartup>1</stabilizeAtStartup>
+    <setpoint layer="1" temperature="60"/>
+  </temperatureController>
+  <fanSpeed>
+    <setpoint layer="1" speed="0"/>
+    <setpoint layer="2" speed="100"/>
+  </fanSpeed>
+  <blipFanToFullPower>1</blipFanToFullPower>
+  <adjustSpeedForCooling>1</adjustSpeedForCooling>
+  <minSpeedLayerTime>15</minSpeedLayerTime>
+  <minCoolingSpeedSlowdown>20</minCoolingSpeedSlowdown>
+  <increaseFanForCooling>0</increaseFanForCooling>
+  <minFanLayerTime>45</minFanLayerTime>
+  <maxCoolingFanSpeed>100</maxCoolingFanSpeed>
+  <increaseFanForBridging>0</increaseFanForBridging>
+  <bridgingFanSpeed>100</bridgingFanSpeed>
+  <use5D>1</use5D>
+  <relativeEdistances>0</relativeEdistances>
+  <allowEaxisZeroing>1</allowEaxisZeroing>
+  <independentExtruderAxes>0</independentExtruderAxes>
+  <includeM10123>0</includeM10123>
+  <stickySupport>1</stickySupport>
+  <applyToolheadOffsets>0</applyToolheadOffsets>
+  <gcodeXoffset>0</gcodeXoffset>
+  <gcodeYoffset>0</gcodeYoffset>
+  <gcodeZoffset>0</gcodeZoffset>
+  <overrideMachineDefinition>1</overrideMachineDefinition>
+  <machineTypeOverride>0</machineTypeOverride>
+  <strokeXoverride>280</strokeXoverride>
+  <strokeYoverride>280</strokeYoverride>
+  <strokeZoverride>285</strokeZoverride>
+  <originOffsetXoverride>0</originOffsetXoverride>
+  <originOffsetYoverride>0</originOffsetYoverride>
+  <originOffsetZoverride>0</originOffsetZoverride>
+  <homeXdirOverride>-1</homeXdirOverride>
+  <homeYdirOverride>-1</homeYdirOverride>
+  <homeZdirOverride>-1</homeZdirOverride>
+  <flipXoverride>1</flipXoverride>
+  <flipYoverride>-1</flipYoverride>
+  <flipZoverride>1</flipZoverride>
+  <toolheadOffsets>0,0|-13.1,0|0,0|0,0|0,0|0,0</toolheadOffsets>
+  <overrideFirmwareConfiguration>1</overrideFirmwareConfiguration>
+  <firmwareTypeOverride>RepRap (Marlin/Repetier/Sprinter)</firmwareTypeOverride>
+  <GPXconfigOverride>r2</GPXconfigOverride>
+  <baudRateOverride>250000</baudRateOverride>
+  <overridePrinterModels>1</overridePrinterModels>
+  <printerModelsOverride>LulzBot_TAZ6.stl</printerModelsOverride>
+  <startingGcode>; This script is designed specifically for PLA and PLA+,M73 P0                                    ; clear GLCD progress bar,M75			     	                            ; start GLCD timer,M107                                      ; disable fans,G90                                       ; absolute positioning,M420 S0                                   ; disable previous leveling matrix,M140 S[bed0_temperature]                  ; begin bed temping up,M104 S180 T0                              ; soften filament,M104 S180 T1                              ; soften filament,G28                                       ; home,M117 Heating...                           ; LCD status message,M109 R180 T0                              ; wait for temp,M109 R180 T1                              ; wait for temp,T0                                        ; select this extruder first,M82                                       ; set extruder to absolute mode,G92 E0                                    ; set extruder to zero,G1 E-10 F100                              ; retract 10mm of filament on first extruder,G0 X50 F1000                              ; move over to switch extruders,T1                                        ; switch extruders,M82                                       ; set extruder to absolute mode,G92 E0                                    ; set extruder to zero,G1  E-10 F100                             ; retract 10mm of filament on second extruder,M104 S170 T0                              ; set to wipe temp,M104 S170 T1                              ; set to wipe temp,M106                                      ; turn on fans to speed cooling,T0                                        ; select first extruder for probing,G1 X-16.5 Y100 F2000                      ; move above wiper pad,M117 Cooling...                           ; LCD status message,M109 R170 T0                              ; wait for T0 to reach temp,M109 R170 T1                              ; wait for T1 to reach temp,M107                                      ; turn off fan,G1 Z 1.0                                  ; push nozzle into wiper,G1 X -16.5 Y100 F1000                     ; slow wipe,G1 X -16.5 Y90 F1000                      ; slow wipe,G1 X -15.5 Y86 F2000                      ; fast wipe,G1 X -17.5 Y80 F2000                      ; fast wipe,G1 X -15.5 Y74 F2000                      ; fast wipe,G1 X -17.5 Y70 F2000                      ; fast wipe,G1 X -16.5 Y68 F1000                      ; slow wipe,G1 X -16.5 Y60 F1000                      ; slow wipe,G1 X -14.5 Y60 F1000                      ; slow wipe,G1 X -14.5 Y46 F1000                      ; slow wipe,G1 X -17.5 Y46 F1000                      ; slow wipe,G1 X -17.5 Y60 F1000                      ; slow wipe,G1 X -14.5 Y60 F1000                      ; slow wipe,G1 X -14.5 Y46 F1000                      ; slow wipe,G1 X -17.5 Y46 F1000                      ; slow wipe,G1 X -17.5 Y60 F1000                      ; slow wipe,G1 X -14.5 Y60 F1000                      ; slow wipe,G1 X -14.5 Y46 F1000                      ; slow wipe,G1 X -17.5 Y46 F1000                      ; slow wipe,G1 X -17.5 Y60 F1000                      ; slow wipe,G1 X -16.5 Y60 F1000                      ; slow wipe,G1 X -16.5 Y42 F1000                      ; slow wipe,G1 X -15.5 Y40 F2000                      ; fast wipe,G1 X -17.5 Y38 F2000                      ; fast wipe,G1 X -15.5 Y36 F2000                      ; fast wipe,G1 X -17.5 Y34 F2000                      ; fast wipe,G1 X -16.5 Y30 F1000                      ; slow wipe,G1 X -16.5 Y19 F1000                      ; slow wipe,G1 X -16.5 Y19 Z20 F1000                  ; raise extruder,M106 S255                                 ; turn on fan to blow away fuzzies,G4 S5                                     ; wait 5 seconds,M107                                      ; turn off fan,G0 X50 F1000                              ; move over to switch extruders,T1                                        ; switch to second extruder,G1 X296.5 Y100  F5000                     ; move E2 above second wiper pad,G1 Z 1.0                                  ; push nozzle into wiper,G1 X 296.5 Y100 F1000                     ; slow wipe,G1 X 296.5 Y90 F1000                      ; slow wipe,G1 X 297.5 Y86 F2000                      ; fast wipe,G1 X 295.5 Y80 F2000                      ; fast wipe,G1 X 297.5 Y74 F2000                      ; fast wipe,G1 X 295.5 Y70 F2000                      ; fast wipe,G1 X 296.5 Y68 F1000                      ; slow wipe,G1 X 296.5 Y60 F1000                      ; slow wipe,G1 X 298 Y60 F1000                        ; slow wipe,G1 X 298 Y46 F1000                        ; slow wipe,G1 X 295 Y46 F1000                        ; slow wipe,G1 X 295 Y60 F1000                        ; slow wipe,G1 X 298 Y60 F1000                        ; slow wipe,G1 X 298 Y46 F1000                        ; slow wipe,G1 X 295 Y46 F1000                        ; slow wipe,G1 X 295 Y60 F1000                        ; slow wipe,G1 X 298 Y60 F1000                        ; slow wipe,G1 X 298 Y46 F1000                        ; slow wipe,G1 X 295 Y46 F1000                        ; slow wipe,G1 X 295 Y60 F1000                        ; slow wipe,G1 X 296.5 Y60 F1000                      ; slow wipe,G1 X 296.5 Y42 F1000                      ; slow wipe,G1 X 297.5 Y40 F2000                      ; fast wipe,G1 X 295.5 Y38 F2000                      ; fast wipe,G1 X 297.5 Y36 F2000                      ; fast wipe,G1 X 295.5 Y34 F2000                      ; fast wipe,G1 X 297.5 Y30 F1000                      ; slow wipe,G1 X 296.5 Y19 F1000                      ; slow wipe,G1 X 296.5 Y19 Z20 F1000                  ; raise extruder,M106 S255                                 ; turn on fan to blow away fuzzies,G4 S5                                     ; wait 5 seconds,M107                                      ; turn off fan,G0 X247 F1000                             ; move over to switch extruders,T0                                        ; switch to first extruder,M109 R160                                 ; heat to probe temp,M204 S100                                 ; set accel for probing,G29                                       ; probe sequence (for auto-leveling),M420 S1                                   ; enable leveling matrix,M204 S500                                 ; set accel back to normal,M104 S[extruder0_temperature]  T0         ; set extruder temp,M104 S[extruder1_temperature]  T1         ; set extruder temp,G1 X100 Y-29 Z0.5 F3000                   ; move to open space,M400                                      ; clear buffer,M117 Heating...                           ; LCD status message,M109 R[extruder0_temperature]  T0  ; set extruder temp and wait,M109 R[extruder1_temperature]  T1  ; set extruder temp and wait,M117 Purging...                           ; LCD status message,T0                                        ; select this extruder first,G1 E0 F100		    	                      ; undo retraction,G92 E-30				                          ; set extruder negative amount to purge,G1 E0 F100				                        ; purge XXmm of filament,G1 E-3 F200                               ; purge retraction,G1 Z0.45                                  ; clear bed (barely),G1 X100 Y10 F4000                         ; move above bed to shear off filament,M106 S255                                 ; turn on fan,G4 S7                                     ; wait 7 seconds,M107                                      ; turn off fan,G1 X180 Y-29 Z0.45 F3000                  ; move to open space,T1                                        ; set extruder,G1 E0 F100                                ; undo retraction,G92 E-30                                  ; set extruder negative amount to purge,G1 E0 F100                                ; purge XXmm of filament,G1 E-4 F200                               ; purge retraction,G1 Z0.35                                  ; clear bed (barely),G1 X180 Y10 F4000                         ; move above bed to shear off filament,T0                                        : set extruder,M190 R[bed0_temperature]                  ; get bed temping up during first layer,G1 Z2 E0 F75                              ; raise head and 0 extruder,M82					                              ; set to absolute mode,M400                                      ; clear buffer,M117 Simplify3D+TAZ Printing...           ; LCD status message,</startingGcode>
+  <layerChangeGcode></layerChangeGcode>
+  <retractionGcode></retractionGcode>
+  <toolChangeGcode></toolChangeGcode>
+  <endingGcode>M400,M104 S0 T0                     ; T0 hotend off,M104 S0 T1                     ; T1 hotend off,M107                           ; fans off,G91                            ; relative positioning,T0,G1 E-1 F300                    ; retract the filament a bit before lifting the nozzle, to release some of the pressure,G1 Z20 E-1 X-20 Y-20 F2000     ; move Z up a bit and retract filament even more,G1 E0                          ; re-prime extruder 1,T1,G1 E-1 F300                    ; retract the filament a bit before lifting the nozzle, to release some of the pressure,G1 E0                          ; re-prime extruder 2,T0,M117 Cooling please wait       ; progress indicator message,G90                            ; absolute positioning,G1 Y0 F3000                    ; move to cooling position,M190 R45                       ; set bed to cool off,G1 Y280 F3000                  ; present finished print,M140 S0                       ; keep temperature or cool downs,M77			                       ; stop GLCD timer,M18 X Y E				               ; turn off x y and e axis,G90                            ; absolute positioning,M117 Print complete            ; progress indicator message</endingGcode>
+  <exportFileFormat>gcode</exportFileFormat>
+  <celebration>0</celebration>
+  <celebrationSong>Star Wars</celebrationSong>
+  <postProcessing></postProcessing>
+  <defaultSpeed>3600</defaultSpeed>
+  <outlineUnderspeed>0.5</outlineUnderspeed>
+  <solidInfillUnderspeed>0.57</solidInfillUnderspeed>
+  <supportUnderspeed>0.8</supportUnderspeed>
+  <rapidXYspeed>4800</rapidXYspeed>
+  <rapidZspeed>1002</rapidZspeed>
+  <minBridgingArea>50</minBridgingArea>
+  <bridgingExtraInflation>0</bridgingExtraInflation>
+  <bridgingExtrusionMultiplier>1</bridgingExtrusionMultiplier>
+  <bridgingSpeedMultiplier>1</bridgingSpeedMultiplier>
+  <useFixedBridgingAngle>0</useFixedBridgingAngle>
+  <fixedBridgingAngle>0</fixedBridgingAngle>
+  <applyBridgingToPerimeters>0</applyBridgingToPerimeters>
+  <filamentDiameters>2.85|2.85|2.85|2.85|2.85|2.85</filamentDiameters>
+  <filamentPricesPerKg>46|46|46|46|46|46</filamentPricesPerKg>
+  <filamentDensities>1.25|1.25|1.25|1.25|1.25|1.25</filamentDensities>
+  <useMinPrintHeight>0</useMinPrintHeight>
+  <minPrintHeight>0</minPrintHeight>
+  <useMaxPrintHeight>0</useMaxPrintHeight>
+  <maxPrintHeight>0</maxPrintHeight>
+  <useDiaphragm>0</useDiaphragm>
+  <diaphragmLayerInterval>20</diaphragmLayerInterval>
+  <robustSlicing>1</robustSlicing>
+  <mergeAllIntoSolid>0</mergeAllIntoSolid>
+  <onlyRetractWhenCrossingOutline>1</onlyRetractWhenCrossingOutline>
+  <retractBetweenLayers>1</retractBetweenLayers>
+  <useRetractionMinTravel>0</useRetractionMinTravel>
+  <retractionMinTravel>3</retractionMinTravel>
+  <retractWhileWiping>0</retractWhileWiping>
+  <onlyWipeOutlines>1</onlyWipeOutlines>
+  <avoidCrossingOutline>1</avoidCrossingOutline>
+  <maxMovementDetourFactor>3</maxMovementDetourFactor>
+  <toolChangeRetractionDistance>3</toolChangeRetractionDistance>
+  <toolChangeExtraRestartDistance>-0.5</toolChangeExtraRestartDistance>
+  <toolChangeRetractionSpeed>600</toolChangeRetractionSpeed>
+  <externalThinWallType>0</externalThinWallType>
+  <internalThinWallType>2</internalThinWallType>
+  <thinWallAllowedOverlapPercentage>10</thinWallAllowedOverlapPercentage>
+  <singleExtrusionMinLength>1</singleExtrusionMinLength>
+  <singleExtrusionMinPrintingWidthPercentage>50</singleExtrusionMinPrintingWidthPercentage>
+  <singleExtrusionMaxPrintingWidthPercentage>200</singleExtrusionMaxPrintingWidthPercentage>
+  <singleExtrusionEndpointExtension>0.2</singleExtrusionEndpointExtension>
+  <horizontalSizeCompensation>0</horizontalSizeCompensation>
+  <autoConfigureMaterial name="PLA">
+    <extruder name="Left Extruder">
+      <toolheadNumber>0</toolheadNumber>
+      <diameter>0.5</diameter>
+      <autoWidth>0</autoWidth>
+      <width>0.5</width>
+      <extrusionMultiplier>1</extrusionMultiplier>
+      <useRetract>1</useRetract>
+      <retractionDistance>1.5</retractionDistance>
+      <extraRestartDistance>0</extraRestartDistance>
+      <retractionZLift>0</retractionZLift>
+      <retractionSpeed>1800</retractionSpeed>
+      <useCoasting>0</useCoasting>
+      <coastingDistance>0.2</coastingDistance>
+      <useWipe>0</useWipe>
+      <wipeDistance>5</wipeDistance>
+    </extruder>
+    <extruder name="Right Extruder">
+      <toolheadNumber>1</toolheadNumber>
+      <diameter>0.5</diameter>
+      <autoWidth>0</autoWidth>
+      <width>0.5</width>
+      <extrusionMultiplier>1</extrusionMultiplier>
+      <useRetract>1</useRetract>
+      <retractionDistance>1.5</retractionDistance>
+      <extraRestartDistance>0</extraRestartDistance>
+      <retractionZLift>0</retractionZLift>
+      <retractionSpeed>1800</retractionSpeed>
+      <useCoasting>0</useCoasting>
+      <coastingDistance>0.2</coastingDistance>
+      <useWipe>0</useWipe>
+      <wipeDistance>5</wipeDistance>
+    </extruder>
+    <temperatureController name="Left Extruder">
+      <temperatureNumber>0</temperatureNumber>
+      <isHeatedBed>0</isHeatedBed>
+      <stabilizeAtStartup>1</stabilizeAtStartup>
+      <setpoint layer="1" temperature="205"/>
+    </temperatureController>
+    <temperatureController name="Right Extruder">
+      <temperatureNumber>1</temperatureNumber>
+      <isHeatedBed>0</isHeatedBed>
+      <stabilizeAtStartup>1</stabilizeAtStartup>
+      <setpoint layer="1" temperature="205"/>
+    </temperatureController>
+    <temperatureController name="Heated Bed">
+      <temperatureNumber>0</temperatureNumber>
+      <isHeatedBed>1</isHeatedBed>
+      <stabilizeAtStartup>1</stabilizeAtStartup>
+      <setpoint layer="1" temperature="60"/>
+    </temperatureController>
+    <fanSpeed>
+      <setpoint layer="1" speed="0"/>
+      <setpoint layer="2" speed="100"/>
+    </fanSpeed>
+  </autoConfigureMaterial>
+  <autoConfigureMaterial name="ABS">
+    <extruder name="Left Extruder">
+      <toolheadNumber>0</toolheadNumber>
+      <diameter>0.5</diameter>
+      <autoWidth>0</autoWidth>
+      <width>0.5</width>
+      <extrusionMultiplier>1</extrusionMultiplier>
+      <useRetract>1</useRetract>
+      <retractionDistance>1.5</retractionDistance>
+      <extraRestartDistance>0</extraRestartDistance>
+      <retractionZLift>0</retractionZLift>
+      <retractionSpeed>1800</retractionSpeed>
+      <useCoasting>0</useCoasting>
+      <coastingDistance>0.2</coastingDistance>
+      <useWipe>0</useWipe>
+      <wipeDistance>5</wipeDistance>
+    </extruder>
+    <extruder name="Right Extruder">
+      <toolheadNumber>1</toolheadNumber>
+      <diameter>0.5</diameter>
+      <autoWidth>0</autoWidth>
+      <width>0.5</width>
+      <extrusionMultiplier>1</extrusionMultiplier>
+      <useRetract>1</useRetract>
+      <retractionDistance>1.5</retractionDistance>
+      <extraRestartDistance>0</extraRestartDistance>
+      <retractionZLift>0</retractionZLift>
+      <retractionSpeed>1800</retractionSpeed>
+      <useCoasting>0</useCoasting>
+      <coastingDistance>0.2</coastingDistance>
+      <useWipe>0</useWipe>
+      <wipeDistance>5</wipeDistance>
+    </extruder>
+    <temperatureController name="Left Extruder">
+      <temperatureNumber>0</temperatureNumber>
+      <isHeatedBed>0</isHeatedBed>
+      <stabilizeAtStartup>1</stabilizeAtStartup>
+      <setpoint layer="1" temperature="240"/>
+    </temperatureController>
+    <temperatureController name="Right Extruder">
+      <temperatureNumber>1</temperatureNumber>
+      <isHeatedBed>0</isHeatedBed>
+      <stabilizeAtStartup>1</stabilizeAtStartup>
+      <setpoint layer="1" temperature="240"/>
+    </temperatureController>
+    <temperatureController name="Heated Bed">
+      <temperatureNumber>0</temperatureNumber>
+      <isHeatedBed>1</isHeatedBed>
+      <stabilizeAtStartup>1</stabilizeAtStartup>
+      <setpoint layer="1" temperature="110"/>
+    </temperatureController>
+    <fanSpeed>
+      <setpoint layer="1" speed="0"/>
+    </fanSpeed>
+  </autoConfigureMaterial>
+  <autoConfigureMaterial name="PVA">
+    <extruder name="Left Extruder">
+      <toolheadNumber>0</toolheadNumber>
+      <diameter>0.5</diameter>
+      <autoWidth>0</autoWidth>
+      <width>0.5</width>
+      <extrusionMultiplier>1</extrusionMultiplier>
+      <useRetract>1</useRetract>
+      <retractionDistance>1.5</retractionDistance>
+      <extraRestartDistance>0</extraRestartDistance>
+      <retractionZLift>0</retractionZLift>
+      <retractionSpeed>1800</retractionSpeed>
+      <useCoasting>0</useCoasting>
+      <coastingDistance>0.2</coastingDistance>
+      <useWipe>0</useWipe>
+      <wipeDistance>5</wipeDistance>
+    </extruder>
+    <extruder name="Right Extruder">
+      <toolheadNumber>1</toolheadNumber>
+      <diameter>0.5</diameter>
+      <autoWidth>0</autoWidth>
+      <width>0.5</width>
+      <extrusionMultiplier>1</extrusionMultiplier>
+      <useRetract>1</useRetract>
+      <retractionDistance>1.5</retractionDistance>
+      <extraRestartDistance>0</extraRestartDistance>
+      <retractionZLift>0</retractionZLift>
+      <retractionSpeed>1800</retractionSpeed>
+      <useCoasting>0</useCoasting>
+      <coastingDistance>0.2</coastingDistance>
+      <useWipe>0</useWipe>
+      <wipeDistance>5</wipeDistance>
+    </extruder>
+    <temperatureController name="Left Extruder">
+      <temperatureNumber>0</temperatureNumber>
+      <isHeatedBed>0</isHeatedBed>
+      <stabilizeAtStartup>1</stabilizeAtStartup>
+      <setpoint layer="1" temperature="195"/>
+    </temperatureController>
+    <temperatureController name="Right Extruder">
+      <temperatureNumber>1</temperatureNumber>
+      <isHeatedBed>0</isHeatedBed>
+      <stabilizeAtStartup>1</stabilizeAtStartup>
+      <setpoint layer="1" temperature="195"/>
+    </temperatureController>
+    <temperatureController name="Heated Bed">
+      <temperatureNumber>0</temperatureNumber>
+      <isHeatedBed>1</isHeatedBed>
+      <stabilizeAtStartup>1</stabilizeAtStartup>
+      <setpoint layer="1" temperature="60"/>
+    </temperatureController>
+    <fanSpeed>
+      <setpoint layer="1" speed="0"/>
+      <setpoint layer="2" speed="100"/>
+    </fanSpeed>
+  </autoConfigureMaterial>
+  <autoConfigureMaterial name="Nylon">
+    <extruder name="Left Extruder">
+      <toolheadNumber>0</toolheadNumber>
+      <diameter>0.5</diameter>
+      <autoWidth>0</autoWidth>
+      <width>0.5</width>
+      <extrusionMultiplier>1</extrusionMultiplier>
+      <useRetract>1</useRetract>
+      <retractionDistance>1.5</retractionDistance>
+      <extraRestartDistance>0</extraRestartDistance>
+      <retractionZLift>0</retractionZLift>
+      <retractionSpeed>1800</retractionSpeed>
+      <useCoasting>0</useCoasting>
+      <coastingDistance>0.2</coastingDistance>
+      <useWipe>0</useWipe>
+      <wipeDistance>5</wipeDistance>
+    </extruder>
+    <extruder name="Right Extruder">
+      <toolheadNumber>1</toolheadNumber>
+      <diameter>0.5</diameter>
+      <autoWidth>0</autoWidth>
+      <width>0.5</width>
+      <extrusionMultiplier>1</extrusionMultiplier>
+      <useRetract>1</useRetract>
+      <retractionDistance>1.5</retractionDistance>
+      <extraRestartDistance>0</extraRestartDistance>
+      <retractionZLift>0</retractionZLift>
+      <retractionSpeed>1800</retractionSpeed>
+      <useCoasting>0</useCoasting>
+      <coastingDistance>0.2</coastingDistance>
+      <useWipe>0</useWipe>
+      <wipeDistance>5</wipeDistance>
+    </extruder>
+    <temperatureController name="Left Extruder">
+      <temperatureNumber>0</temperatureNumber>
+      <isHeatedBed>0</isHeatedBed>
+      <relayBetweenLayers>0</relayBetweenLayers>
+      <relayBetweenLoops>0</relayBetweenLoops>
+      <stabilizeAtStartup>1</stabilizeAtStartup>
+      <setpoint layer="1" temperature="245"/>
+    </temperatureController>
+    <temperatureController name="Right Extruder">
+      <temperatureNumber>1</temperatureNumber>
+      <isHeatedBed>0</isHeatedBed>
+      <relayBetweenLayers>0</relayBetweenLayers>
+      <relayBetweenLoops>0</relayBetweenLoops>
+      <stabilizeAtStartup>1</stabilizeAtStartup>
+      <setpoint layer="1" temperature="245"/>
+    </temperatureController>
+    <temperatureController name="Heated Bed">
+      <temperatureNumber>0</temperatureNumber>
+      <isHeatedBed>1</isHeatedBed>
+      <relayBetweenLayers>0</relayBetweenLayers>
+      <relayBetweenLoops>0</relayBetweenLoops>
+      <stabilizeAtStartup>1</stabilizeAtStartup>
+      <setpoint layer="1" temperature="110"/>
+    </temperatureController>
+    <fanSpeed>
+      <setpoint layer="1" speed="0"/>
+    </fanSpeed>
+  </autoConfigureMaterial>
+  <autoConfigureMaterial name="PLA (Left) PVA (Right)">
+    <extruder name="Left Extruder">
+      <toolheadNumber>0</toolheadNumber>
+      <diameter>0.5</diameter>
+      <autoWidth>0</autoWidth>
+      <width>0.5</width>
+      <extrusionMultiplier>0.9</extrusionMultiplier>
+      <useRetract>1</useRetract>
+      <retractionDistance>1.5</retractionDistance>
+      <extraRestartDistance>0</extraRestartDistance>
+      <retractionZLift>0</retractionZLift>
+      <retractionSpeed>1800</retractionSpeed>
+      <useCoasting>0</useCoasting>
+      <coastingDistance>0.2</coastingDistance>
+      <useWipe>0</useWipe>
+      <wipeDistance>5</wipeDistance>
+    </extruder>
+    <extruder name="Right Extruder">
+      <toolheadNumber>1</toolheadNumber>
+      <diameter>0.5</diameter>
+      <autoWidth>0</autoWidth>
+      <width>0.5</width>
+      <extrusionMultiplier>1</extrusionMultiplier>
+      <useRetract>1</useRetract>
+      <retractionDistance>1.5</retractionDistance>
+      <extraRestartDistance>0</extraRestartDistance>
+      <retractionZLift>0</retractionZLift>
+      <retractionSpeed>1800</retractionSpeed>
+      <useCoasting>0</useCoasting>
+      <coastingDistance>0.2</coastingDistance>
+      <useWipe>0</useWipe>
+      <wipeDistance>5</wipeDistance>
+    </extruder>
+    <temperatureController name="Left Extruder">
+      <temperatureNumber>0</temperatureNumber>
+      <isHeatedBed>0</isHeatedBed>
+      <stabilizeAtStartup>1</stabilizeAtStartup>
+      <setpoint layer="1" temperature="210"/>
+    </temperatureController>
+    <temperatureController name="Right Extruder">
+      <temperatureNumber>1</temperatureNumber>
+      <isHeatedBed>0</isHeatedBed>
+      <stabilizeAtStartup>1</stabilizeAtStartup>
+      <setpoint layer="1" temperature="190"/>
+    </temperatureController>
+    <temperatureController name="Heated Bed">
+      <temperatureNumber>0</temperatureNumber>
+      <isHeatedBed>1</isHeatedBed>
+      <stabilizeAtStartup>1</stabilizeAtStartup>
+      <setpoint layer="1" temperature="60"/>
+    </temperatureController>
+    <fanSpeed>
+      <setpoint layer="1" speed="0"/>
+      <setpoint layer="2" speed="100"/>
+    </fanSpeed>
+  </autoConfigureMaterial>
+  <autoConfigureQuality name="Fast">
+    <layerHeight>0.3</layerHeight>
+    <topSolidLayers>3</topSolidLayers>
+    <bottomSolidLayers>3</bottomSolidLayers>
+    <skirtLayers>1</skirtLayers>
+    <infillPercentage>15</infillPercentage>
+    <supportInfillPercentage>25</supportInfillPercentage>
+    <firstLayerHeightPercentage>133</firstLayerHeightPercentage>
+    <firstLayerWidthPercentage>125</firstLayerWidthPercentage>
+    <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
+  </autoConfigureQuality>
+  <autoConfigureQuality name="Medium">
+    <layerHeight>0.25</layerHeight>
+    <topSolidLayers>3</topSolidLayers>
+    <bottomSolidLayers>3</bottomSolidLayers>
+    <skirtLayers>1</skirtLayers>
+    <infillPercentage>20</infillPercentage>
+    <supportInfillPercentage>25</supportInfillPercentage>
+    <firstLayerHeightPercentage>160</firstLayerHeightPercentage>
+    <firstLayerWidthPercentage>125</firstLayerWidthPercentage>
+    <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
+  </autoConfigureQuality>
+  <autoConfigureQuality name="High">
+    <layerHeight>0.2</layerHeight>
+    <topSolidLayers>4</topSolidLayers>
+    <bottomSolidLayers>4</bottomSolidLayers>
+    <skirtLayers>1</skirtLayers>
+    <infillPercentage>30</infillPercentage>
+    <supportInfillPercentage>40</supportInfillPercentage>
+    <firstLayerHeightPercentage>200</firstLayerHeightPercentage>
+    <firstLayerWidthPercentage>125</firstLayerWidthPercentage>
+    <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
+  </autoConfigureQuality>
+  <autoConfigureExtruders name="Left Extruder Only" allowedToolheads="1">
+    <primaryExtruder>0</primaryExtruder>
+    <raftExtruder>0</raftExtruder>
+    <skirtExtruder>0</skirtExtruder>
+    <infillExtruder>0</infillExtruder>
+    <supportExtruder>0</supportExtruder>
+    <denseSupportExtruder>0</denseSupportExtruder>
+    <useSkirt>1</useSkirt>
+    <usePrimePillar>0</usePrimePillar>
+    <useOozeShield>0</useOozeShield>
+    <toggleTemperatureController name="Left Extruder" status="on" stabilize="on"/>
+    <toggleTemperatureController name="Right Extruder" status="off" stabilize="off"/>
+    <startingGcode>T0,G26 ; clear potential 'probe fail' condition,G21 ; set units to Millimetres,M82 ; set extruder to absolute mode,M107 ; disable fans,M420 S0 ; disable leveling matrix,G90 ; absolute positioning,M104 S170 T0 ; soften filament,M104 S170 T1 ; soften filament,M140 S[bed0_temperature] ; get bed heating up,M117 Heating... ; LCD status message,G28 ; home all axes,M109 S170 T0 ; wait for temp,M109 S170 T1 ; wait for temp,T0 ; return to first extruder,G92 E0 ; set extruder to zero,G1  E-10 F100 ; retract 10mm of filament,G1 X50 F1000 ; move over to switch extruders,T1 ; switch extruders,G92 E0 ; set extruder to zero,G1  E-10 F100 ; retract 10mm of filament,T0 ; switch extruders,G1 X-16 Y100 F3000 ; move above wiper pad,G1 Z1 ; push nozzle into wiper,G1 X -17 Y100 F1000 ; slow wipe,G1 X -17 Y90 F1000 ; slow wipe,G1 X -16 Y86 F2000 ; slow wipe,G1 X -18 Y80 F2000 ; slow wipe,G1 X -16 Y74 F2000 ; slow wipe,G1 X -18 Y70 F2000 ; slow wipe,G1 X -17 Y68 F1000 ; slow wipe,G1 X -17 Y60 F1000 ; slow wipe,G1 X -15 Y60 F1000 ; slow wipe,G1 X -15 Y46 F1000 ; slow wipe,G1 X -18 Y46 F1000 ; slow wipe,G1 X -18 Y60 F1000 ; slow wipe,G1 X -15 Y60 F1000 ; slow wipe,G1 X -15 Y46 F1000 ; slow wipe,G1 X -18 Y46 F1000 ; slow wipe,G1 X -18 Y60 F1000 ; slow wipe,G1 X -15 Y60 F1000 ; slow wipe,G1 X -15 Y46 F1000 ; slow wipe,G1 X -18 Y46 F1000 ; slow wipe,G1 X -18 Y60 F1000 ; slow wipe,G1 X -17 Y60 F1000 ; slow wipe,G1 X -17 Y42 F1000 ; slow wipe,G1 X -16 Y40 F2000 ; slow wipe,G1 X -18 Y38 F2000 ; slow wipe,G1 X -16 Y36 F2000 ; slow wipe,G1 X -18 Y34 F2000 ; slow wipe,G1 X -17 Y30 F1000 ; slow wipe,G1 X -17 Y19 F1000 ; slow wipe,G1 X -17 Y19 Z20 F1000 ; raise extruder,G1 X50 F1000 ; move over to switch extruders,T1 ; switch to second extruder,G1 X301 Y100 F5000 ; move E2 above second wiper pad,G1 Z 1.0 ; push nozzle into wiper,G1 X 298 Y100 F1000 ; slow wipe,G1 X 298 Y90 F1000 ; slow wipe,G1 X 299 Y86 F2000 ; fast wipe,G1 X 297 Y80 F2000 ; fast wipe,G1 X 299 Y74 F2000 ; fast wipe,G1 X 297 Y70 F2000 ; fast wipe,G1 X 298 Y68 F1000 ; slow wipe,G1 X 298 Y60 F1000 ; slow wipe,G1 X 299.5 Y60 F1000 ; slow wipe,G1 X 299.5 Y46 F1000 ; slow wipe,G1 X 296.5 Y46 F1000 ; slow wipe,G1 X 296.5 Y60 F1000 ; slow wipe,G1 X 299.5 Y60 F1000 ; slow wipe,G1 X 299.5 Y46 F1000 ; slow wipe,G1 X 296.5 Y46 F1000 ; slow wipe,G1 X 296.5 Y60 F1000 ; slow wipe,G1 X 299.5 Y60 F1000 ; slow wipe,G1 X 299.5 Y46 F1000 ; slow wipe,G1 X 296.5 Y46 F1000 ; slow wipe,G1 X 296.5 Y60 F1000 ; slow wipe,G1 X 298 Y60 F1000 ; slow wipe,G1 X 298 Y42 F1000 ; slow wipe,G1 X 299 Y40 F2000 ; fast wipe,G1 X 297 Y38 F2000 ; fast wipe,G1 X 299 Y36 F2000 ; fast wipe,G1 X 297 Y34 F2000 ; fast wipe,G1 X 299 Y30 F1000 ; slow wipe,G1 X 298 Y19 F1000 ; slow wipe,G1 X 298 Y19 Z20 F1000 ; raise extruder,M106 S255 ; turn on fan to blow away debris,G4 S5 ; wait 5 seconds,M107 ; turn off fan,G1 X247 F1000 ; move over to switch extruders,T0 ; switch to first extruder,M204 S100 ; set accel for probing,G29 ; probe sequence (for auto-leveling),M420 S1 ; enable leveling matrix,M204 S500 ; set accel back to normal,G1 X100 Y-29 Z0.5 F3000 ; move to open space,M400 ; clear buffer,M117 Heating... ; LCD status message,M109 S[extruder0_temperature] T0 ; set extruder temp and wait,M109 S[extruder1_temperature] T1 ; set extruder temp and wait,M117 Purging... ; LCD status message,T0 ; select this extruder first,G1 E0 F100 ; undo retraction,G92 E-30 ; set extruder negative amount to purge,G1 E0 F100 ; purge 30mm of filament,G1 E-3 F200 ; purge retraction,G1 Z0.45 ; clear bed (barely),G1 X100 Y10 F4000 ; move above bed to shear off filament,G1 X180 Y-29 Z0.45 F3000 ; move to open space,M190 S[bed0_temperature] ; stabilize bed,G1 Z2 E0 F75 ; raise Z to 2mm and 0 extruder,M82 ; set to absolute mode,M400 ; clear buffer,M117 TAZ Printing... ; LCD status message</startingGcode>
+  </autoConfigureExtruders>
+  <autoConfigureExtruders name="Right Extruder Only" allowedToolheads="1">
+    <primaryExtruder>0</primaryExtruder>
+    <raftExtruder>1</raftExtruder>
+    <skirtExtruder>0</skirtExtruder>
+    <infillExtruder>0</infillExtruder>
+    <supportExtruder>1</supportExtruder>
+    <denseSupportExtruder>1</denseSupportExtruder>
+    <useSkirt>1</useSkirt>
+    <usePrimePillar>0</usePrimePillar>
+    <useOozeShield>0</useOozeShield>
+    <toggleTemperatureController name="Left Extruder" status="off" stabilize="off"/>
+    <toggleTemperatureController name="Right Extruder" status="on" stabilize="on"/>
+    <startingGcode>T0,G26 ; clear potential 'probe fail' condition,G21 ; set units to Millimetres,M82 ; set extruder to absolute mode,M107 ; disable fans,M420 S0 ; disable leveling matrix,G90 ; absolute positioning,M104 S170 T0 ; soften filament,M104 S170 T1 ; soften filament,M140 S[bed0_temperature] ; get bed heating up,M117 Heating... ; LCD status message,G28 ; home all axes,M109 S170 T0 ; wait for temp,M109 S170 T1 ; wait for temp,T0 ; return to first extruder,G92 E0 ; set extruder to zero,G1  E-10 F100 ; retract 10mm of filament,G1 X50 F1000 ; move over to switch extruders,T1 ; switch extruders,G92 E0 ; set extruder to zero,G1  E-10 F100 ; retract 10mm of filament,T0 ; switch extruders,G1 X-16 Y100 F3000 ; move above wiper pad,G1 Z1 ; push nozzle into wiper,G1 X -17 Y100 F1000 ; slow wipe,G1 X -17 Y90 F1000 ; slow wipe,G1 X -16 Y86 F2000 ; slow wipe,G1 X -18 Y80 F2000 ; slow wipe,G1 X -16 Y74 F2000 ; slow wipe,G1 X -18 Y70 F2000 ; slow wipe,G1 X -17 Y68 F1000 ; slow wipe,G1 X -17 Y60 F1000 ; slow wipe,G1 X -15 Y60 F1000 ; slow wipe,G1 X -15 Y46 F1000 ; slow wipe,G1 X -18 Y46 F1000 ; slow wipe,G1 X -18 Y60 F1000 ; slow wipe,G1 X -15 Y60 F1000 ; slow wipe,G1 X -15 Y46 F1000 ; slow wipe,G1 X -18 Y46 F1000 ; slow wipe,G1 X -18 Y60 F1000 ; slow wipe,G1 X -15 Y60 F1000 ; slow wipe,G1 X -15 Y46 F1000 ; slow wipe,G1 X -18 Y46 F1000 ; slow wipe,G1 X -18 Y60 F1000 ; slow wipe,G1 X -17 Y60 F1000 ; slow wipe,G1 X -17 Y42 F1000 ; slow wipe,G1 X -16 Y40 F2000 ; slow wipe,G1 X -18 Y38 F2000 ; slow wipe,G1 X -16 Y36 F2000 ; slow wipe,G1 X -18 Y34 F2000 ; slow wipe,G1 X -17 Y30 F1000 ; slow wipe,G1 X -17 Y19 F1000 ; slow wipe,G1 X -17 Y19 Z20 F1000 ; raise extruder,G1 X50 F1000 ; move over to switch extruders,T1 ; switch to second extruder,G1 X301 Y100 F5000 ; move E2 above second wiper pad,G1 Z 1.0 ; push nozzle into wiper,G1 X 298 Y100 F1000 ; slow wipe,G1 X 298 Y90 F1000 ; slow wipe,G1 X 299 Y86 F2000 ; fast wipe,G1 X 297 Y80 F2000 ; fast wipe,G1 X 299 Y74 F2000 ; fast wipe,G1 X 297 Y70 F2000 ; fast wipe,G1 X 298 Y68 F1000 ; slow wipe,G1 X 298 Y60 F1000 ; slow wipe,G1 X 299.5 Y60 F1000 ; slow wipe,G1 X 299.5 Y46 F1000 ; slow wipe,G1 X 296.5 Y46 F1000 ; slow wipe,G1 X 296.5 Y60 F1000 ; slow wipe,G1 X 299.5 Y60 F1000 ; slow wipe,G1 X 299.5 Y46 F1000 ; slow wipe,G1 X 296.5 Y46 F1000 ; slow wipe,G1 X 296.5 Y60 F1000 ; slow wipe,G1 X 299.5 Y60 F1000 ; slow wipe,G1 X 299.5 Y46 F1000 ; slow wipe,G1 X 296.5 Y46 F1000 ; slow wipe,G1 X 296.5 Y60 F1000 ; slow wipe,G1 X 298 Y60 F1000 ; slow wipe,G1 X 298 Y42 F1000 ; slow wipe,G1 X 299 Y40 F2000 ; fast wipe,G1 X 297 Y38 F2000 ; fast wipe,G1 X 299 Y36 F2000 ; fast wipe,G1 X 297 Y34 F2000 ; fast wipe,G1 X 299 Y30 F1000 ; slow wipe,G1 X 298 Y19 F1000 ; slow wipe,G1 X 298 Y19 Z20 F1000 ; raise extruder,M106 S255 ; turn on fan to blow away debris,G4 S5 ; wait 5 seconds,M107 ; turn off fan,G1 X247 F1000 ; move over to switch extruders,T0 ; switch to first extruder,M204 S100 ; set accel for probing,G29 ; probe sequence (for auto-leveling),M420 S1 ; enable leveling matrix,M204 S500 ; set accel back to normal,G1 X100 Y-29 Z0.5 F3000 ; move to open space,M400 ; clear buffer,M117 Heating... ; LCD status message,M109 S[extruder0_temperature] T0 ; set extruder temp and wait,M109 S[extruder1_temperature] T1 ; set extruder temp and wait,M117 Purging... ; LCD status message,T1 ; select this extruder first,G1 E0 F100 ; undo retraction,G92 E-30 ; set extruder negative amount to purge,G1 E0 F100 ; purge 30mm of filament,G1 E-3 F200 ; purge retraction,G1 Z0.45 ; clear bed,G1 X180 Y10 F5000 ; move above bed to shear off filament,M190 S[bed0_temperature] ; stabilize bed,G1 Z2 E0 F75 ; raise Z to 2mm and 0 extruder,M82 ; set to absolute mode,M400 ; clear buffer,M117 TAZ Printing... ; LCD status message</startingGcode>
+  </autoConfigureExtruders>
+  <autoConfigureExtruders name="Both Extruders" allowedToolheads="2">
+    <primaryExtruder>1</primaryExtruder>
+    <raftExtruder>0</raftExtruder>
+    <skirtExtruder>999</skirtExtruder>
+    <infillExtruder>1</infillExtruder>
+    <supportExtruder>1</supportExtruder>
+    <denseSupportExtruder>1</denseSupportExtruder>
+    <useSkirt>1</useSkirt>
+    <usePrimePillar>0</usePrimePillar>
+    <useOozeShield>0</useOozeShield>
+    <toggleTemperatureController name="Left Extruder" status="on" stabilize="on"/>
+    <toggleTemperatureController name="Right Extruder" status="on" stabilize="on"/>
+    <startingGcode>; This script is designed specifically for PLA and PLA+,M73 P0                                    ; clear GLCD progress bar,M75			     	                            ; start GLCD timer,M107                                      ; disable fans,G90                                       ; absolute positioning,M420 S0                                   ; disable previous leveling matrix,M140 S[bed0_temperature]                  ; begin bed temping up,M104 S180 T0                              ; soften filament,M104 S180 T1                              ; soften filament,G28                                       ; home,M117 Heating...                           ; LCD status message,M109 R180 T0                              ; wait for temp,M109 R180 T1                              ; wait for temp,T0                                        ; select this extruder first,M82                                       ; set extruder to absolute mode,G92 E0                                    ; set extruder to zero,G1 E-10 F100                              ; retract 10mm of filament on first extruder,G0 X50 F1000                              ; move over to switch extruders,T1                                        ; switch extruders,M82                                       ; set extruder to absolute mode,G92 E0                                    ; set extruder to zero,G1  E-10 F100                             ; retract 10mm of filament on second extruder,M104 S170 T0                              ; set to wipe temp,M104 S170 T1                              ; set to wipe temp,M106                                      ; turn on fans to speed cooling,T0                                        ; select first extruder for probing,G1 X-16.5 Y100 F2000                      ; move above wiper pad,M117 Cooling...                           ; LCD status message,M109 R170 T0                              ; wait for T0 to reach temp,M109 R170 T1                              ; wait for T1 to reach temp,M107                                      ; turn off fan,G1 Z 1.0                                  ; push nozzle into wiper,G1 X -16.5 Y100 F1000                     ; slow wipe,G1 X -16.5 Y90 F1000                      ; slow wipe,G1 X -15.5 Y86 F2000                      ; fast wipe,G1 X -17.5 Y80 F2000                      ; fast wipe,G1 X -15.5 Y74 F2000                      ; fast wipe,G1 X -17.5 Y70 F2000                      ; fast wipe,G1 X -16.5 Y68 F1000                      ; slow wipe,G1 X -16.5 Y60 F1000                      ; slow wipe,G1 X -14.5 Y60 F1000                      ; slow wipe,G1 X -14.5 Y46 F1000                      ; slow wipe,G1 X -17.5 Y46 F1000                      ; slow wipe,G1 X -17.5 Y60 F1000                      ; slow wipe,G1 X -14.5 Y60 F1000                      ; slow wipe,G1 X -14.5 Y46 F1000                      ; slow wipe,G1 X -17.5 Y46 F1000                      ; slow wipe,G1 X -17.5 Y60 F1000                      ; slow wipe,G1 X -14.5 Y60 F1000                      ; slow wipe,G1 X -14.5 Y46 F1000                      ; slow wipe,G1 X -17.5 Y46 F1000                      ; slow wipe,G1 X -17.5 Y60 F1000                      ; slow wipe,G1 X -16.5 Y60 F1000                      ; slow wipe,G1 X -16.5 Y42 F1000                      ; slow wipe,G1 X -15.5 Y40 F2000                      ; fast wipe,G1 X -17.5 Y38 F2000                      ; fast wipe,G1 X -15.5 Y36 F2000                      ; fast wipe,G1 X -17.5 Y34 F2000                      ; fast wipe,G1 X -16.5 Y30 F1000                      ; slow wipe,G1 X -16.5 Y19 F1000                      ; slow wipe,G1 X -16.5 Y19 Z20 F1000                  ; raise extruder,M106 S255                                 ; turn on fan to blow away fuzzies,G4 S5                                     ; wait 5 seconds,M107                                      ; turn off fan,G0 X50 F1000                              ; move over to switch extruders,T1                                        ; switch to second extruder,G1 X296.5 Y100  F5000                     ; move E2 above second wiper pad,G1 Z 1.0                                  ; push nozzle into wiper,G1 X 296.5 Y100 F1000                     ; slow wipe,G1 X 296.5 Y90 F1000                      ; slow wipe,G1 X 297.5 Y86 F2000                      ; fast wipe,G1 X 295.5 Y80 F2000                      ; fast wipe,G1 X 297.5 Y74 F2000                      ; fast wipe,G1 X 295.5 Y70 F2000                      ; fast wipe,G1 X 296.5 Y68 F1000                      ; slow wipe,G1 X 296.5 Y60 F1000                      ; slow wipe,G1 X 298 Y60 F1000                        ; slow wipe,G1 X 298 Y46 F1000                        ; slow wipe,G1 X 295 Y46 F1000                        ; slow wipe,G1 X 295 Y60 F1000                        ; slow wipe,G1 X 298 Y60 F1000                        ; slow wipe,G1 X 298 Y46 F1000                        ; slow wipe,G1 X 295 Y46 F1000                        ; slow wipe,G1 X 295 Y60 F1000                        ; slow wipe,G1 X 298 Y60 F1000                        ; slow wipe,G1 X 298 Y46 F1000                        ; slow wipe,G1 X 295 Y46 F1000                        ; slow wipe,G1 X 295 Y60 F1000                        ; slow wipe,G1 X 296.5 Y60 F1000                      ; slow wipe,G1 X 296.5 Y42 F1000                      ; slow wipe,G1 X 297.5 Y40 F2000                      ; fast wipe,G1 X 295.5 Y38 F2000                      ; fast wipe,G1 X 297.5 Y36 F2000                      ; fast wipe,G1 X 295.5 Y34 F2000                      ; fast wipe,G1 X 297.5 Y30 F1000                      ; slow wipe,G1 X 296.5 Y19 F1000                      ; slow wipe,G1 X 296.5 Y19 Z20 F1000                  ; raise extruder,M106 S255                                 ; turn on fan to blow away fuzzies,G4 S5                                     ; wait 5 seconds,M107                                      ; turn off fan,G0 X247 F1000                             ; move over to switch extruders,T0                                        ; switch to first extruder,M109 R160                                 ; heat to probe temp,M204 S100                                 ; set accel for probing,G29                                       ; probe sequence (for auto-leveling),M420 S1                                   ; enable leveling matrix,M204 S500                                 ; set accel back to normal,M104 S[extruder0_temperature]  T0         ; set extruder temp,M104 S[extruder1_temperature]  T1         ; set extruder temp,G1 X100 Y-29 Z0.5 F3000                   ; move to open space,M400                                      ; clear buffer,M117 Heating...                           ; LCD status message,M109 R[extruder0_temperature]  T0  ; set extruder temp and wait,M109 R[extruder1_temperature]  T1  ; set extruder temp and wait,M117 Purging...                           ; LCD status message,T0                                        ; select this extruder first,G1 E0 F100		    	                      ; undo retraction,G92 E-30				                          ; set extruder negative amount to purge,G1 E0 F100				                        ; purge XXmm of filament,G1 E-3 F200                               ; purge retraction,G1 Z0.45                                  ; clear bed (barely),G1 X100 Y10 F4000                         ; move above bed to shear off filament,M106 S255                                 ; turn on fan,G4 S7                                     ; wait 7 seconds,M107                                      ; turn off fan,G1 X180 Y-29 Z0.45 F3000                  ; move to open space,T1                                        ; set extruder,G1 E0 F100                                ; undo retraction,G92 E-30                                  ; set extruder negative amount to purge,G1 E0 F100                                ; purge XXmm of filament,G1 E-4 F200                               ; purge retraction,G1 Z0.35                                  ; clear bed (barely),G1 X180 Y10 F4000                         ; move above bed to shear off filament,T0                                        : set extruder,M190 R[bed0_temperature]                  ; get bed temping up during first layer,G1 Z2 E0 F75                              ; raise head and 0 extruder,M82					                              ; set to absolute mode,M400                                      ; clear buffer,M117 Simplify3D+TAZ Printing...           ; LCD status message,</startingGcode>
+  </autoConfigureExtruders>
+</profile>
